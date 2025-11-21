@@ -9,20 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Brand colors
+        // Brand colors - Inte Sistemas
+        // Paleta oficial de la empresa
         primary: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
-          950: '#172554',
+          50: '#e6f4ff',
+          100: '#cce9ff',
+          200: '#a9d9ff',  // anakiwa
+          300: '#7dc4f0',
+          400: '#65a6d8',  // danube
+          500: '#3a89c5',  // boston-blue
+          600: '#1175c7',  // denim (color principal)
+          700: '#0e5fa3',
+          800: '#0b4a7f',
+          900: '#08355b',
+          950: '#051f37',
         },
+        // Colores secundarios (grises para texto y fondos)
         secondary: {
           50: '#f8fafc',
           100: '#f1f5f9',
@@ -36,6 +38,7 @@ const config: Config = {
           900: '#0f172a',
           950: '#020617',
         },
+        // Colores de utilidad
         success: {
           DEFAULT: '#10b981',
           light: '#d1fae5',
@@ -52,14 +55,19 @@ const config: Config = {
           dark: '#dc2626',
         },
         info: {
-          DEFAULT: '#3b82f6',
-          light: '#dbeafe',
-          dark: '#2563eb',
+          DEFAULT: '#1175c7',  // usando denim
+          light: '#a9d9ff',    // usando anakiwa
+          dark: '#0e5fa3',
         },
+        // Colores de marca con nombres específicos
+        denim: '#1175c7',
+        anakiwa: '#a9d9ff',
+        'boston-blue': '#3a89c5',
+        danube: '#65a6d8',
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        heading: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-inter)', 'system-ui', '-apple-system', 'sans-serif'],
+        heading: ['var(--font-poppins)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
       },
       spacing: {
         '18': '4.5rem',

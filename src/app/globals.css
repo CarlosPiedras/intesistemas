@@ -1,15 +1,33 @@
 @import "tailwindcss";
 
+/* Variables globales - Inte Sistemas */
+/* Paleta de colores oficial de la empresa */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Colores de marca */
+  --denim: #1175c7;
+  --anakiwa: #a9d9ff;
+  --boston-blue: #3a89c5;
+  --danube: #65a6d8;
+
+  /* Color principal */
+  --primary: var(--denim);
+  --primary-light: var(--anakiwa);
+  --primary-dark: #0e5fa3;
+
+  /* Colores secundarios */
+  --secondary: #475569;
+  --secondary-light: #cbd5e1;
+  --secondary-dark: #1e293b;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-poppins);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +37,40 @@
   }
 }
 
+/* Estilos base */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mejoras de accesibilidad */
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Clases de utilidad personalizadas */
+.container-custom {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.section-padding {
+  @apply py-16 md:py-24 lg:py-32;
+}
+
+.heading-1 {
+  @apply text-4xl font-bold font-heading tracking-tight sm:text-5xl lg:text-6xl;
+}
+
+.heading-2 {
+  @apply text-3xl font-bold font-heading tracking-tight sm:text-4xl lg:text-5xl;
+}
+
+.heading-3 {
+  @apply text-2xl font-semibold font-heading tracking-tight sm:text-3xl;
 }
