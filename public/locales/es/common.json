@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "portfolio": "Portfolio",
+    "contact": "Contacto"
+  },
+  "buttons": {
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "readMore": "Leer más",
+    "learnMore": "Conocer más",
+    "getStarted": "Comenzar",
+    "contactUs": "Contáctanos"
+  },
+  "footer": {
+    "about": "Sobre Inte Sistemas",
+    "description": "Soluciones tecnológicas empresariales de vanguardia",
+    "quickLinks": "Enlaces Rápidos",
+    "contact": "Contacto",
+    "followUs": "Síguenos",
+    "rights": "Todos los derechos reservados",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos y Condiciones"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "name": "Nombre",
+    "email": "Email",
+    "phone": "Teléfono",
+    "message": "Mensaje",
+    "address": "Dirección",
+    "company": "Empresa"
+  }
+}
