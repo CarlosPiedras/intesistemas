@@ -1,5 +1,16 @@
 # Sistema de Estilos y Diseño - Inte Sistemas
 
+## 🎨 Filosofía de Diseño
+
+Este sistema de diseño sigue un enfoque **minimalista y limpio**, inspirado en guidelines modernas de diseño web, con énfasis en:
+
+- **Espaciado generoso**: Layouts aireados con breathing room
+- **Animaciones suaves**: Transiciones sutiles y naturales
+- **Efectos parallax**: Profundidad visual mediante capas en movimiento
+- **Paleta limpia**: Colores neutros con acentos de marca
+
+---
+
 ## Tailwind CSS
 
 ### Configuración
@@ -460,7 +471,7 @@ xl:  1280px // Extra large devices
 
 ## Animaciones y Transiciones
 
-### Transiciones
+### Transiciones Básicas
 
 ```tsx
 // Hover effects
@@ -482,28 +493,66 @@ xl:  1280px // Extra large devices
 </div>
 ```
 
-### Animaciones
+### Animaciones de Entrada
 
 ```tsx
-// Fade in
+// Fade in básico
 <div className="animate-fade-in">
   Content
 </div>
 
-// Slide up
-<div className="animate-slide-up">
-  Content
+// Fade in lento (para hero sections)
+<div className="animate-fade-in-slow">
+  Hero Content
+</div>
+
+// Fade in direccionales
+<div className="animate-fade-in-up">Desde abajo</div>
+<div className="animate-fade-in-down">Desde arriba</div>
+<div className="animate-fade-in-left">Desde izquierda</div>
+<div className="animate-fade-in-right">Desde derecha</div>
+
+// Slides
+<div className="animate-slide-up">Slide up</div>
+<div className="animate-slide-down">Slide down</div>
+<div className="animate-slide-left">Slide left</div>
+<div className="animate-slide-right">Slide right</div>
+
+// Scale
+<div className="animate-scale-in">Scale in rápido</div>
+<div className="animate-scale-in-slow">Scale in lento</div>
+```
+
+### Efectos Continuos
+
+```tsx
+// Float (efecto flotante)
+<div className="animate-float">
+  Floating element
+</div>
+
+<div className="animate-float-slow">
+  Slow floating element
+</div>
+
+// Pulse suave
+<div className="animate-pulse-soft">
+  Subtle pulse
 </div>
 
 // Spin (loading)
 <svg className="h-5 w-5 animate-spin">
   {/* Spinner icon */}
 </svg>
+```
 
-// Pulse
-<div className="animate-pulse bg-gray-200">
-  Skeleton
-</div>
+### Efectos Parallax con Tailwind
+
+```tsx
+// Parallax para fondos (usar con componente ParallaxBackground)
+<div className="animate-parallax-slow">Muy lento</div>
+<div className="animate-parallax-medium">Medio</div>
+<div className="animate-parallax-fast">Rápido</div>
 ```
 
 ---
@@ -726,5 +775,288 @@ npm install -D prettier-plugin-tailwindcss
 
 ---
 
+## Componentes de Efectos Parallax
+
+### ParallaxSection
+
+Componente para crear secciones con efecto parallax basado en scroll.
+
+```tsx
+import { ParallaxSection } from '@/components/effects'
+
+// Uso básico
+<ParallaxSection speed={0.5} direction="up">
+  <h2 className="text-4xl font-bold">Título con parallax</h2>
+  <p>Este contenido se moverá suavemente al hacer scroll</p>
+</ParallaxSection>
+
+// Con diferentes velocidades
+<ParallaxSection speed={0.3} direction="down">
+  <img src="/image.jpg" alt="Slow parallax" />
+</ParallaxSection>
+
+<ParallaxSection speed={0.8} direction="up">
+  <div>Fast parallax movement</div>
+</ParallaxSection>
+```
+
+**Props:**
+- `speed`: Velocidad del efecto (0.1 - 1.0). Valores bajos = movimiento más lento
+- `direction`: Dirección del movimiento ('up' | 'down')
+- `className`: Clases CSS adicionales
+
+---
+
+### ParallaxBackground
+
+Componente para fondos de imagen con efecto parallax.
+
+```tsx
+import { ParallaxBackground } from '@/components/effects'
+
+// Hero con fondo parallax
+<section className="relative h-screen overflow-hidden">
+  <ParallaxBackground
+    imageSrc="/images/hero-bg.jpg"
+    speed={0.3}
+    overlay
+    overlayOpacity={40}
+  />
+  <div className="relative z-10 flex h-full items-center justify-center">
+    <h1 className="text-white text-6xl font-bold">Hero Title</h1>
+  </div>
+</section>
+
+// Sin overlay
+<section className="relative h-[600px] overflow-hidden">
+  <ParallaxBackground
+    imageSrc="/images/section-bg.jpg"
+    speed={0.5}
+  />
+  <div className="relative z-10 container-clean section-spacing">
+    <h2>Contenido sobre el fondo</h2>
+  </div>
+</section>
+```
+
+**Props:**
+- `imageSrc`: Ruta de la imagen (requerido)
+- `alt`: Texto alternativo para la imagen
+- `speed`: Velocidad del parallax (0.1 - 1.0)
+- `overlay`: Mostrar capa oscura sobre imagen
+- `overlayOpacity`: Opacidad del overlay (0 - 100)
+
+---
+
+### ScrollReveal
+
+Componente que revela su contenido con animación al hacer scroll.
+
+```tsx
+import { ScrollReveal } from '@/components/effects'
+
+// Revelar con fade
+<ScrollReveal animation="fade">
+  <h2>Este título aparecerá al hacer scroll</h2>
+</ScrollReveal>
+
+// Revelar desde abajo
+<ScrollReveal animation="slide-up" delay={200}>
+  <p>Texto que se desliza desde abajo con retraso</p>
+</ScrollReveal>
+
+// Grid de cards con reveal escalonado
+<div className="grid md:grid-cols-3 gap-6">
+  <ScrollReveal animation="scale" delay={0}>
+    <Card>Card 1</Card>
+  </ScrollReveal>
+  <ScrollReveal animation="scale" delay={100}>
+    <Card>Card 2</Card>
+  </ScrollReveal>
+  <ScrollReveal animation="scale" delay={200}>
+    <Card>Card 3</Card>
+  </ScrollReveal>
+</div>
+```
+
+**Props:**
+- `animation`: Tipo de animación ('fade' | 'slide-up' | 'slide-down' | 'slide-left' | 'slide-right' | 'scale')
+- `delay`: Retraso antes de animar (ms)
+- `duration`: Duración de la animación (ms)
+- `threshold`: Porcentaje visible para activar (0-1)
+
+---
+
+## Clases CSS Utility Personalizadas
+
+### Containers Limpios
+
+```tsx
+// Container con padding generoso responsive
+<div className="container-clean">
+  Content
+</div>
+
+// Sección con espaciado vertical consistente
+<section className="section-spacing">
+  Section content
+</section>
+```
+
+### Cards Minimalistas
+
+```tsx
+// Card limpia con hover effect
+<div className="card-minimal">
+  <h3>Card Title</h3>
+  <p>Card content</p>
+</div>
+```
+
+### Botones Limpios
+
+```tsx
+// Botón con estilo minimalista
+<button className="btn-minimal bg-primary-600 text-white">
+  Acción
+</button>
+```
+
+### Divisores Sutiles
+
+```tsx
+// Línea decorativa sutil
+<div className="divider-minimal" />
+```
+
+### Efectos de Glassmorphism
+
+```tsx
+// Card con efecto vidrio
+<div className="glass-effect rounded-2xl p-6">
+  <h3>Glassmorphism Card</h3>
+</div>
+```
+
+---
+
+## Ejemplo Completo: Hero con Parallax
+
+```tsx
+import { ParallaxBackground, ScrollReveal } from '@/components/effects'
+
+export function HeroSection() {
+  return (
+    <section className="relative h-screen overflow-hidden">
+      {/* Fondo parallax */}
+      <ParallaxBackground
+        imageSrc="/images/hero-background.jpg"
+        alt="Hero background"
+        speed={0.3}
+        overlay
+        overlayOpacity={50}
+      />
+
+      {/* Contenido */}
+      <div className="relative z-10 flex h-full items-center">
+        <div className="container-clean">
+          <ScrollReveal animation="fade-in-up" delay={200}>
+            <h1 className="text-6xl font-bold text-white mb-6">
+              Bienvenido a Inte Sistemas
+            </h1>
+          </ScrollReveal>
+
+          <ScrollReveal animation="fade-in-up" delay={400}>
+            <p className="text-xl text-white/90 mb-8 max-w-2xl">
+              Soluciones tecnológicas innovadoras con diseño minimalista
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal animation="fade-in-up" delay={600}>
+            <button className="btn-minimal bg-white text-gray-900 hover:bg-gray-100">
+              Conocer más
+            </button>
+          </ScrollReveal>
+        </div>
+      </div>
+    </section>
+  )
+}
+```
+
+---
+
+## Variables CSS Personalizadas
+
+El sistema utiliza variables CSS para mantener consistencia:
+
+```css
+:root {
+  /* Colores */
+  --background: #ffffff;
+  --foreground: #171717;
+  --surface: #fafafa;
+  --border: #e5e5e5;
+
+  /* Espaciado */
+  --spacing-section: 6rem;
+  --spacing-section-sm: 4rem;
+  --spacing-content: 2rem;
+
+  /* Sombras suaves */
+  --shadow-soft: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  --shadow-soft-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --shadow-soft-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+
+  /* Transiciones */
+  --transition-base: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+```
+
+Uso en componentes:
+
+```tsx
+<div style={{ boxShadow: 'var(--shadow-soft-lg)' }}>
+  Content
+</div>
+
+<button style={{ transition: 'var(--transition-base)' }}>
+  Button
+</button>
+```
+
+---
+
+## Performance Tips
+
+### Parallax Optimization
+
+```tsx
+// ✅ BIEN: Usar will-change en elementos parallax
+<div className="parallax-layer will-change-transform">
+  Content
+</div>
+
+// ✅ BIEN: Limitar número de elementos parallax por página
+// Máximo 3-4 secciones con parallax para mantener 60fps
+
+// ❌ MAL: Parallax en demasiados elementos
+// Evitar aplicar parallax a elementos muy pequeños
+```
+
+### Animaciones Suaves
+
+```tsx
+// ✅ BIEN: Animar propiedades optimizadas
+className="transition-transform transition-opacity"
+
+// ❌ MAL: Animar propiedades costosas
+className="transition-all" // Evitar cuando sea posible
+```
+
+---
+
 **Fecha:** 2025-11-21
-**Sistema de diseño:** En evolución
+**Sistema de diseño:** Minimalista y limpio con efectos parallax
+**Última actualización:** 2025-11-21

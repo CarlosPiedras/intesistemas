@@ -1,8 +1,28 @@
 @import "tailwindcss";
 
+/* ============================================
+   Variables CSS - Estilo Minimalista
+   ============================================ */
 :root {
+  /* Colores base */
   --background: #ffffff;
   --foreground: #171717;
+  --surface: #fafafa;
+  --border: #e5e5e5;
+
+  /* Espaciado consistente */
+  --spacing-section: 6rem;
+  --spacing-section-sm: 4rem;
+  --spacing-content: 2rem;
+
+  /* Sombras suaves */
+  --shadow-soft: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  --shadow-soft-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --shadow-soft-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+
+  /* Transiciones suaves */
+  --transition-base: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @theme inline {
@@ -12,15 +32,228 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ============================================
+   Reset y Base Styles - Enfoque Limpio
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ============================================
+   Typography - Jerarquía Clara
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+}
+
+p {
+  line-height: 1.7;
+  color: #525252;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+/* ============================================
+   Utility Classes - Componentes Minimalistas
+   ============================================ */
+
+/* Container limpio con padding generoso */
+.container-clean {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-clean {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-clean {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Secciones con espaciado vertical consistente */
+.section-spacing {
+  padding-top: var(--spacing-section-sm);
+  padding-bottom: var(--spacing-section-sm);
+}
+
+@media (min-width: 768px) {
+  .section-spacing {
+    padding-top: var(--spacing-section);
+    padding-bottom: var(--spacing-section);
+  }
+}
+
+/* Card minimalista */
+.card-minimal {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all var(--transition-slow);
+}
+
+.card-minimal:hover {
+  box-shadow: var(--shadow-soft-lg);
+  transform: translateY(-2px);
+}
+
+/* Botones limpios */
+.btn-minimal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 0.5rem;
+  transition: all var(--transition-base);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btn-minimal:focus-visible {
+  outline: 2px solid;
+  outline-offset: 2px;
+}
+
+/* Línea decorativa sutil */
+.divider-minimal {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--border) 10%,
+    var(--border) 90%,
+    transparent
+  );
+  margin: 3rem 0;
+}
+
+/* ============================================
+   Animaciones - Efectos Suaves para Parallax
+   ============================================ */
+
+/* Fade in con scroll */
+@keyframes fadeInScroll {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  animation: fadeInScroll 0.8s ease-out;
+}
+
+/* Parallax layer base */
+.parallax-layer {
+  position: relative;
+  will-change: transform;
+}
+
+/* Efecto de glassmorphism */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ============================================
+   Scrollbar Personalizado - Minimalista
+   ============================================ */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}
+
+/* ============================================
+   Selection - Branding Sutil
+   ============================================ */
+::selection {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+/* ============================================
+   Focus States - Accesibilidad
+   ============================================ */
+*:focus-visible {
+  outline: 2px solid #0ea5e9;
+  outline-offset: 2px;
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .no-print {
+    display: none;
+  }
 }
