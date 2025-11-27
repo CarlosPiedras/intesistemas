@@ -49,7 +49,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_ES',
-    alternateLocale: ['en_US'],
     url: '/',
     title: 'Inte Sistemas - Soluciones Eléctricas y Automatización',
     description: 'Empresa especializada en sistemas eléctricos y automatización industrial',
@@ -78,7 +77,7 @@ export const metadata: Metadata = {
 };
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return [{ locale: 'es' }];
 }
 
 export default async function LocaleLayout({
@@ -90,8 +89,8 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
 
-  // Validar que el locale es soportado
-  if (!locales.includes(locale as any)) {
+  // Validar que el locale sea español
+  if (locale !== 'es') {
     notFound();
   }
 

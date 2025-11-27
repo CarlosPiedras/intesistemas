@@ -1,7 +1,7 @@
 import createMiddleware from 'next-intl/middleware';
 import { locales, defaultLocale } from './lib/i18n/config';
 
-export default createMiddleware({
+export const proxy = createMiddleware({
   // Lista de locales soportados
   locales,
 
@@ -12,7 +12,7 @@ export default createMiddleware({
   localeDetection: true,
 
   // Prefijo de locale en la URL
-  localePrefix: 'as-needed', // No mostrar /es en URLs en español
+  localePrefix: 'always', // Siempre mostrar el prefijo de locale (/es, /en)
 });
 
 export const config = {
