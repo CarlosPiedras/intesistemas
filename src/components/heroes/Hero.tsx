@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 
-export default function HeroVariant7() {
+export default function Hero() {
   return (
-    <section className="relative h-[70vh] flex items-center overflow-hidden">
+    <section className="relative h-[85vh] flex items-center overflow-hidden">
       {/* Imagen de fondo */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -17,7 +17,7 @@ export default function HeroVariant7() {
           priority
           quality={90}
         />
-        {/* Overlay más opaco como Variante 6 */}
+        {/* Overlay más opaco */}
         <div className="absolute inset-0 bg-gradient-to-br from-secondary-900/90 via-denim/80 to-primary-900/85" />
       </div>
 
@@ -65,7 +65,7 @@ export default function HeroVariant7() {
                 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.2 }}
-                className="flex items-center gap-3 px-8 py-4 text-base font-bold text-denim bg-white border-2 border-denim rounded-lg cursor-pointer shadow-lg"
+                className="flex items-center gap-3 px-8 py-4 text-base font-bold text-white bg-transparent border-2 border-white rounded-lg cursor-pointer shadow-lg"
               >
                 Conocer más
                 <motion.div
