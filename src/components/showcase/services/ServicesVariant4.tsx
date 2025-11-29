@@ -1,38 +1,38 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Zap, Settings, Target, Wrench } from 'lucide-react';
+import { Hammer, Database, Users, Target } from 'lucide-react';
 
-export default function ServicesVariant3() {
+export default function ServicesVariant4() {
   const services = [
     {
       id: 1,
-      title: 'DISTRIBUCIÓN ELÉCTRICA',
-      description: 'Diseño y fabricación de cuadros de distribución personalizados para todo tipo de instalaciones industriales y comerciales.',
-      icon: Zap,
-    },
-    {
-      id: 2,
-      title: 'AUTOMATIZACIÓN INDUSTRIAL',
-      description: 'Programación de PLCs y sistemas SCADA para optimizar procesos productivos y mejorar la eficiencia.',
-      icon: Settings,
-    },
-    {
-      id: 3,
-      title: 'GESTIÓN DE PROYECTOS',
-      description: 'Planificación y ejecución integral de proyectos eléctricos industriales con garantía de calidad.',
+      title: 'PROJECT MANAGEMENT',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.',
       icon: Target,
     },
     {
+      id: 2,
+      title: 'INFRASTRUCTURE BUILD',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.',
+      icon: Hammer,
+    },
+    {
+      id: 3,
+      title: 'DATA INTEGRATION',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.',
+      icon: Database,
+    },
+    {
       id: 4,
-      title: 'SOPORTE TÉCNICO',
-      description: 'Mantenimiento, asistencia técnica y formación continua para asegurar el óptimo funcionamiento.',
-      icon: Wrench,
+      title: 'TEAM CONSULTING',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.',
+      icon: Users,
     },
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-secondary-50">
+    <section className="py-20 md:py-28 bg-white">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -44,7 +44,7 @@ export default function ServicesVariant3() {
             transition={{ duration: 0.4 }}
             className="text-xs tracking-widest text-denim uppercase mb-4 font-bold"
           >
-            Qué Hacemos
+            Excellence in Delivery
           </motion.p>
 
           {/* Main Title */}
@@ -53,10 +53,9 @@ export default function ServicesVariant3() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-widest mb-6"
-            style={{ color: '#1175c7' }}
+            className="text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-widest text-secondary-900 mb-6"
           >
-            NUESTROS SERVICIOS
+            EXPERTISE AREAS
           </motion.h2>
 
           {/* Description */}
@@ -67,8 +66,7 @@ export default function ServicesVariant3() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base md:text-lg text-secondary-600 max-w-2xl mx-auto leading-relaxed"
           >
-            Soluciones completas en sistemas eléctricos y automatización. Desde el diseño inicial hasta el soporte continuo,
-            acompañamos cada proyecto con experiencia técnica y dedicación profesional.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
           </motion.p>
         </div>
 
@@ -80,44 +78,27 @@ export default function ServicesVariant3() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="flex items-center justify-center mb-16 md:mb-20"
         >
-          {/* Left Line Container */}
-          <motion.span
+          <motion.div
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="inline-flex items-center h-px w-32 md:w-40 relative"
-          >
-            <span className="absolute inset-0 border-t border-secondary-700"></span>
-          </motion.span>
-
-          {/* Gear Icon */}
-          <motion.span
-            initial={{ scale: 0, rotate: -180 }}
-            whileInView={{ scale: 1, rotate: 0 }}
+            className="h-px bg-secondary-300 w-full max-w-xs origin-right"
+          />
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.7, type: "spring", stiffness: 150 }}
-            className="inline-flex mx-4"
-          >
-            <motion.span
-              animate={{ rotate: 360 }}
-              transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
-              className="inline-block"
-            >
-              <Settings className="w-5 h-5 text-denim" strokeWidth={1.5} />
-            </motion.span>
-          </motion.span>
-
-          {/* Right Line Container */}
-          <motion.span
+            transition={{ duration: 0.5, delay: 0.7 }}
+            className="mx-4 w-2 h-2 bg-denim rotate-45"
+          />
+          <motion.div
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="inline-flex items-center h-px w-32 md:w-40 relative"
-          >
-            <span className="absolute inset-0 border-t border-secondary-700"></span>
-          </motion.span>
+            className="h-px bg-secondary-300 w-full max-w-xs origin-left"
+          />
         </motion.div>
 
         {/* Services Grid */}
@@ -133,7 +114,7 @@ export default function ServicesVariant3() {
                 transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
                 className="flex flex-col items-center text-center"
               >
-                {/* Icon Circle with thick border */}
+                {/* Icon Square with thick border */}
                 <motion.div
                   whileHover={{
                     scale: 1.05,
@@ -141,7 +122,7 @@ export default function ServicesVariant3() {
                     backgroundColor: '#e6f4ff'
                   }}
                   transition={{ duration: 0.2 }}
-                  className="w-28 h-28 rounded-full border-[3px] border-secondary-300 flex items-center justify-center mb-6 bg-white shadow-sm group"
+                  className="w-28 h-28 rounded-2xl border-[3px] border-secondary-300 flex items-center justify-center mb-6 bg-white shadow-sm group"
                 >
                   <Icon className="w-12 h-12 text-secondary-700 group-hover:text-[#1175c7] transition-colors duration-200" strokeWidth={1.5} />
                 </motion.div>

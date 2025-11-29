@@ -1,9 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Zap, Settings, Target, Wrench } from 'lucide-react';
+import { Zap, Cpu, ClipboardList, Wrench, Settings } from 'lucide-react';
 
-export default function ServicesVariant3() {
+export default function Services() {
   const services = [
     {
       id: 1,
@@ -15,13 +15,13 @@ export default function ServicesVariant3() {
       id: 2,
       title: 'AUTOMATIZACIÓN INDUSTRIAL',
       description: 'Programación de PLCs y sistemas SCADA para optimizar procesos productivos y mejorar la eficiencia.',
-      icon: Settings,
+      icon: Cpu,
     },
     {
       id: 3,
       title: 'GESTIÓN DE PROYECTOS',
       description: 'Planificación y ejecución integral de proyectos eléctricos industriales con garantía de calidad.',
-      icon: Target,
+      icon: ClipboardList,
     },
     {
       id: 4,
@@ -32,10 +32,10 @@ export default function ServicesVariant3() {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-secondary-50">
+    <section className="py-12 md:py-16 bg-secondary-50">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header Section */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           {/* Eyebrow */}
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -78,7 +78,7 @@ export default function ServicesVariant3() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="flex items-center justify-center mb-16 md:mb-20"
+          className="flex items-center justify-center my-16"
         >
           {/* Left Line Container */}
           <motion.span

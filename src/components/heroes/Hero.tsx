@@ -2,21 +2,21 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
 
 export default function Hero() {
   return (
     <section className="relative h-[85vh] flex items-center overflow-hidden">
-      {/* Imagen de fondo */}
+      {/* Video de fondo */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/hero/1.jpg"
-          alt="Sistemas eléctricos profesionales"
-          fill
-          className="object-cover brightness-50"
-          priority
-          quality={90}
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover brightness-50"
+        >
+          <source src="/videos/Videohero.mp4" type="video/mp4" />
+        </video>
         {/* Overlay más opaco */}
         <div className="absolute inset-0 bg-gradient-to-br from-secondary-900/90 via-denim/80 to-primary-900/85" />
       </div>
