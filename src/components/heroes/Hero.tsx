@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative h-[85vh] flex items-center overflow-hidden">
+    <section className="relative h-[calc(100vh-5rem)] flex items-center overflow-hidden">
       {/* Video de fondo */}
       <div className="absolute inset-0 z-0">
         <video
