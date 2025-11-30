@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales } from '@/lib/i18n/config';
+import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import "../globals.css";
 
@@ -102,6 +103,7 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${inter.variable} ${poppins.variable}`}>
       <body className="font-sans antialiased">
         <NextIntlClientProvider messages={messages}>
+          <Navbar />
           {children}
           <Footer />
         </NextIntlClientProvider>
