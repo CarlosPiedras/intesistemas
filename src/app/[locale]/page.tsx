@@ -1,8 +1,8 @@
 import Hero from '@/components/heroes/Hero';
 import ClientLogos from '@/components/home/ClientLogos';
 import Services from '@/components/home/Services';
-// import WhyChooseUs from '@/components/home/WhyChooseUs';
-// import OurSectors from '@/components/home/OurSectors';
+import WhyChooseUsVariant7 from '@/components/showcase/why-choose-us/WhyChooseUsVariant7';
+import OurSectors from '@/components/home/OurSectors';
 
 export default function HomePage() {
   return (
@@ -16,11 +16,11 @@ export default function HomePage() {
       {/* 3. Services Section */}
       <Services />
 
-      {/* 4. Why Choose Us Section (con CTA) */}
-      {/* <WhyChooseUs /> */}
+      {/* 4. Why Choose Us Section - Variante 7 */}
+      <WhyChooseUsVariant7 />
 
       {/* 5. Our Sectors Section */}
-      {/* <OurSectors /> */}
+      <OurSectors />
     </main>
   );
 }

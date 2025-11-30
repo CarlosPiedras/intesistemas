@@ -7,46 +7,53 @@ import Image from 'next/image';
 const reasons = [
   {
     icon: Award,
-    title: 'Más de 10 años de experiencia',
-    description: 'Desde 2014 diseñando e implementando sistemas de control industrial con los más altos estándares de calidad.',
+    title: 'Trayectoria consolidada',
+    description: 'Una década de experiencia transformando procesos industriales y optimizando infraestructuras eléctricas con resultados medibles.',
   },
   {
     icon: Users,
-    title: 'Integrador oficial EATON',
-    description: 'Certificación oficial que garantiza componentes premium y soluciones técnicas de primera línea.',
+    title: 'Partner estratégico EATON',
+    description: 'Colaboración oficial con EATON que nos permite ofrecer tecnología de vanguardia y respaldo internacional.',
   },
   {
     icon: MapPin,
-    title: '2 sedes en Barcelona',
-    description: 'Presencia en Hospitalet de Llobregat y Terrassa para una atención cercana y personalizada.',
+    title: 'Presencia territorial',
+    description: 'Red de oficinas estratégicamente ubicadas en el área metropolitana de Barcelona para respuesta inmediata.',
   },
   {
     icon: Headphones,
-    title: 'Soporte técnico continuo',
-    description: 'Asistencia técnica, mantenimiento preventivo y formación para garantizar tu tranquilidad.',
+    title: 'Compromiso de servicio',
+    description: 'Acompañamiento integral desde la consultoría inicial hasta el mantenimiento, garantizando la continuidad operativa.',
   },
 ];
 
 export default function WhyChooseUsVariant7() {
   return (
-    <section className="py-24 md:py-32 bg-white">
+    <section className="py-24 md:py-32 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start max-w-7xl mx-auto">
-          {/* Imagen izquierda */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch max-w-[1400px] mx-auto">
+          {/* Imagen izquierda con parallax */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="relative h-[600px] lg:h-auto overflow-hidden -mx-4 lg:mx-0"
           >
-            <div className="relative h-[600px] lg:h-[700px] overflow-hidden">
+            <motion.div
+              initial={{ y: 100 }}
+              whileInView={{ y: -100 }}
+              viewport={{ once: false, amount: 0 }}
+              transition={{ duration: 1.2, ease: "linear" }}
+              className="relative h-[700px] lg:h-[calc(100%+200px)]"
+            >
               <Image
                 src="/images/proceso/instalacion_1.jpg"
                 alt="Equipo de Inte Sistemas trabajando"
                 fill
                 className="object-cover"
               />
-            </div>
+            </motion.div>
           </motion.div>
 
           {/* Contenido derecha */}
@@ -55,18 +62,31 @@ export default function WhyChooseUsVariant7() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="pt-8"
+            className="flex flex-col justify-center py-8"
           >
             {/* Header - alineado con el texto */}
             <div className="flex gap-5 mb-14">
               <div className="w-12 flex-shrink-0"></div>
               <div className="flex-1">
-                <p className="text-primary-600 font-semibold text-sm uppercase tracking-wider mb-3">
+                <motion.p
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4 }}
+                  className="text-xs tracking-widest text-denim uppercase mb-4 font-bold"
+                >
                   ¿Por qué Inte Sistemas?
-                </p>
-                <h2 className="text-4xl md:text-5xl font-bold text-secondary-900">
+                </motion.p>
+                <motion.h2
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  className="text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-widest mb-6"
+                  style={{ color: '#1175c7' }}
+                >
                   CALIDAD Y EXPERIENCIA
-                </h2>
+                </motion.h2>
               </div>
             </div>
 
