@@ -1,0 +1,261 @@
+{
+  "empresa": {
+    "nombre": "INTE SISTEMAS",
+    "nombreCompleto": "Inte Sistemas Eléctricos / INTE AUTOMATIZACIÓN",
+    "descripcion": "Empresa dedicada a soluciones en sistemas eléctricos y automatización industrial",
+    "compromiso": "En Inte Sistemas estamos comprometidos con ofrecer productos y servicios de calidad a nuestros clientes",
+    "anoFundacion": 2014,
+    "slogan": "Esperamos que disfrute de la navegación por nuestro sitio web y que encuentre toda la información que necesita"
+  },
+  "contacto": {
+    "email": {
+      "principal": "inte@inteautomatizacion.com",
+      "alternativo": "info@intesistemas.com"
+    },
+    "telefonos": {
+      "principal": "+34 933 379 453",
+      "alternativo": "93 337 9453",
+      "movil": "627 520 831",
+      "fax": "93 260 4021"
+    },
+    "horario": "Lunes a Sábado: 8:00h a 20:00h"
+  },
+  "ubicaciones": [
+    {
+      "nombre": "Sede Hospitalet de Llobregat",
+      "direccion": "Pasaje Milans 1",
+      "ciudad": "Hospitalet de Llobregat",
+      "provincia": "Barcelona",
+      "pais": "España"
+    },
+    {
+      "nombre": "Sede Terrassa",
+      "direccion": "Avenida Santa Eulalia 290",
+      "codigoPostal": "08223",
+      "ciudad": "Terrassa",
+      "provincia": "Barcelona",
+      "pais": "España",
+      "coordenadas": {
+        "lat": 41.55300068031102,
+        "lng": 2.031235158443434
+      }
+    }
+  ],
+  "servicios": [
+    {
+      "id": "distribucion-energia",
+      "nombre": "Distribución de Energía",
+      "descripcion": "Sistemas de distribución eléctrica y cuadros de distribución eléctrica"
+    },
+    {
+      "id": "automatizacion",
+      "nombre": "Automatización",
+      "descripcion": "Automatización industrial, programación de PLCs y automatización de procesos"
+    }
+  ],
+  "sectores": [
+    {
+      "id": "cortadora",
+      "nombre": "Maquinaria de Corte",
+      "descripcion": "Sistemas eléctricos para maquinaria de corte industrial",
+      "imagen": "/images/sectores/cortadora.jpg"
+    },
+    {
+      "id": "cuadros",
+      "nombre": "Cuadros de Distribución Eléctrica",
+      "descripcion": "Diseño y fabricación de cuadros eléctricos y paneles de control",
+      "imagenes": [
+        "/images/sectores/cuadro_1.jpg",
+        "/images/sectores/cuadro_3.jpg",
+        "/images/sectores/cuadro_4.jpg"
+      ]
+    },
+    {
+      "id": "edificios",
+      "nombre": "Instalaciones Eléctricas para Edificios",
+      "descripcion": "Sistemas eléctricos completos para edificios residenciales y comerciales",
+      "imagenes": [
+        "/images/sectores/edificios.jpg",
+        "/images/sectores/edificios_1.jpg"
+      ]
+    },
+    {
+      "id": "proyectos",
+      "nombre": "Gestión de Proyectos Eléctricos",
+      "descripcion": "Planificación y ejecución de proyectos eléctricos industriales",
+      "imagen": "/images/sectores/proyecto.bmp"
+    },
+    {
+      "id": "plc",
+      "nombre": "Programación de PLCs",
+      "descripcion": "Controladores Lógicos Programables para automatización industrial",
+      "imagen": "/images/sectores/plc.bmp"
+    },
+    {
+      "id": "procesos",
+      "nombre": "Automatización de Procesos Industriales",
+      "descripcion": "Sistemas de automatización para optimizar procesos productivos",
+      "imagenes": [
+        "/images/sectores/procesos.png",
+        "/images/sectores/procesos_2.jpg"
+      ]
+    },
+    {
+      "id": "impresion",
+      "nombre": "Sistemas para Industria de Impresión",
+      "descripcion": "Soluciones eléctricas especializadas para la industria gráfica",
+      "imagenes": [
+        "/images/sectores/impresion.jpg",
+        "/images/sectores/impresion_1.jpg",
+        "/images/sectores/impresion_2.jpg"
+      ]
+    }
+  ],
+  "procesoTrabajo": [
+    {
+      "paso": 1,
+      "titulo": "Análisis de necesidades",
+      "descripcion": "Estudio detallado del proyecto y las necesidades del cliente",
+      "imagenes": [
+        "/images/proceso/analisis.jpg",
+        "/images/proceso/analisis_1.jpg"
+      ]
+    },
+    {
+      "paso": 2,
+      "titulo": "Planificación",
+      "descripcion": "Diseño y estrategia del proyecto",
+      "imagenes": [
+        "/images/proceso/disenos.jpg",
+        "/images/proceso/documentos.jpg"
+      ]
+    },
+    {
+      "paso": 3,
+      "titulo": "Ejecución",
+      "descripcion": "Implementación del proyecto con estándares de calidad",
+      "imagenes": [
+        "/images/proceso/instalacion.jpg",
+        "/images/proceso/instalacion_1.jpg",
+        "/images/proceso/instalacion_2.jpg"
+      ]
+    },
+    {
+      "paso": 4,
+      "titulo": "Control de calidad",
+      "descripcion": "Verificación y pruebas exhaustivas del sistema"
+    },
+    {
+      "paso": 5,
+      "titulo": "Entrega",
+      "descripcion": "Finalización y puesta en marcha del proyecto",
+      "imagenes": [
+        "/images/proceso/entrega.jpg",
+        "/images/proceso/entrega_1.jpg"
+      ]
+    },
+    {
+      "paso": 6,
+      "titulo": "Soporte",
+      "descripcion": "Mantenimiento, asistencia técnica y formación",
+      "imagenes": [
+        "/images/proceso/formacion.jpg",
+        "/images/proceso/formacion_1.jpg"
+      ]
+    }
+  ],
+  "partners": [
+    {
+      "nombre": "EATON",
+      "tipo": "Integrador Oficial",
+      "descripcion": "Integradores oficiales de Eaton en varios sectores industriales",
+      "logo": "/images/logos/logo-eaton.jpg"
+    },
+    {
+      "nombre": "CEA",
+      "tipo": "Partner Comercial",
+      "descripcion": "Controladores Eléctricos Asociados",
+      "logo": "/images/logos/logo-cea.jpg"
+    },
+    {
+      "nombre": "SAEL",
+      "tipo": "Partner Comercial",
+      "descripcion": "Socio comercial en sistemas eléctricos",
+      "logo": "/images/logos/logo-sael.png"
+    }
+  ],
+  "web": {
+    "url": "https://www.inteautomatizacion.com/",
+    "logoEmpresa": "/images/logos/logo-inte.png"
+  },
+  "navegacion": [
+    {
+      "id": "inicio",
+      "titulo": "Inicio",
+      "url": "/"
+    },
+    {
+      "id": "quienes-somos",
+      "titulo": "Quiénes somos",
+      "url": "/about"
+    },
+    {
+      "id": "productos-servicios",
+      "titulo": "Productos y servicios",
+      "submenu": [
+        {
+          "id": "distribucion",
+          "titulo": "Distribución Energía",
+          "url": "/servicios/distribucion-energia"
+        },
+        {
+          "id": "automatizacion",
+          "titulo": "Automatización",
+          "url": "/servicios/automatizacion"
+        }
+      ]
+    },
+    {
+      "id": "sectores",
+      "titulo": "Sectores",
+      "url": "/sectores"
+    },
+    {
+      "id": "como-lo-hacemos",
+      "titulo": "Cómo lo hacemos",
+      "url": "/proceso"
+    },
+    {
+      "id": "contacto",
+      "titulo": "Contacto",
+      "url": "/contacto"
+    }
+  ],
+  "imagenes": {
+    "hero": [
+      "/images/hero/01.jpg",
+      "/images/hero/01_mov.jpg",
+      "/images/hero/1.jpg",
+      "/images/hero/1.1.jpg",
+      "/images/hero/12.jpg",
+      "/images/hero/13.jpg"
+    ],
+    "banners": {
+      "sectores": "/images/hero/ban_sectores.jpg",
+      "sector": "/images/hero/ban_sector.jpg",
+      "contacto": "/images/hero/bg-contacto.jpg"
+    },
+    "adicionales": [
+      "/images/hero/img_prin.jpg",
+      "/images/hero/foto_burbujas.jpg",
+      "/images/hero/stand_barnigrado_2.jpg"
+    ]
+  },
+  "metadata": {
+    "version": "1.0",
+    "ultimaActualizacion": "2025-11-21",
+    "proyectoOriginal": "Laravel 8 - Mayo 2021",
+    "proyectoNuevo": "Next.js 16 - Noviembre 2025",
+    "migracion": "Completada"
+  }
+}

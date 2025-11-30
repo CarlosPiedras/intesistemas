@@ -9,34 +9,36 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Brand colors - Minimalista y limpio
+        // Brand colors - Inte Sistemas
+        // Paleta oficial de la empresa
         primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
-          950: '#082f49',
+          50: '#e6f4ff',
+          100: '#cce9ff',
+          200: '#a9d9ff',  // anakiwa
+          300: '#7dc4f0',
+          400: '#65a6d8',  // danube
+          500: '#3a89c5',  // boston-blue
+          600: '#1175c7',  // denim (color principal)
+          700: '#0e5fa3',
+          800: '#0b4a7f',
+          900: '#08355b',
+          950: '#051f37',
         },
+        // Colores secundarios (grises para texto y fondos)
         secondary: {
-          50: '#fafafa',
-          100: '#f5f5f5',
-          200: '#e5e5e5',
-          300: '#d4d4d4',
-          400: '#a3a3a3',
-          500: '#737373',
-          600: '#525252',
-          700: '#404040',
-          800: '#262626',
-          900: '#171717',
-          950: '#0a0a0a',
+          50: '#f8fafc',
+          100: '#f1f5f9',
+          200: '#e2e8f0',
+          300: '#cbd5e1',
+          400: '#94a3b8',
+          500: '#64748b',
+          600: '#475569',
+          700: '#334155',
+          800: '#1e293b',
+          900: '#0f172a',
+          950: '#020617',
         },
-        // Semantic colors
+        // Colores de utilidad
         success: {
           DEFAULT: '#10b981',
           light: '#d1fae5',
@@ -53,123 +55,45 @@ const config: Config = {
           dark: '#dc2626',
         },
         info: {
-          DEFAULT: '#0ea5e9',
-          light: '#e0f2fe',
-          dark: '#0284c7',
+          DEFAULT: '#1175c7',  // usando denim
+          light: '#a9d9ff',    // usando anakiwa
+          dark: '#0e5fa3',
         },
+        // Colores de marca con nombres específicos
+        denim: '#1175c7',
+        anakiwa: '#a9d9ff',
+        'boston-blue': '#3a89c5',
+        danube: '#65a6d8',
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        heading: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-inter)', 'system-ui', '-apple-system', 'sans-serif'],
+        heading: ['var(--font-poppins)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
       },
-      // Sistema de espaciado mejorado para layouts minimalistas
       spacing: {
-        '18': '4.5rem',     // 72px
-        '22': '5.5rem',     // 88px
-        '26': '6.5rem',     // 104px
-        '30': '7.5rem',     // 120px
-        '34': '8.5rem',     // 136px
-        '38': '9.5rem',     // 152px
-        '88': '22rem',      // 352px
-        '100': '25rem',     // 400px
-        '112': '28rem',     // 448px
-        '128': '32rem',     // 512px
-        '144': '36rem',     // 576px
-        '160': '40rem',     // 640px
+        '18': '4.5rem',
+        '88': '22rem',
+        '100': '25rem',
+        '112': '28rem',
+        '128': '32rem',
       },
-      // Border radius minimalista
       borderRadius: {
         '4xl': '2rem',
-        '5xl': '2.5rem',
-        '6xl': '3rem',
       },
-      // Sombras suaves para diseño limpio
       boxShadow: {
-        'soft': '0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05)',
-        'soft-md': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05)',
-        'soft-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05)',
-        'soft-xl': '0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05)',
+        'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',
         'hard': '0 10px 40px -10px rgba(0, 0, 0, 0.2)',
-        'inner-soft': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.03)',
       },
-      // Animaciones avanzadas y suaves
       animation: {
-        // Fades
-        'fade-in': 'fadeIn 0.6s ease-out',
-        'fade-in-slow': 'fadeIn 1s ease-out',
-        'fade-in-up': 'fadeInUp 0.6s ease-out',
-        'fade-in-down': 'fadeInDown 0.6s ease-out',
-        'fade-in-left': 'fadeInLeft 0.6s ease-out',
-        'fade-in-right': 'fadeInRight 0.6s ease-out',
-
-        // Slides
-        'slide-up': 'slideUp 0.6s ease-out',
-        'slide-down': 'slideDown 0.6s ease-out',
-        'slide-left': 'slideLeft 0.6s ease-out',
-        'slide-right': 'slideRight 0.6s ease-out',
-
-        // Scales
-        'scale-in': 'scaleIn 0.4s ease-out',
-        'scale-in-slow': 'scaleIn 0.8s ease-out',
-
-        // Floats y efectos sutiles
-        'float': 'float 3s ease-in-out infinite',
-        'float-slow': 'float 6s ease-in-out infinite',
-        'pulse-soft': 'pulseSoft 2s ease-in-out infinite',
-
-        // Parallax
-        'parallax-slow': 'parallax 20s linear infinite',
-        'parallax-medium': 'parallax 15s linear infinite',
-        'parallax-fast': 'parallax 10s linear infinite',
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'slide-up': 'slideUp 0.5s ease-out',
+        'slide-down': 'slideDown 0.5s ease-out',
+        'scale-in': 'scaleIn 0.3s ease-out',
       },
       keyframes: {
-        // Fade animations
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
-        fadeInUp: {
-          '0%': {
-            opacity: '0',
-            transform: 'translateY(30px)',
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateY(0)',
-          },
-        },
-        fadeInDown: {
-          '0%': {
-            opacity: '0',
-            transform: 'translateY(-30px)',
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateY(0)',
-          },
-        },
-        fadeInLeft: {
-          '0%': {
-            opacity: '0',
-            transform: 'translateX(-30px)',
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateX(0)',
-          },
-        },
-        fadeInRight: {
-          '0%': {
-            opacity: '0',
-            transform: 'translateX(30px)',
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateX(0)',
-          },
-        },
-
-        // Slide animations
         slideUp: {
           '0%': { transform: 'translateY(20px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
@@ -178,42 +102,10 @@ const config: Config = {
           '0%': { transform: 'translateY(-20px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
-        slideLeft: {
-          '0%': { transform: 'translateX(20px)', opacity: '0' },
-          '100%': { transform: 'translateX(0)', opacity: '1' },
-        },
-        slideRight: {
-          '0%': { transform: 'translateX(-20px)', opacity: '0' },
-          '100%': { transform: 'translateX(0)', opacity: '1' },
-        },
-
-        // Scale animations
         scaleIn: {
-          '0%': { transform: 'scale(0.95)', opacity: '0' },
+          '0%': { transform: 'scale(0.9)', opacity: '0' },
           '100%': { transform: 'scale(1)', opacity: '1' },
         },
-
-        // Float effect
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-20px)' },
-        },
-
-        // Pulse soft
-        pulseSoft: {
-          '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0.8' },
-        },
-
-        // Parallax effect
-        parallax: {
-          '0%': { transform: 'translateY(0)' },
-          '100%': { transform: 'translateY(-10%)' },
-        },
-      },
-      // Backdrop blur para efectos modernos
-      backdropBlur: {
-        xs: '2px',
       },
     },
   },
