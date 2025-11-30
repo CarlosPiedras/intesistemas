@@ -39,10 +39,7 @@ export default function Navbar() {
 
   return (
     <>
-      <motion.nav
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
+      <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
             ? 'bg-white/95 backdrop-blur-md shadow-md'
@@ -58,6 +55,7 @@ export default function Navbar() {
                 alt="INTE SISTEMAS"
                 width={160}
                 height={50}
+                priority
                 className={`h-12 w-auto transition-all duration-300 ${
                   isScrolled ? '' : 'brightness-0 invert'
                 }`}
@@ -137,7 +135,7 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-      </motion.nav>
+      </nav>
 
       {/* Mobile Menu */}
       <AnimatePresence>
