@@ -97,20 +97,14 @@ function ProcessCard({ step, index }: { step: typeof processSteps[0]; index: num
       >
         {/* Imagen de fondo con efecto parallax interno */}
         <div className="relative h-56 overflow-hidden">
-          <motion.div
-            animate={{
-              scale: hoveredStep ? 1.15 : 1,
-            }}
-            transition={{ duration: 0.6 }}
-            className="absolute inset-0"
-          >
-            <Image
-              src={step.imagen}
-              alt={step.titulo}
-              fill
-              className="object-cover"
-            />
-          </motion.div>
+          <Image
+            src={step.imagen}
+            alt={step.titulo}
+            fill
+            quality={95}
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover"
+          />
 
           {/* Overlay gradiente con brillo */}
           <motion.div
