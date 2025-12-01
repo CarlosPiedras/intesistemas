@@ -21,20 +21,20 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Inicio', href: '/' },
-    { name: 'Quiénes somos', href: '/about' },
+    { name: 'Inicio', href: '/es' },
+    { name: 'Quiénes somos', href: '/es/about' },
     {
       name: 'Servicios',
-      href: '/servicios',
+      href: '/es/servicios',
       dropdown: [
-        { name: 'Distribución de Energía', href: '/servicios/distribucion-energia' },
-        { name: 'Automatización Industrial', href: '/servicios/automatizacion' },
-        { name: 'Gestión de Proyectos', href: '/servicios/proyectos' },
-        { name: 'Soporte Técnico', href: '/servicios/soporte' },
+        { name: 'Distribución de Energía', href: '/es/servicios/distribucion-energia' },
+        { name: 'Automatización Industrial', href: '/es/servicios/automatizacion' },
+        { name: 'Gestión de Proyectos', href: '/es/servicios/proyectos' },
+        { name: 'Soporte Técnico', href: '/es/servicios/soporte' },
       ],
     },
-    { name: 'Sectores', href: '/sectores' },
-    { name: 'Contacto', href: '/contacto' },
+    { name: 'Sectores', href: '/es/sectores' },
+    { name: 'Contacto', href: '/es/contacto' },
   ];
 
   return (

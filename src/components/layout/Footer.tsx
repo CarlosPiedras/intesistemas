@@ -9,10 +9,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: 'Quiénes somos', href: '/about' },
-    { name: 'Sectores', href: '/sectores' },
-    { name: 'Servicios', href: '/servicios' },
-    { name: 'Contacto', href: '/contacto' },
+    { name: 'Quiénes somos', href: '/es/about' },
+    { name: 'Sectores', href: '/es/sectores' },
+    { name: 'Servicios', href: '/es/servicios' },
+    { name: 'Contacto', href: '/es/contacto' },
   ];
 
   return (
