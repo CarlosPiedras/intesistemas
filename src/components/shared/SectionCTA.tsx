@@ -30,7 +30,7 @@ export default function SectionCTA({
   };
 
   return (
-    <section className="bg-gradient-to-r from-[#1175c7] via-[#3a89c5] to-[#65a6d8] py-20 md:py-24">
+    <section className="bg-gradient-to-r from-[#1175c7] via-[#3a89c5] to-[#65a6d8] py-12 md:py-16">
       <div className="container mx-auto px-4 max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

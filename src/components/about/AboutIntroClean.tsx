@@ -58,9 +58,8 @@ export default function AboutIntroClean() {
             </div>
 
             {/* Título principal */}
-            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-secondary-900 mb-4 leading-tight">
-              Comprometidos con la excelencia en{' '}
-              <span className="block">automatización industrial.</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-widest mb-6" style={{ color: '#1175c7' }}>
+              TU SOCIO EN TECNOLOGÍA
             </h2>
 
             {/* Descripción */}

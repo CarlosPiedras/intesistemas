@@ -1,6 +1,7 @@
 import AboutIntroClean from '@/components/about/AboutIntroClean';
 import WorkProcess from '@/components/about/WorkProcess';
 import SectionCTA from '@/components/shared/SectionCTA';
+import FAQ from '@/components/about/FAQ';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function AboutPage() {
           href: '/es#servicios',
         }}
       />
+      <FAQ />
     </>
   );
 }
