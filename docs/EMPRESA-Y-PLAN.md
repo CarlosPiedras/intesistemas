@@ -392,22 +392,433 @@ import { useState } from 'react';
 
 ---
 
+---
+
+## 📄 PÁGINA "QUIÉNES SOMOS" (/about)
+
+### 🎯 Objetivo
+Transmitir confianza, experiencia y profesionalidad. Mostrar la trayectoria de INTE SISTEMAS, el proceso de trabajo y generar conversiones.
+
+### 📐 Estructura de la Página (4 Secciones)
+
+#### 1. ⏳ **Hero/Banner de Página**
+**Propósito:** Introducción visual impactante
+
+**Componente:** `PageHero.tsx`
+- **Ruta:** `/src/components/about/PageHero.tsx`
+- **Tipo:** Client Component (`'use client'`)
+
+**Diseño:**
+- Imagen de fondo a pantalla completa (~40-50vh de altura)
+- Overlay con gradiente azul oscuro (marca)
+- Contenido centrado verticalmente y horizontalmente
+- Breadcrumb superior: "Inicio > Quiénes Somos"
+
+**Contenido:**
+- **Imagen de fondo:** `/images/hero/1.1.jpg` o `/images/hero/13.jpg`
+- **Título principal:** "Quiénes Somos" (text-5xl font-bold text-white)
+- **Subtítulo:** "Más de 10 años innovando en sistemas eléctricos y automatización industrial" (text-xl text-white/90)
+
+**Especificaciones técnicas:**
+- **Altura:** h-[40vh] md:h-[50vh]
+- **Overlay:** bg-gradient-to-b from-denim/80 to-boston-blue/90
+- **Animaciones:** Fade in del contenido (framer-motion)
+- **Responsive:** Padding ajustado en móvil/tablet/desktop
+
+**Dependencies:**
+```typescript
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import { ChevronRight } from 'lucide-react';
+```
+
+---
+
+#### 2. ⏳ **Introducción de la Empresa**
+**Propósito:** Presentar quiénes son, qué hacen y sus logros
+
+**Componente:** `AboutIntro.tsx`
+- **Ruta:** `/src/components/about/AboutIntro.tsx`
+- **Tipo:** Client Component (`'use client'`)
+
+**Diseño Layout 2 Columnas:**
+- **Columna Izquierda (40%):** Imagen con border radius
+- **Columna Derecha (60%):** Contenido textual + stats
+
+**Contenido - Columna Izquierda:**
+- **Imagen:** `/images/proceso/instalacion.jpg` o `/images/hero/img_prin.jpg`
+- **Tamaño:** Relación aspecto 4:5 aproximadamente
+- **Bordes:** rounded-2xl
+- **Efecto:** Sombra suave, opcional parallax sutil en scroll
+
+**Contenido - Columna Derecha:**
+- **Eyebrow:** "Sobre Nosotros" (text-sm text-primary-600 font-semibold uppercase tracking-wider)
+- **Título:** "INTE SISTEMAS" (text-4xl font-bold text-primary-600 mb-4)
+- **Badge destacado:** "Desde 2014" (inline badge con fondo primary-50)
+- **Descripción 1:**
+  ```
+  Empresa española especializada en soluciones integrales de sistemas
+  eléctricos y automatización industrial. Con más de 10 años de experiencia,
+  INTE SISTEMAS se ha consolidado como referente en el sector, ofreciendo
+  servicios de calidad y excelencia técnica.
+  ```
+- **Descripción 2 (Compromiso):**
+  ```
+  En Inte Sistemas estamos comprometidos con ofrecer productos y servicios
+  de calidad a nuestros clientes, proporcionando soluciones innovadoras que
+  optimizan procesos industriales y garantizan la eficiencia energética.
+  ```
+
+**Stats (Grid 3 columnas):**
+```
+┌─────────────┬─────────────┬─────────────┐
+│  +10 años   │  2 sedes    │ 3 partners  │
+│ Experiencia │  Barcelona  │ Estratégicos│
+└─────────────┴─────────────┴─────────────┘
+```
+
+**Especificaciones Stats:**
+- **Número:** text-4xl font-bold text-primary-600
+- **Label:** text-sm text-secondary-600
+- **Fondo:** bg-secondary-50 rounded-lg p-6
+- **Animación:** Count-up animado al entrar en viewport (opcional)
+
+**Especificaciones técnicas:**
+- **Fondo sección:** bg-white
+- **Padding:** py-20 md:py-28
+- **Grid responsive:** 1 col móvil, 2 col desktop
+- **Gap:** gap-12 md:gap-16
+- **Animaciones:** Fade in + slide up al entrar en viewport
+
+**Dependencies:**
+```typescript
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { Award, MapPin, Users } from 'lucide-react';
+```
+
+**Datos fuente:** `/info/empresa-data.json` (empresa.descripcion, empresa.compromiso)
+
+---
+
+#### 3. ⏳ **Proceso de Trabajo - Timeline Horizontal Creativa**
+**Propósito:** Mostrar el método de trabajo profesional en 6 pasos
+
+**Componente:** `WorkProcess.tsx`
+- **Ruta:** `/src/components/about/WorkProcess.tsx`
+- **Tipo:** Client Component (`'use client'`)
+
+**Diseño Timeline Horizontal:**
+```
+        [Icon1]         [Icon2]         [Icon3]         [Icon4]         [Icon5]         [Icon6]
+           1 ═══════════► 2 ═══════════► 3 ═══════════► 4 ═══════════► 5 ═══════════► 6
+           ●              ●              ●              ●              ●              ●
+       ┌────────┐     ┌────────┐     ┌────────┐     ┌────────┐     ┌────────┐     ┌────────┐
+       │Análisis│     │  Plan  │     │ Ejec.  │     │Control │     │Entrega │     │Soporte │
+       └────────┘     └────────┘     └────────┘     └────────┘     └────────┘     └────────┘
+```
+
+**Header de Sección:**
+- **Eyebrow:** "Cómo Trabajamos" (text-sm text-primary-600)
+- **Título:** "NUESTRO PROCESO" (text-4xl font-bold text-primary-600 uppercase)
+- **Descripción:** "Un método probado que garantiza resultados excepcionales en cada proyecto"
+
+**6 Pasos del Proceso:**
+
+1. **Análisis de necesidades**
+   - **Icono:** Search o ClipboardCheck
+   - **Descripción:** "Estudio detallado del proyecto y las necesidades del cliente"
+   - **Imagen:** `/images/proceso/analisis.jpg`
+
+2. **Planificación**
+   - **Icono:** Layers o FileText
+   - **Descripción:** "Diseño y estrategia del proyecto"
+   - **Imágenes:** `/images/proceso/disenos.jpg`
+
+3. **Ejecución**
+   - **Icono:** Hammer o Settings
+   - **Descripción:** "Implementación del proyecto con estándares de calidad"
+   - **Imágenes:** `/images/proceso/instalacion.jpg`
+
+4. **Control de calidad**
+   - **Icono:** CheckCircle o Shield
+   - **Descripción:** "Verificación y pruebas exhaustivas del sistema"
+
+5. **Entrega**
+   - **Icono:** Package o Truck
+   - **Descripción:** "Finalización y puesta en marcha del proyecto"
+   - **Imágenes:** `/images/proceso/entrega.jpg`
+
+6. **Soporte**
+   - **Icono:** Headphones o LifeBuoy
+   - **Descripción:** "Mantenimiento, asistencia técnica y formación"
+   - **Imágenes:** `/images/proceso/formacion.jpg`
+
+**Elementos del Timeline:**
+
+**Círculos numerados:**
+- **Tamaño:** w-16 h-16 (64px)
+- **Fondo:** bg-white
+- **Borde:** 3px solid, color primary-600
+- **Número:** text-2xl font-bold text-primary-600
+- **Icono superior:** Pequeño, 20px, color primary-600
+- **Hover:** Scale 1.1 + efecto glow/shadow
+
+**Líneas de conexión:**
+- **Estilo:** Línea gruesa (4px) con flecha al final
+- **Color:** border-primary-600
+- **Ancho:** Dinámico entre círculos
+- **Animación:** Dibujado progresivo de izquierda a derecha (scaleX from 0 to 1)
+
+**Cards de información:**
+- **Posición:** Debajo de cada círculo
+- **Ancho:** max-w-[180px]
+- **Padding:** p-4
+- **Fondo:** bg-white
+- **Borde:** border border-secondary-200
+- **Bordes redondeados:** rounded-lg
+- **Sombra:** shadow-sm hover:shadow-md
+
+**Contenido de Cards:**
+- **Título:** text-sm font-semibold text-secondary-900 mb-2
+- **Descripción:** text-xs text-secondary-600 leading-relaxed
+
+**Animaciones Creativas:**
+1. **Entrada inicial:** Stagger animation (cada paso aparece con 0.1s de delay)
+2. **Círculos:** Fade in + scale from 0.8 to 1 con efecto bounce
+3. **Líneas:** Dibujado animado (scaleX) sincronizado con aparición de círculos
+4. **Cards:** Slide up + fade in
+5. **Iconos:** Rotate -180° al aparecer (spring effect)
+6. **Hover en círculo:**
+   - Scale 1.1
+   - Glow effect (box-shadow con color primary)
+   - Pulso suave del icono (rotate alternado)
+
+**Responsive Design:**
+- **Desktop (>1024px):** Timeline horizontal completo
+- **Tablet (768-1023px):** Timeline horizontal comprimido, cards más pequeñas
+- **Mobile (<768px):** Timeline vertical con línea lateral izquierda
+
+**Especificaciones técnicas:**
+- **Fondo sección:** bg-secondary-50
+- **Padding:** py-20 md:py-28
+- **Container:** max-w-7xl mx-auto
+- **Scroll trigger:** Animaciones al entrar en viewport (whileInView)
+
+**Dependencies:**
+```typescript
+import { motion } from 'framer-motion';
+import { Search, Layers, Hammer, CheckCircle, Package, Headphones } from 'lucide-react';
+```
+
+**Datos fuente:** `/info/empresa-data.json` (procesoTrabajo array)
+
+---
+
+#### 4. ⏳ **Call to Action Final**
+**Propósito:** Invitar a contactar y generar conversión
+
+**Componente:** `SectionCTA.tsx` (reutilizable)
+- **Ruta:** `/src/components/shared/SectionCTA.tsx`
+- **Tipo:** Client Component (`'use client'`)
+
+**Diseño:**
+- Banner horizontal de ancho completo
+- Fondo con gradiente azul de marca
+- Contenido centrado
+- 2 botones de acción
+
+**Contenido:**
+- **Título:** "¿Listo para impulsar tu proyecto?" (text-4xl font-bold text-white)
+- **Descripción:** "Contáctanos y descubre cómo podemos ayudarte con soluciones personalizadas en sistemas eléctricos y automatización industrial" (text-xl text-white/90)
+
+**Botones (layout horizontal, gap entre ellos):**
+
+1. **Botón Primario:**
+   - **Texto:** "Contactar ahora"
+   - **Estilo:** bg-white text-primary-600 hover:bg-primary-50
+   - **Tamaño:** px-8 py-4 text-lg
+   - **Icono:** ArrowRight (opcional)
+   - **Link:** `/contacto`
+
+2. **Botón Secundario:**
+   - **Texto:** "Ver servicios"
+   - **Estilo:** border-2 border-white text-white hover:bg-white/10
+   - **Tamaño:** px-8 py-4 text-lg
+   - **Icono:** Grid3x3 (opcional)
+   - **Link:** `/#servicios` (scroll a sección home)
+
+**Especificaciones técnicas:**
+- **Fondo:** bg-gradient-to-r from-denim via-boston-blue to-danube
+- **Padding:** py-20 md:py-24
+- **Alineación:** text-center
+- **Gap entre botones:** gap-4
+- **Animaciones:**
+  - Fade in + slide up al entrar en viewport
+  - Hover effect en botones (scale 1.05)
+  - Transiciones suaves (duration-300)
+
+**Responsive:**
+- **Desktop:** Botones lado a lado (flex-row)
+- **Mobile:** Botones apilados (flex-col), ancho completo
+
+**Dependencies:**
+```typescript
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { ArrowRight, Grid3x3 } from 'lucide-react';
+```
+
+---
+
+### 🎨 Paleta de Colores Específica
+
+**Usar los mismos colores de la landing:**
+- **Azul principal:** #1175c7 (denim) - Títulos, iconos, bordes activos
+- **Azules secundarios:** #3a89c5 (boston-blue), #65a6d8 (danube) - Gradientes
+- **Grises:**
+  - secondary-50 (#f8fafc) - Fondos alternos
+  - secondary-600 (#475569) - Texto secundario
+  - secondary-900 (#0f172a) - Texto principal
+- **Blanco:** Fondos principales, texto sobre azul
+
+---
+
+### 📱 Responsive Breakpoints
+
+**Mobile (< 768px):**
+- Hero: 40vh altura
+- AboutIntro: 1 columna (imagen arriba, texto abajo)
+- Stats: 1 columna vertical
+- WorkProcess: Timeline vertical con línea izquierda
+- CTA: Botones apilados verticalmente
+
+**Tablet (768px - 1024px):**
+- Hero: 45vh altura
+- AboutIntro: 2 columnas (imagen 40%, texto 60%)
+- Stats: 3 columnas en fila
+- WorkProcess: Timeline horizontal comprimido
+- CTA: Botones lado a lado
+
+**Desktop (> 1024px):**
+- Hero: 50vh altura
+- AboutIntro: 2 columnas con gaps amplios
+- Stats: 3 columnas con espaciado generoso
+- WorkProcess: Timeline horizontal completo
+- CTA: Botones lado a lado centrados
+
+---
+
+### ✨ Animaciones Generales
+
+**Patrón de animaciones (consistente con la landing):**
+1. **Viewport triggers:** Animaciones al entrar en viewport (whileInView)
+2. **Fade in:** opacity 0 → 1
+3. **Slide up:** translateY(20px) → translateY(0)
+4. **Stagger:** Delays progresivos de 0.1s entre elementos hijos
+5. **Hover effects:**
+   - Scale 1.05
+   - Shadow elevation
+   - Color transitions
+6. **Spring animations:** Para efectos más dinámicos (iconos, círculos)
+
+**Configuración Framer Motion:**
+```typescript
+viewport={{ once: true, amount: 0.3 }}
+transition={{ duration: 0.6, ease: "easeOut" }}
+```
+
+---
+
+### 🚀 Orden de Implementación
+
+**Archivos a crear:**
+
+1. ✅ `/src/app/[locale]/about/page.tsx` (Página principal)
+2. ✅ `/src/components/about/PageHero.tsx` (Hero de página)
+3. ✅ `/src/components/about/AboutIntro.tsx` (Introducción 2 columnas)
+4. ✅ `/src/components/about/WorkProcess.tsx` (Timeline de proceso)
+5. ✅ `/src/components/shared/SectionCTA.tsx` (CTA reutilizable)
+
+**Estructura del page.tsx:**
+```typescript
+import PageHero from '@/components/about/PageHero';
+import AboutIntro from '@/components/about/AboutIntro';
+import WorkProcess from '@/components/about/WorkProcess';
+import SectionCTA from '@/components/shared/SectionCTA';
+
+export default function AboutPage() {
+  return (
+    <>
+      <PageHero />
+      <AboutIntro />
+      <WorkProcess />
+      <SectionCTA
+        title="¿Listo para impulsar tu proyecto?"
+        description="Contáctanos y descubre cómo podemos ayudarte..."
+        primaryButton={{ text: "Contactar ahora", href: "/contacto" }}
+        secondaryButton={{ text: "Ver servicios", href: "/#servicios" }}
+      />
+    </>
+  );
+}
+```
+
+---
+
+### 📊 Datos Necesarios
+
+**Fuentes de datos:**
+- `/info/empresa-data.json`:
+  - `empresa.descripcion`
+  - `empresa.compromiso`
+  - `empresa.anoFundacion`
+  - `procesoTrabajo` (array de 6 pasos)
+  - `ubicaciones` (2 sedes)
+  - `partners` (3 partners)
+
+**Traducciones (opcional para futuro):**
+- `/public/locales/es/about.json` (crear nuevo archivo para traducciones de esta página)
+
+---
+
+### 🎯 Métricas de Éxito
+
+**Objetivos de la página:**
+1. **Conversión:** CTA clicks > 5% de visitantes
+2. **Engagement:** Tiempo en página > 45 segundos
+3. **Bounce rate:** < 40%
+4. **Performance:** Lighthouse score > 90
+
+**Call to Actions principales:**
+- Botón "Contactar ahora" en CTA final
+- Links a servicios individuales (futuro)
+- Scroll suave entre secciones
+
+---
+
 ## 📝 PRÓXIMOS PASOS
 
 ### Corto Plazo
-1. ⏳ Implementar navegación (Header/Footer)
-2. ⏳ Crear páginas de servicio individuales:
+1. ✅ Implementar navegación (Header/Footer) - COMPLETADO
+2. ⏳ **Crear página "Quiénes Somos" (/about)** - PRÓXIMO
+   - PageHero.tsx
+   - AboutIntro.tsx
+   - WorkProcess.tsx
+   - SectionCTA.tsx
+3. ⏳ Crear páginas de servicio individuales:
    - `/servicios/distribucion-energia`
    - `/servicios/automatizacion`
-3. ⏳ Crear página de sectores con los 7 sectores
-4. ⏳ Implementar internacionalización (ES/EN)
+4. ⏳ Crear página de sectores con los 7 sectores
+5. ⏳ Implementar internacionalización (ES/EN)
 
 ### Mediano Plazo
-5. ⏳ Sección de casos de éxito / proyectos destacados
-6. ⏳ Formulario de contacto funcional
-7. ⏳ Integración con CMS (opcional)
-8. ⏳ SEO y meta tags optimizados
-9. ⏳ Performance optimization
+6. ⏳ Sección de casos de éxito / proyectos destacados
+7. ⏳ Formulario de contacto funcional
+8. ⏳ Integración con CMS (opcional)
+9. ⏳ SEO y meta tags optimizados
+10. ⏳ Performance optimization
 
 ---
 
