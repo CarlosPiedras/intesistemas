@@ -16,19 +16,22 @@ export default function GalleryVariant1() {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-6 max-w-[1400px]">
         {/* Header Section */}
-        <div className="grid lg:grid-cols-12 gap-16 mb-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-24">
           {/* Left - Title */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-5"
           >
-            <h2 className="text-6xl md:text-7xl lg:text-8xl font-light text-secondary-900 leading-[0.95] tracking-tight">
-              Cuadros
-              <br />
-              eléctricos
+            {/* Tag superior */}
+            <div className="text-xs md:text-sm font-medium text-secondary-600 mb-4 tracking-wide">
+              /Servicios/Distribución de Energía
+            </div>
+
+            {/* Título principal */}
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-widest" style={{ color: '#1175c7' }}>
+              CUADROS ELÉCTRICOS
             </h2>
           </motion.div>
 
@@ -38,19 +41,14 @@ export default function GalleryVariant1() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:col-span-7 flex items-end"
+            className="flex items-end"
           >
-            <div className="space-y-6">
-              <p className="text-secondary-600 text-lg leading-relaxed font-light">
-                Diseñamos y fabricamos cuadros de distribución eléctrica a medida,
-                combinando ingeniería de precisión con los más altos estándares
-                de seguridad industrial.
-              </p>
-              <p className="text-secondary-500 text-base leading-relaxed font-light">
-                Cada proyecto es una solución única, adaptada a las necesidades
-                específicas de instalaciones industriales y comerciales.
-              </p>
-            </div>
+            <p className="text-sm md:text-base text-secondary-600 leading-relaxed">
+              Diseñamos y fabricamos cuadros de distribución eléctrica a medida,
+              combinando ingeniería de precisión con los más altos estándares
+              de seguridad industrial. Cada proyecto es una solución única, adaptada a las necesidades
+              específicas de instalaciones industriales y comerciales.
+            </p>
           </motion.div>
         </div>
 
@@ -102,7 +100,7 @@ export default function GalleryVariant1() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="col-span-2 md:col-span-3 group relative overflow-hidden bg-secondary-100"
           >
-            <div className="relative w-full h-[250px] md:h-[350px]">
+            <div className="relative w-full h-[350px] md:h-[500px]">
               <Image
                 src={cuadros[2].imagen}
                 alt={cuadros[2].alt}
@@ -121,7 +119,7 @@ export default function GalleryVariant1() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="col-span-2 md:col-span-3 group relative overflow-hidden bg-secondary-100"
           >
-            <div className="relative w-full h-[250px] md:h-[350px]">
+            <div className="relative w-full h-[350px] md:h-[500px]">
               <Image
                 src={cuadros[3].imagen}
                 alt={cuadros[3].alt}
@@ -140,7 +138,7 @@ export default function GalleryVariant1() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="col-span-4 md:col-span-2 group relative overflow-hidden bg-secondary-100"
           >
-            <div className="relative w-full h-[250px] md:h-[350px]">
+            <div className="relative w-full h-[350px] md:h-[500px]">
               <Image
                 src={cuadros[4].imagen}
                 alt={cuadros[4].alt}

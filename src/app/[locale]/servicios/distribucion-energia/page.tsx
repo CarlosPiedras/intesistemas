@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import GalleryVariant1 from '@/components/showcase/gallery/GalleryVariant1';
 
 export const metadata: Metadata = {
   title: 'Distribución de Energía | INTE SISTEMAS',
@@ -11,15 +12,7 @@ export const metadata: Metadata = {
 export default function DistribucionEnergiaPage() {
   return (
     <div className="min-h-screen">
-      {/* Página de Distribución de Energía - Sin contenido */}
-      <div className="container mx-auto px-4 py-20">
-        <h1 className="text-4xl font-bold text-center text-gray-900">
-          Distribución de Energía
-        </h1>
-        <p className="mt-4 text-center text-gray-600">
-          Contenido próximamente
-        </p>
-      </div>
+      <GalleryVariant1 />
     </div>
   );
 }
