@@ -15,41 +15,27 @@ export default function GalleryVariant1() {
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-6 max-w-[1400px]">
-        {/* Header Section */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-24">
-          {/* Left - Title */}
-          <motion.div
+        {/* Title and Description Section */}
+        <div className="text-center mb-16">
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5 }}
+            className="text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-widest mb-6"
+            style={{ color: '#1175c7' }}
           >
-            {/* Tag superior */}
-            <div className="text-xs md:text-sm font-medium text-secondary-600 mb-4 tracking-wide">
-              /Servicios/Distribución de Energía
-            </div>
-
-            {/* Título principal */}
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-widest" style={{ color: '#1175c7' }}>
-              CUADROS ELÉCTRICOS
-            </h2>
-          </motion.div>
-
-          {/* Right - Description */}
-          <motion.div
+            NUESTROS PROYECTOS
+          </motion.h2>
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex items-end"
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-base md:text-lg text-secondary-600 max-w-3xl mx-auto leading-relaxed"
           >
-            <p className="text-sm md:text-base text-secondary-600 leading-relaxed">
-              Diseñamos y fabricamos cuadros de distribución eléctrica a medida,
-              combinando ingeniería de precisión con los más altos estándares
-              de seguridad industrial. Cada proyecto es una solución única, adaptada a las necesidades
-              específicas de instalaciones industriales y comerciales.
-            </p>
-          </motion.div>
+            Explora nuestra galería de proyectos de distribución eléctrica realizados con los más altos estándares de calidad y seguridad industrial.
+          </motion.p>
         </div>
 
         {/* Gallery Grid - 5 images flexible layout */}
