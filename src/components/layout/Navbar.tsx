@@ -29,8 +29,8 @@ export default function Navbar() {
       dropdown: [
         { name: 'Distribución de Energía', href: '/es/servicios/distribucion-energia' },
         { name: 'Automatización Industrial', href: '/es/servicios/automatizacion-industrial' },
-        { name: 'Gestión de Proyectos', href: '/es/servicios/proyectos' },
-        { name: 'Soporte Técnico', href: '/es/servicios/soporte' },
+        { name: 'Gestión de Proyectos', href: '/es/servicios/gestion-proyectos' },
+        { name: 'Soporte Técnico', href: '/es/servicios/soporte-tecnico' },
       ],
     },
     { name: 'Sectores', href: '/es/sectores' },
