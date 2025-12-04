@@ -6,9 +6,9 @@ import Image from 'next/image';
 export default function GalleryVariant1() {
   const cuadros = [
     { id: 1, imagen: '/images/services/cuadros/cuadro1.webp', alt: 'Cuadro eléctrico 1' },
-    { id: 2, imagen: '/images/services/cuadros/cuandro2.webp', alt: 'Cuadro eléctrico 2' },
-    { id: 3, imagen: '/images/services/cuadros/cuandro3.webp', alt: 'Cuadro eléctrico 3' },
-    { id: 4, imagen: '/images/services/cuadros/cuandro4.webp', alt: 'Cuadro eléctrico 4' },
+    { id: 2, imagen: '/images/services/cuadros/cuadro2.webp', alt: 'Cuadro eléctrico 2' },
+    { id: 3, imagen: '/images/services/cuadros/cuadro3.webp', alt: 'Cuadro eléctrico 3' },
+    { id: 4, imagen: '/images/services/cuadros/cuadro4.webp', alt: 'Cuadro eléctrico 4' },
     { id: 5, imagen: '/images/services/cuadros/cuadro5.webp', alt: 'Cuadro eléctrico 5' },
   ];
 
