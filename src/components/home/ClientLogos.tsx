@@ -1,67 +1,167 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 export default function ClientLogos() {
   const logos = [
     {
-      name: 'EATON',
-      image: '/images/logos/clientes/logo-eaton.jpg',
-      width: 140,
-      height: 60,
-    },
-    {
-      name: 'CEA',
-      image: '/images/logos/clientes/logo-cea.jpg',
-      width: 120,
-      height: 60,
+      name: 'SIEMENS',
+      image: '/images/logos/clientes/logo-siemens.webp',
+      width: 200,
+      height: 90,
     },
     {
       name: 'SAEL',
-      image: '/images/logos/clientes/logo-sael.png',
-      width: 130,
-      height: 60,
+      image: '/images/logos/clientes/logo-sael.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'GEFRAN',
+      image: '/images/logos/clientes/logo-gefran.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'MASELLI',
+      image: '/images/logos/clientes/logo-maselli.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'EATON',
+      image: '/images/logos/clientes/logo-eaton.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'BARNIGRADO',
+      image: '/images/logos/clientes/logo-barnigrado.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'BOROBIL',
+      image: '/images/logos/clientes/logo-borobil.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'CELSUR',
+      image: '/images/logos/clientes/logo-celsur.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'CROP',
+      image: '/images/logos/clientes/logo-crop.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'EIFFAGE',
+      image: '/images/logos/clientes/logo-eiffage.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'ELECNOR',
+      image: '/images/logos/clientes/logo-elecnor.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'ENDRESS',
+      image: '/images/logos/clientes/logo-endress.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'ITRESA',
+      image: '/images/logos/clientes/logo-itresa.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'MELINK',
+      image: '/images/logos/clientes/logo-melink.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'MOYANO',
+      image: '/images/logos/clientes/logo-moyano.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'PAPER',
+      image: '/images/logos/clientes/logo-paper.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'PRENSA',
+      image: '/images/logos/clientes/logo-prensa.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'PRISA',
+      image: '/images/logos/clientes/logo-prisa.webp',
+      width: 200,
+      height: 90,
+    },
+    {
+      name: 'VOCENTO',
+      image: '/images/logos/clientes/logo-vocento.webp',
+      width: 200,
+      height: 90,
     },
   ];
 
-  return (
-    <section className="py-10 md:py-12 bg-gradient-to-b from-white to-secondary-50">
-      <div className="container mx-auto px-4 max-w-6xl">
-        {/* Texto */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-8"
-        >
-          <p className="text-sm uppercase tracking-wider text-secondary-600 font-semibold">
-            Integradores oficiales de
-          </p>
-        </motion.div>
+  // Duplicamos los logos para el efecto infinito
+  const duplicatedLogos = [...logos, ...logos];
 
-        {/* Logos */}
-        <div className="flex flex-wrap items-center justify-center gap-x-16 gap-y-10 md:gap-x-20">
-          {logos.map((logo, index) => (
-            <motion.div
-              key={logo.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.15 }}
-              whileHover={{ y: -5 }}
-              className="relative transition-all duration-300"
-            >
-              <Image
-                src={logo.image}
-                alt={`Logo ${logo.name}`}
-                width={logo.width}
-                height={logo.height}
-                className="object-contain"
-              />
-            </motion.div>
-          ))}
+  return (
+    <section className="pt-20 pb-10 md:pt-24 md:pb-12 bg-gradient-to-b from-white to-secondary-50 overflow-hidden">
+      <div className="relative">
+        {/* Logos en carrusel infinito */}
+        <div className="flex items-center">
+          <div className="flex items-center animate-scroll">
+            {duplicatedLogos.map((logo, index) => (
+              <div
+                key={`${logo.name}-${index}`}
+                className="flex-shrink-0 mx-12 flex items-center justify-center"
+                style={{ height: '90px' }}
+              >
+                <Image
+                  src={logo.image}
+                  alt={`Logo ${logo.name}`}
+                  width={logo.width}
+                  height={logo.height}
+                  className="object-contain"
+                />
+              </div>
+            ))}
+          </div>
+          <div className="flex items-center animate-scroll" aria-hidden="true">
+            {duplicatedLogos.map((logo, index) => (
+              <div
+                key={`${logo.name}-duplicate-${index}`}
+                className="flex-shrink-0 mx-12 flex items-center justify-center"
+                style={{ height: '90px' }}
+              >
+                <Image
+                  src={logo.image}
+                  alt={`Logo ${logo.name}`}
+                  width={logo.width}
+                  height={logo.height}
+                  className="object-contain"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
