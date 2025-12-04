@@ -114,16 +114,6 @@ function ProcessCard({ step, index }: { step: typeof processSteps[0]; index: num
             className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary-900/40 to-secondary-900/90"
           />
 
-          {/* Efecto de luz siguiendo el cursor */}
-          <motion.div
-            style={{
-              background: 'radial-gradient(circle at center, rgba(17, 117, 199, 0.4) 0%, transparent 70%)',
-              x: useTransform(x, [-100, 100], [-20, 20]),
-              y: useTransform(y, [-100, 100], [-20, 20]),
-            }}
-            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-          />
-
           {/* Líneas decorativas animadas */}
           <motion.div
             initial={{ scaleX: 0 }}

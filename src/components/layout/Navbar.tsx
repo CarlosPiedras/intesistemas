@@ -28,7 +28,7 @@ export default function Navbar() {
       href: '/es/servicios',
       dropdown: [
         { name: 'Distribución de Energía', href: '/es/servicios/distribucion-energia' },
-        { name: 'Automatización Industrial', href: '/es/servicios/automatizacion' },
+        { name: 'Automatización Industrial', href: '/es/servicios/automatizacion-industrial' },
         { name: 'Gestión de Proyectos', href: '/es/servicios/proyectos' },
         { name: 'Soporte Técnico', href: '/es/servicios/soporte' },
       ],
@@ -49,7 +49,7 @@ export default function Navbar() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center">
+            <Link href="/es" className="flex items-center">
               <Image
                 src="/images/logos/logointe.webp"
                 alt="INTE SISTEMAS"

@@ -4,8 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 export default function AboutIntroClean() {
-  const currentYear = new Date().getFullYear();
-  const yearsOfExperience = currentYear - 2014;
+  const yearsOfExperience = 30;
 
   const stats = [
     {
@@ -36,7 +35,7 @@ export default function AboutIntroClean() {
           >
             <div className="relative w-full h-full rounded-none overflow-hidden">
               <Image
-                src="/images/proceso/instalacion.jpg"
+                src="/images/procesosabout/aboutimage.png"
                 alt="INTE SISTEMAS - Equipo profesional"
                 fill
                 className="object-cover"
@@ -86,7 +85,7 @@ export default function AboutIntroClean() {
                   }}
                   className="text-center"
                 >
-                  <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-900 mb-1">
+                  <div className="text-3xl md:text-4xl lg:text-5xl font-normal text-secondary-900 mb-1">
                     {stat.number}
                   </div>
                   <div className="text-xs md:text-sm text-secondary-600">
