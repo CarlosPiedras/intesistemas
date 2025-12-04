@@ -33,7 +33,6 @@ export default function Navbar() {
         { name: 'Soporte Técnico', href: '/es/servicios/soporte-tecnico' },
       ],
     },
-    { name: 'Sectores', href: '/es/sectores' },
     { name: 'Contacto', href: '/es/contacto' },
   ];
 
