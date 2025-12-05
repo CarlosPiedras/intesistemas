@@ -9,8 +9,6 @@ export default function ContactForm() {
     nombre: '',
     email: '',
     telefono: '',
-    empresa: '',
-    asunto: '',
     mensaje: '',
   });
 
@@ -39,8 +37,6 @@ export default function ContactForm() {
         nombre: '',
         email: '',
         telefono: '',
-        empresa: '',
-        asunto: '',
         mensaje: '',
       });
     } catch (error) {
@@ -117,45 +113,6 @@ export default function ContactForm() {
                 placeholder="+34 600 000 000"
               />
             </div>
-          </div>
-
-          {/* Empresa */}
-          <div>
-            <label htmlFor="empresa" className="block text-sm font-medium text-secondary-700 mb-2">
-              Empresa
-            </label>
-            <input
-              type="text"
-              id="empresa"
-              name="empresa"
-              value={formData.empresa}
-              onChange={handleChange}
-              className="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1175c7] focus:border-transparent transition-all duration-200"
-              placeholder="Nombre de tu empresa"
-            />
-          </div>
-
-          {/* Asunto */}
-          <div>
-            <label htmlFor="asunto" className="block text-sm font-medium text-secondary-700 mb-2">
-              Asunto <span className="text-error">*</span>
-            </label>
-            <select
-              id="asunto"
-              name="asunto"
-              value={formData.asunto}
-              onChange={handleChange}
-              required
-              className="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1175c7] focus:border-transparent transition-all duration-200"
-            >
-              <option value="">Selecciona un asunto</option>
-              <option value="automatizacion">Automatización Industrial</option>
-              <option value="distribucion">Distribución de Energía</option>
-              <option value="proyectos">Gestión de Proyectos</option>
-              <option value="soporte">Soporte Técnico</option>
-              <option value="presupuesto">Solicitar Presupuesto</option>
-              <option value="otro">Otro</option>
-            </select>
           </div>
 
           {/* Mensaje */}

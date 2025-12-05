@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { locales } from '@/lib/i18n/config';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import PageWrapper from '@/components/layout/PageWrapper';
 import "../globals.css";
 
 const inter = Inter({
@@ -104,7 +105,9 @@ export default async function LocaleLayout({
       <body className="font-sans antialiased">
         <NextIntlClientProvider messages={messages}>
           <Navbar />
-          {children}
+          <PageWrapper>
+            {children}
+          </PageWrapper>
           <Footer />
         </NextIntlClientProvider>
       </body>
