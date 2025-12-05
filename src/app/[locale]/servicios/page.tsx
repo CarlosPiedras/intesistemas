@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import ServicesHero from '@/components/services/ServicesHero';
 import ServicesIntro from '@/components/services/ServicesIntro';
-import ServicesGrid from '@/components/services/ServicesGrid';
-import ServicesCTA from '@/components/services/ServicesCTA';
 
 export const metadata: Metadata = {
   title: 'Servicios | INTE SISTEMAS - Soluciones Eléctricas y Automatización',
@@ -18,14 +16,8 @@ export default function ServiciosPage() {
       {/* Hero Section */}
       <ServicesHero />
 
-      {/* Intro Section */}
+      {/* Services Section */}
       <ServicesIntro />
-
-      {/* Services Grid */}
-      <ServicesGrid />
-
-      {/* CTA Section */}
-      <ServicesCTA />
     </div>
   );
 }

@@ -1,38 +1,54 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Settings, Zap, Shield, TrendingUp } from 'lucide-react';
+import Link from 'next/link';
+import { Zap, Cpu, ClipboardList, Wrench, ArrowUpRight } from 'lucide-react';
 
 export default function ServicesIntro() {
-  const features = [
+  const services = [
     {
+      id: '01',
+      title: 'Distribución de Energía',
+      description: 'Cuadros eléctricos y sistemas de distribución de baja y media tensión para instalaciones industriales.',
+      keywords: ['BT/MT', 'Protección', 'Eficiencia'],
       icon: Zap,
-      title: 'Eficiencia',
-      description: 'Optimizamos procesos para maximizar rendimiento y reducir costes operativos.',
+      href: '/es/servicios/distribucion-energia',
+      gradient: 'from-[#1175c7] to-[#3a89c5]',
     },
     {
-      icon: Shield,
-      title: 'Seguridad',
-      description: 'Cumplimiento estricto de normativas y estándares de calidad internacional.',
+      id: '02',
+      title: 'Automatización Industrial',
+      description: 'PLCs, SCADA y sistemas de control automatizado para optimizar procesos productivos.',
+      keywords: ['PLCs', 'SCADA', 'Control'],
+      icon: Cpu,
+      href: '/es/servicios/automatizacion-industrial',
+      gradient: 'from-[#3a89c5] to-[#65a6d8]',
     },
     {
-      icon: TrendingUp,
-      title: 'Innovación',
-      description: 'Tecnologías de vanguardia aplicadas a soluciones industriales reales.',
+      id: '03',
+      title: 'Gestión de Proyectos',
+      description: 'Planificación, dirección y control integral de proyectos eléctricos con metodologías ágiles.',
+      keywords: ['Planificación', 'Ejecución', 'Control'],
+      icon: ClipboardList,
+      href: '/es/servicios/gestion-proyectos',
+      gradient: 'from-[#65a6d8] to-[#a9d9ff]',
     },
     {
-      icon: Settings,
-      title: 'Personalización',
-      description: 'Cada proyecto diseñado específicamente según las necesidades del cliente.',
+      id: '04',
+      title: 'Soporte Técnico',
+      description: 'Mantenimiento preventivo, correctivo y asistencia técnica especializada disponible 24/7.',
+      keywords: ['Mantenimiento', 'Asistencia', 'Formación'],
+      icon: Wrench,
+      href: '/es/servicios/soporte-tecnico',
+      gradient: 'from-[#a9d9ff] to-[#1175c7]',
     },
   ];
 
   return (
     <section className="py-16 md:py-20 lg:py-24 bg-white">
-      <div className="container mx-auto px-4 max-w-6xl">
-        {/* Main Content */}
+      <div className="container mx-auto px-4 max-w-7xl">
+        {/* Header */}
         <div className="text-center mb-16">
-          {/* Eyebrow */}
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -41,10 +57,9 @@ export default function ServicesIntro() {
             className="text-xs tracking-widest uppercase mb-4 font-semibold"
             style={{ color: '#1175c7' }}
           >
-            Por qué elegirnos
+            Lo que ofrecemos
           </motion.p>
 
-          {/* Title */}
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -53,10 +68,9 @@ export default function ServicesIntro() {
             className="text-3xl md:text-4xl lg:text-5xl font-light uppercase tracking-wider mb-6"
             style={{ color: '#1175c7' }}
           >
-            EXCELENCIA EN CADA PROYECTO
+            SERVICIOS ESPECIALIZADOS
           </motion.h2>
 
-          {/* Description */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -64,84 +78,90 @@ export default function ServicesIntro() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base md:text-lg text-secondary-600 max-w-3xl mx-auto leading-relaxed"
           >
-            En INTE SISTEMAS combinamos más de una década de experiencia con las últimas
-            tecnologías del sector. Nuestro compromiso es ofrecer soluciones que no solo cumplan,
-            sino que superen las expectativas de nuestros clientes.
+            Desde la distribución eléctrica hasta la automatización completa, ofrecemos soluciones
+            integrales adaptadas a las necesidades específicas de cada industria.
           </motion.p>
         </div>
 
-        {/* Decorative Separator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="flex items-center justify-center mb-16"
-        >
-          {/* Left Line */}
-          <motion.span
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="inline-flex items-center h-px w-24 md:w-32 relative"
-          >
-            <span className="absolute inset-0 border-t border-secondary-300"></span>
-          </motion.span>
-
-          {/* Icon */}
-          <motion.span
-            initial={{ scale: 0, rotate: -180 }}
-            whileInView={{ scale: 1, rotate: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.7, type: 'spring', stiffness: 150 }}
-            className="inline-flex mx-4"
-          >
-            <Settings className="w-5 h-5" style={{ color: '#1175c7' }} strokeWidth={1.5} />
-          </motion.span>
-
-          {/* Right Line */}
-          <motion.span
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="inline-flex items-center h-px w-24 md:w-32 relative"
-          >
-            <span className="absolute inset-0 border-t border-secondary-300"></span>
-          </motion.span>
-        </motion.div>
-
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {services.map((service, index) => {
+            const Icon = service.icon;
             return (
               <motion.div
-                key={feature.title}
+                key={service.id}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                className="text-center"
+                transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                {/* Icon */}
-                <motion.div
-                  whileHover={{ scale: 1.1, rotate: 360 }}
-                  transition={{ duration: 0.6, type: 'spring', stiffness: 200 }}
-                  className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4"
-                  style={{ backgroundColor: '#e6f4ff' }}
-                >
-                  <Icon className="w-8 h-8" style={{ color: '#1175c7' }} strokeWidth={1.5} />
-                </motion.div>
+                <Link href={service.href}>
+                  <motion.div
+                    whileHover={{ scale: 1.02 }}
+                    className="group relative h-full bg-white border-2 border-secondary-200 hover:border-[#1175c7] transition-all duration-300 overflow-hidden"
+                  >
+                    {/* Gradient Background on Hover */}
+                    <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
 
-                {/* Title */}
-                <h3 className="text-lg font-semibold text-secondary-900 mb-2 uppercase tracking-wide">
-                  {feature.title}
-                </h3>
+                    {/* Content */}
+                    <div className="relative p-8 md:p-10">
+                      {/* Number */}
+                      <div className="flex items-start justify-between mb-6">
+                        <span
+                          className="text-7xl md:text-8xl font-light leading-none"
+                          style={{ color: '#1175c7', opacity: 0.15 }}
+                        >
+                          {service.id}
+                        </span>
 
-                {/* Description */}
-                <p className="text-sm text-secondary-600 leading-relaxed">{feature.description}</p>
+                        {/* Icon */}
+                        <motion.div
+                          whileHover={{ scale: 1.2, rotate: 90 }}
+                          transition={{ duration: 0.4 }}
+                        >
+                          <Icon
+                            className="w-10 h-10 md:w-12 md:h-12"
+                            style={{ color: '#1175c7' }}
+                            strokeWidth={1.5}
+                          />
+                        </motion.div>
+                      </div>
+
+                      {/* Title */}
+                      <h3 className="text-2xl md:text-3xl font-semibold uppercase tracking-wide mb-4 text-secondary-900">
+                        {service.title}
+                      </h3>
+
+                      {/* Description */}
+                      <p className="text-sm md:text-base text-secondary-600 leading-relaxed mb-6">
+                        {service.description}
+                      </p>
+
+                      {/* Keywords */}
+                      <div className="flex flex-wrap gap-2 mb-6">
+                        {service.keywords.map((keyword, idx) => (
+                          <span
+                            key={idx}
+                            className="text-xs px-3 py-1 border border-secondary-300 text-secondary-700 uppercase tracking-wide"
+                          >
+                            {keyword}
+                          </span>
+                        ))}
+                      </div>
+
+                      {/* Arrow */}
+                      <div className="flex items-center gap-2 text-sm font-medium uppercase tracking-wider group-hover:gap-4 transition-all duration-300"
+                        style={{ color: '#1175c7' }}
+                      >
+                        <span>Ver detalles</span>
+                        <ArrowUpRight className="w-5 h-5" strokeWidth={2} />
+                      </div>
+                    </div>
+
+                    {/* Corner Accent */}
+                    <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-[#1175c7]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </motion.div>
+                </Link>
               </motion.div>
             );
           })}
