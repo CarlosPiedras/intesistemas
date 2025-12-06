@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import DistribucionIntro from '@/components/services/distribucion/DistribucionIntro';
+import ServicesHero from '@/components/services/ServicesHero';
 import GalleryVariant1 from '@/components/showcase/gallery/GalleryVariant1';
 
 export const metadata: Metadata = {
@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 export default function DistribucionEnergiaPage() {
   return (
     <div className="min-h-screen">
-      {/* Intro Section */}
-      <DistribucionIntro />
+      {/* Hero Section */}
+      <ServicesHero />
 
       {/* Gallery Section */}
       <GalleryVariant1 />

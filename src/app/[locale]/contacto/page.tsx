@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import ContactIntro from '@/components/contact/ContactIntro';
+import ShowcaseHeroContact from '@/components/showcase/ShowcaseHeroContact';
 import ContactForm from '@/components/contact/ContactForm';
 import ContactInfo from '@/components/contact/ContactInfo';
 
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 export default function ContactoPage() {
   return (
     <div className="min-h-screen">
-      {/* Intro Section */}
-      <ContactIntro />
+      {/* Hero Section */}
+      <ShowcaseHeroContact />
 
       {/* Main Contact Section */}
       <section className="py-16 md:py-24 bg-white">

@@ -3,17 +3,16 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-export default function ServicesHero() {
+export default function ShowcaseHeroContact() {
   return (
     <section className="relative h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden bg-secondary-900">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/13.jpg"
-          alt="INTE SISTEMAS - Distribución de energía eléctrica"
+          src="/images/hero/bg-contacto.jpg"
+          alt="INTE SISTEMAS - Contacto"
           fill
           className="object-cover"
-          style={{ objectPosition: 'center 0%' }}
           priority
         />
         {/* Overlay oscuro */}
@@ -30,7 +29,7 @@ export default function ServicesHero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xs md:text-sm font-medium text-white/80 mb-6 tracking-widest uppercase"
           >
-            / Servicios / Distribución de Energía
+            / Contacto
           </motion.div>
 
           {/* Main Title */}
@@ -40,10 +39,10 @@ export default function ServicesHero() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="text-4xl md:text-6xl lg:text-7xl font-light uppercase tracking-widest text-white mb-8"
           >
-            DISTRIBUCIÓN
+            HABLEMOS DE
             <br />
             <span className="font-normal" style={{ color: '#a9d9ff' }}>
-              EFICIENTE
+              TU PROYECTO
             </span>
           </motion.h1>
 
@@ -54,9 +53,9 @@ export default function ServicesHero() {
             transition={{ duration: 0.7, delay: 0.6 }}
             className="text-base md:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed"
           >
-            Soluciones integrales en sistemas de distribución eléctrica industrial.
+            Soluciones personalizadas en sistemas eléctricos y automatización industrial.
             <br className="hidden md:block" />
-            Diseño, instalación y mantenimiento de cuadros eléctricos con los más altos estándares de calidad.
+            Nuestro equipo está preparado para transformar tus ideas en realidad con excelencia técnica.
           </motion.p>
 
           {/* Decorative Line */}

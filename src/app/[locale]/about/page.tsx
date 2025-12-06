@@ -1,4 +1,4 @@
-import AboutIntroClean from '@/components/about/AboutIntroClean';
+import AboutHero from '@/components/about/AboutHero';
 import WorkProcess from '@/components/about/WorkProcess';
 import SectionCTA from '@/components/shared/SectionCTA';
 import FAQ from '@/components/about/FAQ';
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <AboutIntroClean />
+      <AboutHero />
       <WorkProcess />
       <SectionCTA
         title="¿Listo para impulsar tu proyecto?"
