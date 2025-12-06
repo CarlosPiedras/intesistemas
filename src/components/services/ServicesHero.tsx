@@ -9,11 +9,10 @@ export default function ServicesHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/13.jpg"
-          alt="INTE SISTEMAS - Distribución de energía eléctrica"
+          src="/images/procesosabout/aboutimage.png"
+          alt="INTE SISTEMAS - Servicios profesionales"
           fill
           className="object-cover"
-          style={{ objectPosition: 'center 0%' }}
           priority
         />
         {/* Overlay oscuro */}
@@ -30,7 +29,7 @@ export default function ServicesHero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xs md:text-sm font-medium text-white/80 mb-6 tracking-widest uppercase"
           >
-            / Servicios / Distribución de Energía
+            / Servicios
           </motion.div>
 
           {/* Main Title */}
@@ -40,10 +39,10 @@ export default function ServicesHero() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="text-4xl md:text-6xl lg:text-7xl font-light uppercase tracking-widest text-white mb-8"
           >
-            DISTRIBUCIÓN
+            SOLUCIONES
             <br />
             <span className="font-normal" style={{ color: '#a9d9ff' }}>
-              EFICIENTE
+              PROFESIONALES
             </span>
           </motion.h1>
 
@@ -54,9 +53,9 @@ export default function ServicesHero() {
             transition={{ duration: 0.7, delay: 0.6 }}
             className="text-base md:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed"
           >
-            Soluciones integrales en sistemas de distribución eléctrica industrial.
+            Soluciones integrales en sistemas eléctricos y automatización industrial.
             <br className="hidden md:block" />
-            Diseño, instalación y mantenimiento de cuadros eléctricos con los más altos estándares de calidad.
+            Desde el diseño hasta el soporte continuo con excelencia técnica.
           </motion.p>
 
           {/* Decorative Line */}
