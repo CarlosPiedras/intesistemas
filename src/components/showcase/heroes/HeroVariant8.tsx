@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function HeroVariant8() {
   return (
-    <section className="relative h-[70vh] flex items-center overflow-hidden bg-denim">
+    <section className="relative h-[65vh] md:h-[55vh] lg:h-[70vh] 2xl:h-[60vh] flex items-center overflow-hidden bg-denim">
       {/* Imagen de fondo con opacidad muy baja */}
       <div className="absolute inset-0 z-0 opacity-10">
         <Image

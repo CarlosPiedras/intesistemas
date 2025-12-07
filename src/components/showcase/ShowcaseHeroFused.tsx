@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function ShowcaseHeroFused() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-secondary-900">
+    <section className="relative h-[65vh] md:h-[55vh] lg:h-[70vh] 2xl:h-[60vh] overflow-hidden bg-secondary-900">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <Image
@@ -20,7 +20,7 @@ export default function ShowcaseHeroFused() {
       </div>
 
       {/* Content Container */}
-      <div className="relative min-h-screen flex items-center py-16 md:py-20">
+      <div className="relative h-full flex items-center py-16 md:py-20">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 

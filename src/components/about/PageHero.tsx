@@ -7,7 +7,7 @@ import { ChevronRight } from 'lucide-react';
 
 export default function PageHero() {
   return (
-    <section className="relative h-[40vh] md:h-[50vh] overflow-hidden">
+    <section className="relative h-[65vh] md:h-[55vh] lg:h-[70vh] 2xl:h-[60vh] overflow-hidden">
       {/* Imagen de fondo */}
       <div className="absolute inset-0">
         <Image

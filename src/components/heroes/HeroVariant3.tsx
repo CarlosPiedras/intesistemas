@@ -39,7 +39,7 @@ export default function HeroVariant3() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="min-h-screen flex items-center bg-gradient-to-b from-white via-primary-50/20 to-white py-20">
+      <section className="relative h-[65vh] md:h-[55vh] lg:h-[70vh] 2xl:h-[60vh] flex items-center bg-gradient-to-b from-white via-primary-50/20 to-white py-20">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto">
             {/* Contenido central */}

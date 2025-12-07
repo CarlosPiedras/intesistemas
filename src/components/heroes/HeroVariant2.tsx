@@ -32,7 +32,7 @@ export default function HeroVariant2() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="min-h-screen flex items-center bg-gradient-to-br from-white via-primary-50/30 to-white py-20">
+      <section className="relative h-[65vh] md:h-[55vh] lg:h-[70vh] 2xl:h-[60vh] flex items-center bg-gradient-to-br from-white via-primary-50/30 to-white py-20">
         <div className="container-custom">
           <div className="grid lg:grid-cols-5 gap-12 items-center">
             {/* COLUMNA IZQUIERDA - CONTENIDO (60%) */}
