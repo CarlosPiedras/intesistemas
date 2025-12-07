@@ -18,7 +18,7 @@ const reasons = [
   {
     icon: MapPin,
     title: 'Presencia territorial',
-    description: 'Red de oficinas estratégicamente ubicadas en el área metropolitana de Barcelona para respuesta inmediata.',
+    description: 'Red de oficinas estratégicamente ubicadas en el área metropolitana de Barcelona y Sevilla para respuesta inmediata.',
   },
   {
     icon: Headphones,

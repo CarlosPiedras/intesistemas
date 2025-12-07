@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Zap, Cpu, ClipboardList, Wrench, Settings } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Services() {
   const services = [
@@ -10,24 +11,28 @@ export default function Services() {
       title: 'DISTRIBUCIÓN ELÉCTRICA',
       description: 'Diseño y fabricación de cuadros de distribución personalizados para instalaciones industriales y comerciales.',
       icon: Zap,
+      slug: 'distribucion-energia',
     },
     {
       id: 2,
       title: 'AUTOMATIZACIÓN INDUSTRIAL',
       description: 'Programación de PLCs y sistemas SCADA para optimizar procesos productivos y mejorar la eficiencia.',
       icon: Cpu,
+      slug: 'automatizacion-industrial',
     },
     {
       id: 3,
       title: 'GESTIÓN DE PROYECTOS',
       description: 'Planificación y ejecución integral de proyectos eléctricos industriales con garantía de calidad.',
       icon: ClipboardList,
+      slug: 'gestion-proyectos',
     },
     {
       id: 4,
       title: 'SOPORTE TÉCNICO',
       description: 'Mantenimiento, asistencia técnica y formación continua para asegurar el óptimo funcionamiento.',
       icon: Wrench,
+      slug: 'soporte-tecnico',
     },
   ];
 
@@ -131,55 +136,46 @@ export default function Services() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                className="flex flex-col items-center text-center"
               >
-                {/* Icon Circle with thick border */}
-                <motion.div
-                  whileHover={{
-                    scale: 1.05,
-                    borderColor: '#1175c7',
-                    backgroundColor: '#e6f4ff'
-                  }}
-                  transition={{ duration: 0.2 }}
-                  className="w-28 h-28 rounded-full border-[2.5px] border-secondary-300 flex items-center justify-center mb-6 bg-white shadow-sm group"
+                <Link
+                  href={`/servicios/${service.slug}`}
+                  className="flex flex-col items-center text-center group cursor-pointer block"
                 >
-                  <Icon className="w-12 h-12 text-secondary-700 group-hover:text-[#1175c7] transition-colors duration-200" strokeWidth={1.25} />
-                </motion.div>
+                  {/* Icon Circle with thick border */}
+                  <div className="w-28 h-28 rounded-full border-[2.5px] border-secondary-300 group-hover:border-[#1175c7] group-hover:bg-[#e6f4ff] flex items-center justify-center mb-6 bg-white shadow-sm transition-all duration-200">
+                    <Icon className="w-12 h-12 text-secondary-700 group-hover:text-[#1175c7] transition-colors duration-200" strokeWidth={1.25} />
+                  </div>
 
-                {/* Subtitle */}
-                <h3 className="text-sm md:text-base font-semibold uppercase tracking-wider text-secondary-900 mb-3">
-                  {service.title}
-                </h3>
+                  {/* Subtitle */}
+                  <h3 className="text-sm md:text-base font-semibold uppercase tracking-wider text-secondary-900 mb-3">
+                    {service.title}
+                  </h3>
 
-                {/* Description */}
-                <p className="text-sm text-secondary-600 leading-relaxed mb-4 min-h-[4.5rem]">
-                  {service.description}
-                </p>
+                  {/* Description */}
+                  <p className="text-sm text-secondary-600 leading-relaxed mb-4 min-h-[4.5rem]">
+                    {service.description}
+                  </p>
 
-                {/* CTA Button */}
-                <motion.a
-                  href={`/servicios/${service.id}`}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center gap-2 text-sm font-medium text-secondary-700 hover:text-[#1175c7] transition-colors duration-200 group"
-                >
-                  Más información
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="group-hover:translate-x-1 transition-transform duration-200"
-                  >
-                    <path d="M5 12h14"/>
-                    <path d="m12 5 7 7-7 7"/>
-                  </svg>
-                </motion.a>
+                  {/* CTA Button */}
+                  <span className="inline-flex items-center gap-2 text-sm font-medium text-secondary-700 group-hover:text-[#1175c7] transition-colors duration-200">
+                    Más información
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="group-hover:translate-x-1 transition-transform duration-200"
+                    >
+                      <path d="M5 12h14"/>
+                      <path d="m12 5 7 7-7 7"/>
+                    </svg>
+                  </span>
+                </Link>
               </motion.div>
             );
           })}

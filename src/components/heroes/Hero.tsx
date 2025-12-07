@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -56,25 +57,27 @@ export default function Hero() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <motion.button
-                whileHover={{
-                  scale: 1.05,
-                  backgroundColor: "#1175c7",
-                  color: "#ffffff",
-                  boxShadow: "0 0 20px rgba(17, 117, 199, 0.5)",
-                }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ duration: 0.2 }}
-                className="flex items-center gap-3 px-8 py-4 text-base font-bold text-white bg-transparent border-2 border-white rounded-lg cursor-pointer shadow-lg"
-              >
-                Conocer más
+              <Link href="/servicios">
                 <motion.div
-                  whileHover={{ x: 5 }}
+                  whileHover={{
+                    scale: 1.05,
+                    backgroundColor: "#1175c7",
+                    color: "#ffffff",
+                    boxShadow: "0 0 20px rgba(17, 117, 199, 0.5)",
+                  }}
+                  whileTap={{ scale: 0.95 }}
                   transition={{ duration: 0.2 }}
+                  className="inline-flex items-center gap-3 px-8 py-4 text-base font-bold text-white bg-transparent border-2 border-white rounded-lg cursor-pointer shadow-lg"
                 >
-                  <ArrowRight className="w-5 h-5" />
+                  Conocer más
+                  <motion.div
+                    whileHover={{ x: 5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <ArrowRight className="w-5 h-5" />
+                  </motion.div>
                 </motion.div>
-              </motion.button>
+              </Link>
             </motion.div>
           </div>
         </div>

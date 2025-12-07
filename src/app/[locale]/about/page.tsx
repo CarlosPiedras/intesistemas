@@ -22,12 +22,12 @@ export default function AboutPage() {
         description="Contáctanos y descubre cómo podemos ayudarte con soluciones personalizadas en sistemas eléctricos y automatización industrial"
         primaryButton={{
           text: 'Contactar ahora',
-          href: '/es/contacto',
+          href: '/contacto',
           icon: 'arrow',
         }}
         secondaryButton={{
           text: 'Ver servicios',
-          href: '/es#servicios',
+          href: '/servicios',
         }}
       />
       <FAQ />
