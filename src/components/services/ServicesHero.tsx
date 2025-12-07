@@ -9,7 +9,7 @@ export default function ServicesHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/heroautomati.jpg"
+          src="/images/hero/13.jpg"
           alt="INTE SISTEMAS - Servicios profesionales"
           fill
           className="object-cover"
@@ -29,7 +29,7 @@ export default function ServicesHero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xs md:text-sm font-medium text-white/80 mb-6 tracking-widest uppercase"
           >
-            / Automatización Industrial
+            / Nuestros Servicios
           </motion.div>
 
           {/* Main Title */}
@@ -39,10 +39,10 @@ export default function ServicesHero() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="text-4xl md:text-6xl lg:text-7xl font-light uppercase tracking-widest text-white mb-8"
           >
-            AUTOMATIZACIÓN
+            SOLUCIONES
             <br />
             <span className="font-normal" style={{ color: '#a9d9ff' }}>
-              INTELIGENTE
+              INTEGRALES
             </span>
           </motion.h1>
 
@@ -53,9 +53,9 @@ export default function ServicesHero() {
             transition={{ duration: 0.7, delay: 0.6 }}
             className="text-base md:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed"
           >
-            Soluciones de control industrial para optimizar procesos productivos.
+            Servicios especializados en distribución de energía, automatización industrial,
             <br className="hidden md:block" />
-            Experiencia en programación PLCs, SCADA y sistemas de automatización.
+            gestión de proyectos y soporte técnico para tu empresa.
           </motion.p>
 
           {/* Decorative Line */}

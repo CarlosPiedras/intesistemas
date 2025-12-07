@@ -42,58 +42,67 @@ const services = [
 export default function SoporteTecnicoPage() {
   return (
     <div className="min-h-screen">
-      {/* Intro Section */}
-      <section className="bg-secondary-50 pt-12 pb-16 md:pt-16 md:pb-20 lg:pt-20 lg:pb-24">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
-            {/* Columna Izquierda - Imagen */}
+      {/* Hero Section */}
+      <section className="relative h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden bg-secondary-900">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/hero/1.jpg"
+            alt="INTE SISTEMAS - Servicios profesionales"
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Overlay oscuro */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+        </div>
+
+        {/* Content */}
+        <div className="relative h-full flex items-center justify-center">
+          <div className="container mx-auto px-4 max-w-6xl text-center">
+            {/* Eyebrow */}
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.6, ease: 'easeOut' }}
-              className="relative h-full min-h-[400px] lg:min-h-[500px]"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-xs md:text-sm font-medium text-white/80 mb-6 tracking-widest uppercase"
             >
-              <div className="relative w-full h-full rounded-none overflow-hidden">
-                <Image
-                  src="/images/hero/1.jpg"
-                  alt="INTE SISTEMAS - Soporte técnico especializado"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              / Servicios / Soporte Técnico
             </motion.div>
 
-            {/* Columna Derecha - Contenido */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-              className="flex flex-col justify-center h-full"
+            {/* Main Title */}
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+              className="text-4xl md:text-6xl lg:text-7xl font-light uppercase tracking-widest text-white mb-8"
             >
-              {/* Tag superior */}
-              <div className="text-xs md:text-sm font-medium text-secondary-600 mb-4 tracking-wide">
-                /Servicios/Soporte Técnico
-              </div>
+              SOPORTE
+              <br />
+              <span className="font-normal" style={{ color: '#a9d9ff' }}>
+                CONTINUO
+              </span>
+            </motion.h1>
 
-              {/* Título principal */}
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-widest mb-6" style={{ color: '#1175c7' }}>
-                SOPORTE CONTINUO
-              </h2>
+            {/* Subtitle */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.6 }}
+              className="text-base md:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed"
+            >
+              Asistencia técnica especializada para garantizar el funcionamiento óptimo.
+              <br className="hidden md:block" />
+              Mantenimiento preventivo, reparaciones efectivas y actualizaciones.
+            </motion.p>
 
-              {/* Descripción */}
-              <p className="text-sm md:text-base text-secondary-600 leading-relaxed mb-6">
-                Ofrecemos asistencia técnica especializada para garantizar el correcto funcionamiento de tus
-                instalaciones eléctricas y sistemas de automatización. Nuestro equipo está disponible para resolver
-                incidencias y optimizar el rendimiento de tus equipos.
-              </p>
-
-              <p className="text-sm md:text-base text-secondary-600 leading-relaxed">
-                Mantenimiento preventivo, correctivo y formación técnica para maximizar la vida útil de tus
-                sistemas y minimizar tiempos de inactividad en tu operación.
-              </p>
-            </motion.div>
+            {/* Decorative Line */}
+            <motion.div
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: 1 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="h-px w-32 md:w-48 bg-gradient-to-r from-transparent via-white to-transparent mx-auto mt-12"
+            />
           </div>
         </div>
       </section>
