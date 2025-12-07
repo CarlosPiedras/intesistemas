@@ -1,23 +1,27 @@
 import { Metadata } from 'next';
 import ServicesHero from '@/components/services/ServicesHero';
-import GalleryVariant1 from '@/components/showcase/gallery/GalleryVariant1';
+import ServicesSection from '@/components/services/automatizacion/ServicesSection';
+import SectorsSection from '@/components/services/automatizacion/SectorsSection';
 
 export const metadata: Metadata = {
-  title: 'Showcase - Distribución de Energía | INTE SISTEMAS',
+  title: 'Automatización Industrial | INTE SISTEMAS',
   description:
-    'Visualización de la página de distribución de energía de INTE SISTEMAS.',
+    'Soluciones profesionales en automatización industrial. Programación de PLCs, sistemas SCADA, control de procesos y robótica industrial. Más de 10 años de experiencia en Barcelona.',
   keywords:
-    'showcase, servicios, distribución energía, distribución eléctrica, cuadros eléctricos',
+    'automatización industrial, PLCs, SCADA, control industrial, sistemas automatizados, programación PLCs, Siemens, Allen-Bradley, Schneider Electric, EATON, Barcelona, robótica industrial, control de procesos',
 };
 
-export default function ShowcasePage() {
+export default function AutomatizacionIndustrialPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <ServicesHero />
 
-      {/* Gallery Section */}
-      <GalleryVariant1 />
+      {/* Services Section */}
+      <ServicesSection />
+
+      {/* Sectors Section */}
+      <SectorsSection />
     </div>
   );
 }

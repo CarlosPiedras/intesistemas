@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import AutomatizacionIntro from '@/components/services/automatizacion/AutomatizacionIntro';
+import ServicesHero from '@/components/services/ServicesHero';
 import ServicesSection from '@/components/services/automatizacion/ServicesSection';
 import SectorsSection from '@/components/services/automatizacion/SectorsSection';
 
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 export default function AutomatizacionIndustrialPage() {
   return (
     <div className="min-h-screen">
-      {/* Intro Section */}
-      <AutomatizacionIntro />
+      {/* Hero Section */}
+      <ServicesHero />
 
       {/* Services Section */}
       <ServicesSection />
