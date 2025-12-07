@@ -9,7 +9,7 @@ export default function ServicesHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/13.jpg"
+          src="/images/hero/heroservices.jpg"
           alt="INTE SISTEMAS - Servicios profesionales"
           fill
           className="object-cover"

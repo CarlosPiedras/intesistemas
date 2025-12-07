@@ -9,7 +9,7 @@ export default function AutomationHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/13.jpg"
+          src="/images/hero/heroautomati.jpg"
           alt="INTE SISTEMAS - Automatización Industrial"
           fill
           className="object-cover"
@@ -39,10 +39,10 @@ export default function AutomationHero() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="text-4xl md:text-6xl lg:text-7xl font-light uppercase tracking-widest text-white mb-8"
           >
-            SOLUCIONES
+            CONTROL Y
             <br />
             <span className="font-normal" style={{ color: '#a9d9ff' }}>
-              INTEGRALES
+              PRECISIÓN
             </span>
           </motion.h1>
 
@@ -53,9 +53,9 @@ export default function AutomationHero() {
             transition={{ duration: 0.7, delay: 0.6 }}
             className="text-base md:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed"
           >
-            Servicios especializados en distribución de energía, automatización industrial,
+            Diseño, programación e integración de sistemas automatizados para optimizar
             <br className="hidden md:block" />
-            gestión de proyectos y soporte técnico para tu empresa.
+            procesos industriales y maximizar la productividad de tu empresa.
           </motion.p>
 
           {/* Decorative Line */}
