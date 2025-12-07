@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function ShowcaseHeroContact() {
   return (
-    <section className="relative h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden bg-secondary-900">
+    <section className="relative h-[60vh] md:h-[70vh] lg:h-[80vh] 2xl:h-[60vh] overflow-hidden bg-secondary-900">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image

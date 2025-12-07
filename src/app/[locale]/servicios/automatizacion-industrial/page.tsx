@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import ServicesHero from '@/components/services/ServicesHero';
+import AutomationHero from '@/components/services/AutomationHero';
 import ServicesSection from '@/components/services/automatizacion/ServicesSection';
 import SectorsSection from '@/components/services/automatizacion/SectorsSection';
 
@@ -15,7 +15,7 @@ export default function AutomatizacionIndustrialPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <ServicesHero />
+      <AutomationHero />
 
       {/* Services Section */}
       <ServicesSection />

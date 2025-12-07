@@ -43,7 +43,7 @@ export default function GestionProyectosPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden bg-secondary-900">
+      <section className="relative h-[60vh] md:h-[70vh] lg:h-[80vh] 2xl:h-[60vh] overflow-hidden bg-secondary-900">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -67,7 +67,7 @@ export default function GestionProyectosPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xs md:text-sm font-medium text-white/80 mb-6 tracking-widest uppercase"
             >
-              / Gestión de Proyectos
+              / Servicios / Gestión de Proyectos
             </motion.div>
 
             {/* Main Title */}

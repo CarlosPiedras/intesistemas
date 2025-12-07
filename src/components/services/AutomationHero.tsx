@@ -3,14 +3,14 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-export default function DistributionHero() {
+export default function AutomationHero() {
   return (
     <section className="relative h-[60vh] md:h-[70vh] lg:h-[80vh] 2xl:h-[60vh] overflow-hidden bg-secondary-900">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
           src="/images/hero/13.jpg"
-          alt="INTE SISTEMAS - Distribución de Energía"
+          alt="INTE SISTEMAS - Automatización Industrial"
           fill
           className="object-cover"
           priority
@@ -29,7 +29,7 @@ export default function DistributionHero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xs md:text-sm font-medium text-white/80 mb-6 tracking-widest uppercase"
           >
-            / Servicios / Distribución de Energía
+            / Servicios / Automatización Industrial
           </motion.div>
 
           {/* Main Title */}
@@ -39,10 +39,10 @@ export default function DistributionHero() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="text-4xl md:text-6xl lg:text-7xl font-light uppercase tracking-widest text-white mb-8"
           >
-            ENERGÍA
+            SOLUCIONES
             <br />
             <span className="font-normal" style={{ color: '#a9d9ff' }}>
-              EFICIENTE
+              INTEGRALES
             </span>
           </motion.h1>
 
@@ -53,9 +53,9 @@ export default function DistributionHero() {
             transition={{ duration: 0.7, delay: 0.6 }}
             className="text-base md:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed"
           >
-            Diseño, fabricación e instalación de cuadros de distribución eléctrica.
+            Servicios especializados en distribución de energía, automatización industrial,
             <br className="hidden md:block" />
-            Soluciones profesionales para sistemas eléctricos industriales y comerciales.
+            gestión de proyectos y soporte técnico para tu empresa.
           </motion.p>
 
           {/* Decorative Line */}
