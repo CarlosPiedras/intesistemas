@@ -47,7 +47,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.15 }}
               className="text-base md:text-lg lg:text-xl text-white/90 mb-8 leading-relaxed"
             >
-              Más de 10 años diseñando e implementando sistemas de control industrial.
+              Más de 30 años diseñando e implementando sistemas de control industrial.
               Calidad, innovación y compromiso en cada proyecto.
             </motion.p>
 

@@ -21,7 +21,7 @@ const faqs = [
     id: 3,
     question: '¿En qué sectores tienen experiencia?',
     answer:
-      'Tenemos más de 10 años de experiencia trabajando en diversos sectores industriales incluyendo manufactura, alimentación, farmacéutica, logística, energías renovables y construcción. Cada proyecto es abordado con la experiencia técnica específica del sector.',
+      'Tenemos más de 30 años de experiencia trabajando en diversos sectores industriales incluyendo manufactura, alimentación, farmacéutica, logística, energías renovables y construcción. Cada proyecto es abordado con la experiencia técnica específica del sector.',
   },
   {
     id: 4,

@@ -7,9 +7,9 @@ import Image from 'next/image';
 const reasons = [
   {
     icon: Award,
-    number: '10+',
+    number: '30+',
     title: 'Años de experiencia',
-    description: 'Líderes en automatización industrial desde 2014',
+    description: 'Líderes en automatización industrial desde 1994',
     image: '/images/sectores/procesos_2.jpg',
     stats: [
       { icon: Star, value: '500+', label: 'Proyectos' },

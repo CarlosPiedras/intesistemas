@@ -16,14 +16,14 @@ import { CheckCircle2, ArrowRight, Zap, Shield, Award, Users } from 'lucide-reac
  */
 export default function HeroVariant2() {
   const beneficios = [
-    'Integradores oficiales de Eaton desde 2014',
+    'Integradores oficiales de Eaton desde 1994',
     'Más de 500 proyectos completados exitosamente',
     'Equipo de ingenieros certificados',
     'Soporte técnico 24/7 todo el año',
   ];
 
   const stats = [
-    { icon: Users, value: '10+', label: 'Años de Experiencia' },
+    { icon: Users, value: '30+', label: 'Años de Experiencia' },
     { icon: Award, value: '500+', label: 'Proyectos Completados' },
     { icon: Shield, value: '100%', label: 'Satisfacción' },
     { icon: Zap, value: '24/7', label: 'Soporte' },

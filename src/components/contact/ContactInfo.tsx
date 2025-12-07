@@ -24,13 +24,13 @@ const contactItems = [
   },
   {
     icon: MapPin,
-    title: 'Hospitalet de Llobregat',
-    value: 'Pasaje Milans 1, Barcelona',
+    title: 'Terrassa - Oficina Principal',
+    value: 'Av. Santa Eulalia 290, 08223 Barcelona',
   },
   {
     icon: MapPin,
-    title: 'Terrassa',
-    value: 'Avenida Santa Eulalia 290, 08223 Barcelona',
+    title: 'Hospitalet de Llobregat',
+    value: 'Pasaje Milans 1, Barcelona',
   },
   {
     icon: Clock,

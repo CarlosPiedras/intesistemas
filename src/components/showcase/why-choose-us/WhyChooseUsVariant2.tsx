@@ -6,10 +6,10 @@ import { Award, Users, MapPin, Headphones, ArrowRight } from 'lucide-react';
 const reasons = [
   {
     icon: Award,
-    number: '10+',
+    number: '30+',
     label: 'años',
     title: 'Experiencia consolidada',
-    description: 'Desde 2014 ofreciendo soluciones de calidad en el sector industrial.',
+    description: 'Desde 1994 ofreciendo soluciones de calidad en el sector industrial.',
   },
   {
     icon: Users,

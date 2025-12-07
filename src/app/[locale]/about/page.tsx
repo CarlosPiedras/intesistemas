@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Quiénes Somos | INTE SISTEMAS - Expertos en Automatización Industrial',
   description:
-    'Más de 10 años de experiencia en sistemas eléctricos y automatización industrial. INTE SISTEMAS, tu partner de confianza en Barcelona.',
+    'Más de 30 años de experiencia en sistemas eléctricos y automatización industrial. INTE SISTEMAS, tu partner de confianza en Barcelona.',
   keywords:
     'INTE SISTEMAS, quiénes somos, automatización industrial, sistemas eléctricos, Barcelona, empresa, experiencia',
 };

@@ -119,7 +119,7 @@ export default function HeroVariant3() {
               >
                 <div className="flex items-center gap-2">
                   <TrendingUp className="w-4 h-4 text-denim" />
-                  <span>+10 años en el sector</span>
+                  <span>+30 años en el sector</span>
                 </div>
                 <span className="text-secondary-300">|</span>
                 <div className="flex items-center gap-2">

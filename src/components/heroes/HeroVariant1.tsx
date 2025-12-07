@@ -79,7 +79,7 @@ export default function HeroVariant1() {
               className="text-xl md:text-2xl lg:text-3xl mb-12 max-w-4xl mx-auto text-white/95 font-light"
             >
               Soluciones eléctricas y automatización industrial de vanguardia.<br />
-              Más de 10 años transformando la industria española.
+              Más de 30 años transformando la industria española.
             </motion.p>
 
             {/* CTAs grandes */}

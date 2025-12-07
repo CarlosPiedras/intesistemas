@@ -45,7 +45,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm text-white/90 leading-relaxed">
-              Más de 10 años transformando la industria con tecnología eléctrica avanzada y automatización de procesos. Partner oficial EATON.
+              Más de 30 años transformando la industria con tecnología eléctrica avanzada y automatización de procesos. Partner oficial EATON.
             </p>
           </motion.div>
 
@@ -139,8 +139,8 @@ export default function Footer() {
                   <MapPin className="w-3.5 h-3.5 text-white" strokeWidth={2} />
                 </div>
                 <div className="flex-1">
-                  <p className="text-xs text-white/70">Ubicación</p>
-                  <p className="text-sm font-medium text-white">Pasaje Milans 1, Hospitalet de Llobregat, Barcelona</p>
+                  <p className="text-xs text-white/70">Oficina Principal</p>
+                  <p className="text-sm font-medium text-white">Av. Santa Eulalia 290, 08223 Terrassa, Barcelona</p>
                 </div>
               </div>
 

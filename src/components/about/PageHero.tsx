@@ -57,7 +57,7 @@ export default function PageHero() {
           transition={{ duration: 0.6, delay: 0.4, ease: 'easeOut' }}
           className="text-lg md:text-xl text-white/90 max-w-3xl"
         >
-          Más de 10 años innovando en sistemas eléctricos y automatización
+          Más de 30 años innovando en sistemas eléctricos y automatización
           industrial
         </motion.p>
       </div>

@@ -103,7 +103,7 @@ export default function HeroVariant9() {
               className="mb-8 pl-6 border-l-4 border-anakiwa"
             >
               <p className="text-base md:text-lg lg:text-xl text-white/95 leading-relaxed">
-                Más de 10 años diseñando e implementando sistemas de control industrial.
+                Más de 30 años diseñando e implementando sistemas de control industrial.
                 <span className="block mt-2 text-anakiwa font-bold">
                   Calidad, innovación y compromiso en cada proyecto.
                 </span>

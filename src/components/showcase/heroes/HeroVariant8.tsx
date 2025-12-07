@@ -96,7 +96,7 @@ export default function HeroVariant8() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-base md:text-lg lg:text-xl text-primary-100 mb-8 leading-relaxed"
             >
-              Más de 10 años diseñando e implementando sistemas de control industrial.
+              Más de 30 años diseñando e implementando sistemas de control industrial.
               <span className="block mt-2 text-anakiwa font-semibold">
                 Calidad, innovación y compromiso en cada proyecto.
               </span>

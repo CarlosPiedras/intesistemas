@@ -6,7 +6,7 @@ import { Award, MapPin, Users } from 'lucide-react';
 
 export default function AboutIntro() {
   const currentYear = new Date().getFullYear();
-  const yearsOfExperience = currentYear - 2014;
+  const yearsOfExperience = currentYear - 1994;
 
   const stats = [
     {
@@ -67,7 +67,7 @@ export default function AboutIntro() {
 
             {/* Badge */}
             <div className="inline-block bg-primary-50 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Desde 2014
+              Desde 1994
             </div>
 
             {/* Descripción 1 */}

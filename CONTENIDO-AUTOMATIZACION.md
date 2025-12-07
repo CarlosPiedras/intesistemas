@@ -9,7 +9,7 @@
 Soluciones avanzadas en control y automatización de procesos para optimizar la productividad de tu industria
 
 ### Descripción Breve
-Con más de 10 años de experiencia, INTE AUTOMATIZACIÓN ofrece servicios integrales de automatización industrial, desde la programación de PLCs hasta sistemas SCADA completos.
+Con más de 30 años de experiencia, INTE AUTOMATIZACIÓN ofrece servicios integrales de automatización industrial, desde la programación de PLCs hasta sistemas SCADA completos.
 
 ---
 
@@ -204,7 +204,7 @@ Ofrecemos servicio de mantenimiento preventivo, asistencia técnica remota y pre
 ## 🎯 VENTAJAS COMPETITIVAS
 
 ### Experiencia Contrastada
-Más de 10 años desarrollando proyectos de automatización en múltiples sectores industriales.
+Más de 30 años desarrollando proyectos de automatización en múltiples sectores industriales.
 
 ### Integrador Oficial EATON
 Certificación y soporte directo del fabricante para soluciones de control y automatización.

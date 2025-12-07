@@ -25,12 +25,12 @@
 
 **Nombre Legal:** INTE SISTEMAS
 **Nombre Comercial:** Inte Sistemas Eléctricos / INTE AUTOMATIZACIÓN
-**Fundación:** 2014 (Más de 10 años de experiencia)
+**Fundación:** 1994 (Más de 30 años de experiencia)
 **Sector:** Sistemas Eléctricos y Automatización Industrial
 
 ### Descripción
 
-Empresa española especializada en **soluciones integrales de sistemas eléctricos y automatización industrial**. Con más de 10 años de experiencia, INTE SISTEMAS se ha consolidado como referente en el sector, ofreciendo servicios de calidad y excelencia técnica.
+Empresa española especializada en **soluciones integrales de sistemas eléctricos y automatización industrial**. Con más de 30 años de experiencia, INTE SISTEMAS se ha consolidado como referente en el sector, ofreciendo servicios de calidad y excelencia técnica.
 
 ### Misión y Compromiso
 
@@ -217,7 +217,7 @@ secondary-950: #020617
 
 1. ✅ **Hero Section** (Implementado)
    - Título: "Automatización Industrial Avanzada"
-   - Subtítulo: "Más de 10 años diseñando e implementando sistemas de control industrial. Calidad, innovación y compromiso en cada proyecto."
+   - Subtítulo: "Más de 30 años diseñando e implementando sistemas de control industrial. Calidad, innovación y compromiso en cada proyecto."
    - CTA: "Conocer más"
    - Imagen: `/images/hero/1.jpg`
 
@@ -241,7 +241,7 @@ secondary-950: #020617
 4. ✅ **Why Choose Us Section** (Implementado)
    - **Componente:** `/src/components/showcase/why-choose-us/WhyChooseUsVariant7.tsx`
    - 4 razones principales:
-     - ✅ +10 años de experiencia (desde 2014)
+     - ✅ +30 años de experiencia (desde 1994)
      - ✅ Integrador oficial EATON
      - ✅ 2 sedes en Barcelona
      - ✅ Soporte técnico continuo
@@ -418,7 +418,7 @@ Transmitir confianza, experiencia y profesionalidad. Mostrar la trayectoria de I
 **Contenido:**
 - **Imagen de fondo:** `/images/hero/1.1.jpg` o `/images/hero/13.jpg`
 - **Título principal:** "Quiénes Somos" (text-5xl font-bold text-white)
-- **Subtítulo:** "Más de 10 años innovando en sistemas eléctricos y automatización industrial" (text-xl text-white/90)
+- **Subtítulo:** "Más de 30 años innovando en sistemas eléctricos y automatización industrial" (text-xl text-white/90)
 
 **Especificaciones técnicas:**
 - **Altura:** h-[40vh] md:h-[50vh]
@@ -456,11 +456,11 @@ import { ChevronRight } from 'lucide-react';
 **Contenido - Columna Derecha:**
 - **Eyebrow:** "Sobre Nosotros" (text-sm text-primary-600 font-semibold uppercase tracking-wider)
 - **Título:** "INTE SISTEMAS" (text-4xl font-bold text-primary-600 mb-4)
-- **Badge destacado:** "Desde 2014" (inline badge con fondo primary-50)
+- **Badge destacado:** "Desde 1994" (inline badge con fondo primary-50)
 - **Descripción 1:**
   ```
   Empresa española especializada en soluciones integrales de sistemas
-  eléctricos y automatización industrial. Con más de 10 años de experiencia,
+  eléctricos y automatización industrial. Con más de 30 años de experiencia,
   INTE SISTEMAS se ha consolidado como referente en el sector, ofreciendo
   servicios de calidad y excelencia técnica.
   ```
@@ -474,7 +474,7 @@ import { ChevronRight } from 'lucide-react';
 **Stats (Grid 3 columnas):**
 ```
 ┌─────────────┬─────────────┬─────────────┐
-│  +10 años   │  2 sedes    │ 3 partners  │
+│  +30 años   │  2 sedes    │ 3 partners  │
 │ Experiencia │  Barcelona  │ Estratégicos│
 └─────────────┴─────────────┴─────────────┘
 ```

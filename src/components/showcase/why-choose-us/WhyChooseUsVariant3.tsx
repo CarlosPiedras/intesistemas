@@ -7,10 +7,10 @@ import Image from 'next/image';
 const reasons = [
   {
     icon: Award,
-    number: '10+',
+    number: '30+',
     label: 'años',
     title: 'Experiencia consolidada',
-    description: 'Más de una década diseñando e implementando sistemas de control industrial. Desde 2014, hemos completado cientos de proyectos exitosos en toda España.',
+    description: 'Más de tres décadas diseñando e implementando sistemas de control industrial. Desde 1994, hemos completado cientos de proyectos exitosos en toda España.',
     image: '/images/sectores/cuadro_1.jpg',
     imageAlt: 'Cuadro eléctrico industrial',
   },

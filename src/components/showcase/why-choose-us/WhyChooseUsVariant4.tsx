@@ -7,9 +7,9 @@ import Image from 'next/image';
 const reasons = [
   {
     icon: Award,
-    title: '+10 años de experiencia',
-    subtitle: 'Desde 2014',
-    description: 'Más de una década ofreciendo soluciones de calidad en sistemas eléctricos y automatización industrial.',
+    title: '+30 años de experiencia',
+    subtitle: 'Desde 1994',
+    description: 'Más de tres décadas ofreciendo soluciones de calidad en sistemas eléctricos y automatización industrial.',
     image: '/images/proceso/instalacion_1.jpg',
     features: ['Proyectos completados', 'Clientes satisfechos', 'Certificaciones'],
   },
