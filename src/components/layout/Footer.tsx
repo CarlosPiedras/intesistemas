@@ -9,9 +9,12 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
+    { name: 'Inicio', href: '/es' },
     { name: 'Quiénes somos', href: '/es/about' },
-    { name: 'Sectores', href: '/es/sectores' },
-    { name: 'Servicios', href: '/es/servicios' },
+    { name: 'Distribución de Energía', href: '/es/servicios/distribucion-energia' },
+    { name: 'Automatización Industrial', href: '/es/servicios/automatizacion-industrial' },
+    { name: 'Gestión de Proyectos', href: '/es/servicios/gestion-proyectos' },
+    { name: 'Soporte Técnico', href: '/es/servicios/soporte-tecnico' },
     { name: 'Contacto', href: '/es/contacto' },
   ];
 
