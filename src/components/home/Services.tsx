@@ -41,17 +41,6 @@ export default function Services() {
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header Section */}
         <div className="text-center mb-12">
-          {/* Eyebrow */}
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4 }}
-            className="text-xs tracking-widest text-denim uppercase mb-4 font-bold"
-          >
-            Qué Hacemos
-          </motion.p>
-
           {/* Main Title */}
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

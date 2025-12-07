@@ -55,13 +55,8 @@ export default function AboutIntro() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
           >
-            {/* Eyebrow */}
-            <div className="text-sm text-primary-600 font-semibold uppercase tracking-wider mb-4">
-              Sobre Nosotros
-            </div>
-
             {/* Título */}
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-600 mb-4">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-widest mb-6" style={{ color: '#1175c7' }}>
               INTE SISTEMAS
             </h2>
 

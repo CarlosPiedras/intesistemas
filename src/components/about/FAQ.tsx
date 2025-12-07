@@ -55,23 +55,12 @@ export default function FAQ() {
       <div className="container mx-auto px-4 max-w-4xl">
         {/* Header */}
         <div className="text-center mb-12">
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4 }}
-            className="text-xs tracking-widest uppercase mb-4 font-bold"
-            style={{ color: '#65a6d8' }}
-          >
-            FAQ
-          </motion.p>
-
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-light uppercase tracking-widest mb-4"
+            className="text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-widest mb-6"
             style={{ color: '#1175c7' }}
           >
             PREGUNTAS FRECUENTES
