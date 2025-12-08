@@ -53,7 +53,7 @@ export default function ServicesIntro() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-widest mb-6"
             style={{ color: '#1175c7' }}
           >
@@ -64,7 +64,7 @@ export default function ServicesIntro() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base md:text-lg text-secondary-600 max-w-3xl mx-auto leading-relaxed"
           >
             Desde la distribución eléctrica hasta la automatización completa, ofrecemos soluciones

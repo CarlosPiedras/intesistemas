@@ -21,7 +21,7 @@ export default function GalleryVariant1() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-widest mb-6"
             style={{ color: '#1175c7' }}
           >
@@ -31,7 +31,7 @@ export default function GalleryVariant1() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base md:text-lg text-secondary-600 max-w-3xl mx-auto leading-relaxed"
           >
             Explora nuestra galería de proyectos de distribución eléctrica realizados con los más altos estándares de calidad y seguridad industrial.
