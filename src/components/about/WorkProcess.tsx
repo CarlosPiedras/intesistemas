@@ -207,7 +207,7 @@ export default function WorkProcess() {
     <section className="py-12 md:py-16 bg-gradient-to-b from-white via-secondary-50 to-white">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

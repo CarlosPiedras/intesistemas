@@ -16,7 +16,7 @@ export default function GalleryVariant1() {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-6 max-w-[1400px]">
         {/* Title and Description Section */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
