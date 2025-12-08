@@ -11,7 +11,7 @@ const reasons = [
     title: 'Experiencia probada',
     highlight: '+30 años',
     description: 'Desde 1994 implementando soluciones que transforman industrias.',
-    image: '/images/sectores/impresion_1.jpg',
+    image: '/media/shared/sectores/impresion_1.jpg',
     benefits: ['Proyectos exitosos', 'Equipo experto', 'Metodología probada'],
   },
   {
@@ -20,7 +20,7 @@ const reasons = [
     title: 'Partners de confianza',
     highlight: 'EATON Oficial',
     description: 'Integrador certificado con acceso a tecnología de primera línea.',
-    image: '/images/sectores/cortadora.jpg',
+    image: '/media/shared/sectores/cortadora.jpg',
     benefits: ['Certificación oficial', 'Componentes premium', 'Garantía extendida'],
   },
   {
@@ -29,7 +29,7 @@ const reasons = [
     title: 'Cobertura local',
     highlight: '2 sedes BCN',
     description: 'Presencia física para una atención cercana y personalizada.',
-    image: '/images/proceso/analisis.jpg',
+    image: '/media/shared/proceso/analisis.jpg',
     benefits: ['Hospitalet', 'Terrassa', 'Respuesta rápida'],
   },
   {
@@ -38,7 +38,7 @@ const reasons = [
     title: 'Compromiso total',
     highlight: 'Soporte 24/7',
     description: 'Mantenimiento y asistencia continua para tu tranquilidad.',
-    image: '/images/proceso/entrega_1.jpg',
+    image: '/media/shared/proceso/entrega_1.jpg',
     benefits: ['Asistencia inmediata', 'Mantenimiento', 'Formación'],
   },
 ];

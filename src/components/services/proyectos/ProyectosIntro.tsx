@@ -19,7 +19,7 @@ export default function ProyectosIntro() {
           >
             <div className="relative w-full h-full rounded-none overflow-hidden">
               <Image
-                src="/images/hero/heroproyecto.png"
+                src="/media/pages/servicios/gestion/project-hero.png"
                 alt="INTE SISTEMAS - Gestión de proyectos eléctricos e industriales"
                 fill
                 className="object-cover"

@@ -9,7 +9,7 @@ export default function DistributionHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/13.jpg"
+          src="/media/pages/servicios/distribucion/hero.jpg"
           alt="INTE SISTEMAS - Distribución de Energía"
           fill
           className="object-cover"

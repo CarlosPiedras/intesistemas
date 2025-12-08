@@ -11,7 +11,7 @@ export default function PageHero() {
       {/* Imagen de fondo */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/1.1.jpg"
+          src="/media/pages/about/page-hero.jpg"
           alt="Quiénes Somos - INTE SISTEMAS"
           fill
           className="object-cover"

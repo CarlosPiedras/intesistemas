@@ -4,18 +4,18 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const images = [
-  { id: 1, src: '/images/sectores/cortadora.jpg', alt: 'Maquinaria de Corte' },
-  { id: 2, src: '/images/sectores/cuadro_1.jpg', alt: 'Cuadros de Distribución' },
-  { id: 3, src: '/images/sectores/cuadro_3.jpg', alt: 'Panel de Control' },
-  { id: 4, src: '/images/sectores/edificios.jpg', alt: 'Instalaciones Eléctricas' },
-  { id: 5, src: '/images/sectores/impresion_2.jpg', alt: 'Industria de Impresión' },
-  { id: 6, src: '/images/sectores/plc.bmp', alt: 'Programación PLCs' },
-  { id: 7, src: '/images/sectores/procesos.png', alt: 'Automatización de Procesos' },
-  { id: 8, src: '/images/sectores/cuadro_4.jpg', alt: 'Sistemas Eléctricos' },
-  { id: 9, src: '/images/sectores/edificios_1.jpg', alt: 'Edificios Comerciales' },
-  { id: 10, src: '/images/sectores/impresion_1.jpg', alt: 'Maquinaria de Impresión' },
-  { id: 11, src: '/images/sectores/procesos_2.jpg', alt: 'Procesos Industriales' },
-  { id: 12, src: '/images/sectores/proyecto.bmp', alt: 'Gestión de Proyectos' },
+  { id: 1, src: '/media/shared/sectores/cortadora.jpg', alt: 'Maquinaria de Corte' },
+  { id: 2, src: '/media/shared/sectores/cuadro_1.jpg', alt: 'Cuadros de Distribución' },
+  { id: 3, src: '/media/shared/sectores/cuadro_3.jpg', alt: 'Panel de Control' },
+  { id: 4, src: '/media/shared/sectores/edificios.jpg', alt: 'Instalaciones Eléctricas' },
+  { id: 5, src: '/media/shared/sectores/impresion_2.jpg', alt: 'Industria de Impresión' },
+  { id: 6, src: '/media/shared/sectores/plc.bmp', alt: 'Programación PLCs' },
+  { id: 7, src: '/media/shared/sectores/procesos.png', alt: 'Automatización de Procesos' },
+  { id: 8, src: '/media/shared/sectores/cuadro_4.jpg', alt: 'Sistemas Eléctricos' },
+  { id: 9, src: '/media/shared/sectores/edificios_1.jpg', alt: 'Edificios Comerciales' },
+  { id: 10, src: '/media/shared/sectores/impresion_1.jpg', alt: 'Maquinaria de Impresión' },
+  { id: 11, src: '/media/shared/sectores/procesos_2.jpg', alt: 'Procesos Industriales' },
+  { id: 12, src: '/media/shared/sectores/proyecto.bmp', alt: 'Gestión de Proyectos' },
 ];
 
 export default function OurSectorsVariant3() {

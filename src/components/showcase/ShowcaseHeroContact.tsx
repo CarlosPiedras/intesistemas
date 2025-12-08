@@ -9,7 +9,7 @@ export default function ShowcaseHeroContact() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/bg-contacto.jpg"
+          src="/media/pages/contacto/hero.jpg"
           alt="INTE SISTEMAS - Contacto"
           fill
           className="object-cover"

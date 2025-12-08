@@ -35,7 +35,7 @@ export default function AboutIntroClean() {
           >
             <div className="relative w-full h-full rounded-none overflow-hidden">
               <Image
-                src="/images/procesosabout/aboutimage.png"
+                src="/media/shared/procesos-about/aboutimage.png"
                 alt="INTE SISTEMAS - Equipo profesional"
                 fill
                 className="object-cover"

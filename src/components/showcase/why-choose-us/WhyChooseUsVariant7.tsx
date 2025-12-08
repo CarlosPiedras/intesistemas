@@ -48,7 +48,7 @@ export default function WhyChooseUsVariant7() {
               className="relative h-[700px] lg:h-[calc(100%+200px)]"
             >
               <Image
-                src="/images/proceso/instalacion_1.jpg"
+                src="/media/shared/proceso/instalacion_1.jpg"
                 alt="Equipo de Inte Sistemas trabajando"
                 fill
                 className="object-cover"

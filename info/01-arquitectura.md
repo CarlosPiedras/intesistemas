@@ -234,7 +234,7 @@ Cliente → ContactForm (validación) → API Route (/api/contact)
 ### 3. Optimización de Imágenes
 
 ```
-<Image src="/images/hero.jpg" />
+<Image src="/media/pages/servicios/hero.jpg" />
             ↓
 Next.js Image Optimizer
             ↓

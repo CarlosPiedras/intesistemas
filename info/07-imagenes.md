@@ -23,7 +23,7 @@ import Image from 'next/image'
 export function Hero() {
   return (
     <Image
-      src="/images/hero/office-team.jpg"
+      src="/media/pages/about/hero.jpg"
       alt="Equipo de Inte Sistemas trabajando en oficina moderna"
       width={1200}
       height={600}
@@ -40,7 +40,7 @@ export function Hero() {
 // Para imágenes que llenan un contenedor
 <div className="relative h-96 w-full">
   <Image
-    src="/images/hero.jpg"
+    src="/media/pages/servicios/hero.jpg"
     alt="Hero image"
     fill
     className="object-cover"
@@ -52,7 +52,7 @@ export function Hero() {
 
 ```tsx
 <Image
-  src="/images/service.jpg"
+  src="/media/pages/servicios/distribucion/gallery/cuadro1.webp"
   alt="Service"
   width={800}
   height={600}
@@ -82,7 +82,7 @@ export function Hero() {
 ```tsx
 // Opción 1: Data URL manual
 <Image
-  src="/images/team.jpg"
+  src="/media/shared/hero-extras/stand_barnigrado_2.jpg"
   alt="Team"
   width={800}
   height={600}
@@ -94,7 +94,7 @@ export function Hero() {
 import { getPlaiceholder } from 'plaiceholder'
 
 export async function getStaticProps() {
-  const { base64, img } = await getPlaiceholder('/images/team.jpg')
+  const { base64, img } = await getPlaiceholder('/media/shared/hero-extras/stand_barnigrado_2.jpg')
 
   return {
     props: {
@@ -434,8 +434,8 @@ const sharp = require('sharp')
 const fs = require('fs')
 const path = require('path')
 
-const inputDir = './public/images/original'
-const outputDir = './public/images/optimized'
+const inputDir = './public/media/original'
+const outputDir = './public/media/optimized'
 
 async function optimizeImages() {
   const files = fs.readdirSync(inputDir)
@@ -607,7 +607,7 @@ export function CheckIcon({ className }: { className?: string }) {
 import Image from 'next/image'
 
 <Image
-  src="/images/logos/logo.svg"
+  src="/media/shared/logos/brand/logointe.webp"
   alt="Inte Sistemas Logo"
   width={200}
   height={50}

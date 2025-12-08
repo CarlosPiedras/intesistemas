@@ -10,7 +10,7 @@ export default function HeroVariant7() {
       {/* Imagen de fondo */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero/1.jpg"
+          src="/media/pages/servicios/soporte/hero.jpg"
           alt="Sistemas eléctricos profesionales"
           fill
           className="object-cover brightness-50"

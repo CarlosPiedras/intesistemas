@@ -10,7 +10,7 @@ const reasons = [
     number: '30+',
     title: 'Años de experiencia',
     description: 'Líderes en automatización industrial desde 1994',
-    image: '/images/sectores/procesos_2.jpg',
+    image: '/media/shared/sectores/procesos_2.jpg',
     stats: [
       { icon: Star, value: '500+', label: 'Proyectos' },
       { icon: TrendingUp, value: '98%', label: 'Satisfacción' },
@@ -21,7 +21,7 @@ const reasons = [
     number: '100%',
     title: 'Integrador EATON oficial',
     description: 'Certificados y avalados por los mejores',
-    image: '/images/sectores/cuadro_4.jpg',
+    image: '/media/shared/sectores/cuadro_4.jpg',
     stats: [
       { icon: Star, value: 'A+', label: 'Certificación' },
       { icon: TrendingUp, value: '100%', label: 'Garantía' },
@@ -32,7 +32,7 @@ const reasons = [
     number: '02',
     title: 'Sedes en Barcelona',
     description: 'Hospitalet y Terrassa a tu servicio',
-    image: '/images/proceso/instalacion_2.jpg',
+    image: '/media/shared/proceso/instalacion_2.jpg',
     stats: [
       { icon: Star, value: '2', label: 'Oficinas' },
       { icon: TrendingUp, value: '<2h', label: 'Respuesta' },
@@ -43,7 +43,7 @@ const reasons = [
     number: '24/7',
     title: 'Soporte continuo',
     description: 'Asistencia técnica cuando la necesites',
-    image: '/images/proceso/entrega.jpg',
+    image: '/media/shared/proceso/entrega.jpg',
     stats: [
       { icon: Star, value: '24/7', label: 'Disponible' },
       { icon: TrendingUp, value: '365', label: 'Días/año' },

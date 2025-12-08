@@ -58,16 +58,16 @@
       "id": "cortadora",
       "nombre": "Maquinaria de Corte",
       "descripcion": "Sistemas eléctricos para maquinaria de corte industrial",
-      "imagen": "/images/sectores/cortadora.jpg"
+      "imagen": "/media/shared/sectores/cortadora.jpg"
     },
     {
       "id": "cuadros",
       "nombre": "Cuadros de Distribución Eléctrica",
       "descripcion": "Diseño y fabricación de cuadros eléctricos y paneles de control",
       "imagenes": [
-        "/images/sectores/cuadro_1.jpg",
-        "/images/sectores/cuadro_3.jpg",
-        "/images/sectores/cuadro_4.jpg"
+        "/media/shared/sectores/cuadro_1.jpg",
+        "/media/shared/sectores/cuadro_3.jpg",
+        "/media/shared/sectores/cuadro_4.jpg"
       ]
     },
     {
@@ -75,29 +75,29 @@
       "nombre": "Instalaciones Eléctricas para Edificios",
       "descripcion": "Sistemas eléctricos completos para edificios residenciales y comerciales",
       "imagenes": [
-        "/images/sectores/edificios.jpg",
-        "/images/sectores/edificios_1.jpg"
+        "/media/shared/sectores/edificios.jpg",
+        "/media/shared/sectores/edificios_1.jpg"
       ]
     },
     {
       "id": "proyectos",
       "nombre": "Gestión de Proyectos Eléctricos",
       "descripcion": "Planificación y ejecución de proyectos eléctricos industriales",
-      "imagen": "/images/sectores/proyecto.bmp"
+      "imagen": "/media/shared/sectores/proyecto.bmp"
     },
     {
       "id": "plc",
       "nombre": "Programación de PLCs",
       "descripcion": "Controladores Lógicos Programables para automatización industrial",
-      "imagen": "/images/sectores/plc.bmp"
+      "imagen": "/media/shared/sectores/plc.bmp"
     },
     {
       "id": "procesos",
       "nombre": "Automatización de Procesos Industriales",
       "descripcion": "Sistemas de automatización para optimizar procesos productivos",
       "imagenes": [
-        "/images/sectores/procesos.png",
-        "/images/sectores/procesos_2.jpg"
+        "/media/shared/sectores/procesos.png",
+        "/media/shared/sectores/procesos_2.jpg"
       ]
     },
     {
@@ -105,9 +105,9 @@
       "nombre": "Sistemas para Industria de Impresión",
       "descripcion": "Soluciones eléctricas especializadas para la industria gráfica",
       "imagenes": [
-        "/images/sectores/impresion.jpg",
-        "/images/sectores/impresion_1.jpg",
-        "/images/sectores/impresion_2.jpg"
+        "/media/shared/sectores/impresion.jpg",
+        "/media/shared/sectores/impresion_1.jpg",
+        "/media/shared/sectores/impresion_2.jpg"
       ]
     }
   ],
@@ -117,8 +117,8 @@
       "titulo": "Análisis de necesidades",
       "descripcion": "Estudio detallado del proyecto y las necesidades del cliente",
       "imagenes": [
-        "/images/proceso/analisis.jpg",
-        "/images/proceso/analisis_1.jpg"
+        "/media/shared/proceso/analisis.jpg",
+        "/media/shared/proceso/analisis_1.jpg"
       ]
     },
     {
@@ -126,8 +126,8 @@
       "titulo": "Planificación",
       "descripcion": "Diseño y estrategia del proyecto",
       "imagenes": [
-        "/images/proceso/disenos.jpg",
-        "/images/proceso/documentos.jpg"
+        "/media/shared/proceso/disenos.jpg",
+        "/media/shared/proceso/documentos.jpg"
       ]
     },
     {
@@ -135,9 +135,9 @@
       "titulo": "Ejecución",
       "descripcion": "Implementación del proyecto con estándares de calidad",
       "imagenes": [
-        "/images/proceso/instalacion.jpg",
-        "/images/proceso/instalacion_1.jpg",
-        "/images/proceso/instalacion_2.jpg"
+        "/media/shared/proceso/instalacion.jpg",
+        "/media/shared/proceso/instalacion_1.jpg",
+        "/media/shared/proceso/instalacion_2.jpg"
       ]
     },
     {
@@ -150,8 +150,8 @@
       "titulo": "Entrega",
       "descripcion": "Finalización y puesta en marcha del proyecto",
       "imagenes": [
-        "/images/proceso/entrega.jpg",
-        "/images/proceso/entrega_1.jpg"
+        "/media/shared/proceso/entrega.jpg",
+        "/media/shared/proceso/entrega_1.jpg"
       ]
     },
     {
@@ -159,8 +159,8 @@
       "titulo": "Soporte",
       "descripcion": "Mantenimiento, asistencia técnica y formación",
       "imagenes": [
-        "/images/proceso/formacion.jpg",
-        "/images/proceso/formacion_1.jpg"
+        "/media/shared/proceso/formacion.jpg",
+        "/media/shared/proceso/formacion_1.jpg"
       ]
     }
   ],
@@ -169,24 +169,24 @@
       "nombre": "EATON",
       "tipo": "Integrador Oficial",
       "descripcion": "Integradores oficiales de Eaton en varios sectores industriales",
-      "logo": "/images/logos/logo-eaton.jpg"
+      "logo": "/media/shared/logos/clientes/logo-eaton.webp"
     },
     {
-      "nombre": "CEA",
+      "nombre": "SIEMENS",
       "tipo": "Partner Comercial",
-      "descripcion": "Controladores Eléctricos Asociados",
-      "logo": "/images/logos/logo-cea.jpg"
+      "descripcion": "Socio tecnológico en automatización industrial",
+      "logo": "/media/shared/logos/clientes/logo-siemens.webp"
     },
     {
       "nombre": "SAEL",
       "tipo": "Partner Comercial",
       "descripcion": "Socio comercial en sistemas eléctricos",
-      "logo": "/images/logos/logo-sael.png"
+      "logo": "/media/shared/logos/clientes/logo-sael.webp"
     }
   ],
   "web": {
     "url": "https://www.inteautomatizacion.com/",
-    "logoEmpresa": "/images/logos/logo-inte.png"
+    "logoEmpresa": "/media/shared/logos/brand/logointe.webp"
   },
   "navegacion": [
     {
@@ -233,22 +233,22 @@
   ],
   "imagenes": {
     "hero": [
-      "/images/hero/01.jpg",
-      "/images/hero/01_mov.jpg",
-      "/images/hero/1.jpg",
-      "/images/hero/1.1.jpg",
-      "/images/hero/12.jpg",
-      "/images/hero/13.jpg"
+      "/media/shared/variantes/hero-01.jpg",
+      "/media/shared/hero-extras/01_mov.jpg",
+      "/media/pages/servicios/soporte/hero.jpg",
+      "/media/pages/about/page-hero.jpg",
+      "/media/pages/about/hero.jpg",
+      "/media/pages/servicios/distribucion/hero.jpg"
     ],
     "banners": {
-      "sectores": "/images/hero/ban_sectores.jpg",
-      "sector": "/images/hero/ban_sector.jpg",
-      "contacto": "/images/hero/bg-contacto.jpg"
+      "sectores": "/media/shared/hero-extras/ban_sectores.jpg",
+      "sector": "/media/shared/hero-extras/ban_sector.jpg",
+      "contacto": "/media/pages/contacto/hero.jpg"
     },
     "adicionales": [
-      "/images/hero/img_prin.jpg",
-      "/images/hero/foto_burbujas.jpg",
-      "/images/hero/stand_barnigrado_2.jpg"
+      "/media/shared/hero-extras/img_prin.jpg",
+      "/media/shared/hero-extras/foto_burbujas.jpg",
+      "/media/shared/hero-extras/stand_barnigrado_2.jpg"
     ]
   },
   "metadata": {

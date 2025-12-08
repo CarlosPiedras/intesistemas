@@ -671,7 +671,7 @@ export function Hero() {
           {/* Image */}
           <div className="relative aspect-square lg:aspect-auto lg:h-[500px]">
             <Image
-              src="/images/hero/office-team.jpg"
+              src="/media/pages/about/hero.jpg"
               alt="Inte Sistemas Team"
               fill
               priority

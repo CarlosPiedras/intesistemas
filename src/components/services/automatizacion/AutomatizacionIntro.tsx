@@ -19,7 +19,7 @@ export default function AutomatizacionIntro() {
           >
             <div className="relative w-full h-full rounded-none overflow-hidden">
               <Image
-                src="/images/services/automatizacion/Pantalla.webp"
+                src="/media/pages/servicios/automatizacion/pantalla.webp"
                 alt="INTE SISTEMAS - Sistemas de control industrial"
                 fill
                 className="object-cover"

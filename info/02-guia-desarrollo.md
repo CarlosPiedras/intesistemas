@@ -302,13 +302,17 @@ export const locales = ['es', 'en', 'fr']
 ### Añadir Imágenes
 
 ```bash
-# Ubicación
-public/images/[categoría]/nombre-descriptivo.jpg
+# Ubicación principal
+public/media/pages/[pagina]/nombre-descriptivo.ext
+
+# Reutilizables/compartidas
+public/media/shared/[categoria]/archivo.ext
 
 # Ejemplos
-public/images/hero/office-team.jpg
-public/images/services/consulting.jpg
-public/images/gallery/project-01.jpg
+public/media/pages/servicios/automatizacion/hero.jpg
+public/media/pages/servicios/distribucion/gallery/cuadro1.webp
+public/media/shared/sectores/cortadora.jpg
+public/media/shared/logos/clientes/logo-eaton.webp
 ```
 
 ### Usar Imágenes en Componentes
@@ -318,8 +322,8 @@ import Image from 'next/image'
 
 // Imagen optimizada
 <Image
-  src="/images/hero/office-team.jpg"
-  alt="Equipo de Inte Sistemas"
+  src="/media/pages/about/hero.jpg"
+  alt="Equipo de Inte Sistemas sobre fondo corporativo"
   width={1200}
   height={600}
   priority // Solo para imágenes above the fold
@@ -328,8 +332,8 @@ import Image from 'next/image'
 
 // Con placeholder blur
 <Image
-  src="/images/services/consulting.jpg"
-  alt="Consultoría"
+  src="/media/pages/servicios/distribucion/gallery/cuadro1.webp"
+  alt="Cuadro eléctrico"
   width={800}
   height={600}
   placeholder="blur"

@@ -47,7 +47,7 @@ export default function SoporteTecnicoPage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/hero/1.jpg"
+            src="/media/pages/servicios/soporte/hero.jpg"
             alt="INTE SISTEMAS - Servicios profesionales"
             fill
             className="object-cover"

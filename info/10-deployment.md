@@ -205,8 +205,8 @@ server {
         add_header Cache-Control "public, max-age=3600, immutable";
     }
 
-    # Cache images
-    location /images/ {
+    # Cache media assets
+    location /media/ {
         proxy_pass http://localhost:3000;
         proxy_cache_valid 200 7d;
         add_header Cache-Control "public, max-age=604800, immutable";
@@ -410,7 +410,7 @@ const nextConfig = {
         ],
       },
       {
-        source: '/images/:path*',
+        source: '/media/:path*',
         headers: [
           {
             key: 'Cache-Control',

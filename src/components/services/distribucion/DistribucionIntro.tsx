@@ -19,7 +19,7 @@ export default function DistribucionIntro() {
           >
             <div className="relative w-full h-full rounded-none overflow-hidden">
               <Image
-                src="/images/hero/13.jpg"
+                src="/media/pages/servicios/distribucion/hero.jpg"
                 alt="INTE SISTEMAS - Distribución de energía eléctrica"
                 fill
                 className="object-cover"

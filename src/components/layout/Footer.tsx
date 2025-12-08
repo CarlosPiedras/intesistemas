@@ -40,7 +40,7 @@ export default function Footer() {
           >
             <div className="mb-5">
               <Image
-                src="/images/logos/logointe.webp"
+                src="/media/shared/logos/brand/logointe.webp"
                 alt="INTE SISTEMAS"
                 width={280}
                 height={90}

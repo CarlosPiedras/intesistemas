@@ -11,28 +11,28 @@ export default function ServicesVariant2() {
       title: 'POWER SOLUTIONS',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.',
       icon: Lightbulb,
-      image: '/images/sectores/cuadro_1.jpg',
+      image: '/media/shared/sectores/cuadro_1.jpg',
     },
     {
       id: 2,
       title: 'SECURITY SYSTEMS',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.',
       icon: Lock,
-      image: '/images/sectores/edificios.jpg',
+      image: '/media/shared/sectores/edificios.jpg',
     },
     {
       id: 3,
       title: 'PROCESS AUTOMATION',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.',
       icon: Workflow,
-      image: '/images/sectores/procesos.png',
+      image: '/media/shared/sectores/procesos.png',
     },
     {
       id: 4,
       title: 'REMOTE MONITORING',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.',
       icon: Radio,
-      image: '/images/proceso/instalacion.jpg',
+      image: '/media/shared/proceso/instalacion.jpg',
     },
   ];
 

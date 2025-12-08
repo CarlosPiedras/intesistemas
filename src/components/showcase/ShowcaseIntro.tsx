@@ -19,7 +19,7 @@ export default function ShowcaseIntro() {
           >
             <div className="relative w-full h-full rounded-none overflow-hidden">
               <Image
-                src="/images/hero/1.jpg"
+                src="/media/pages/servicios/soporte/hero.jpg"
                 alt="INTE SISTEMAS - Soluciones en sistemas eléctricos y automatización industrial"
                 fill
                 className="object-cover"

@@ -5,11 +5,11 @@ import Image from 'next/image';
 
 export default function GalleryVariant3() {
   const cuadros = [
-    { id: 1, imagen: '/images/services/cuadros/cuadro1.webp' },
-    { id: 2, imagen: '/images/services/cuadros/cuandro2.webp' },
-    { id: 3, imagen: '/images/services/cuadros/cuandro3.webp' },
-    { id: 4, imagen: '/images/services/cuadros/cuandro4.webp' },
-    { id: 5, imagen: '/images/services/cuadros/cuadro5.webp' },
+    { id: 1, imagen: '/media/pages/servicios/distribucion/gallery/cuadro1.webp' },
+    { id: 2, imagen: '/media/pages/servicios/distribucion/gallery/cuadro2.webp' },
+    { id: 3, imagen: '/media/pages/servicios/distribucion/gallery/cuadro3.webp' },
+    { id: 4, imagen: '/media/pages/servicios/distribucion/gallery/cuadro4.webp' },
+    { id: 5, imagen: '/media/pages/servicios/distribucion/gallery/cuadro5.webp' },
   ];
 
   return (

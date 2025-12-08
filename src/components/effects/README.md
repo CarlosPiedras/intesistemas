@@ -41,7 +41,7 @@ import { ParallaxBackground } from '@/components/effects'
 
 <section className="relative h-screen overflow-hidden">
   <ParallaxBackground
-    imageSrc="/images/hero.jpg"
+    imageSrc="/media/pages/servicios/hero.jpg"
     speed={0.3}
     overlay
     overlayOpacity={50}
@@ -97,7 +97,7 @@ export function Hero() {
   return (
     <section className="relative h-screen overflow-hidden">
       <ParallaxBackground
-        imageSrc="/images/hero-bg.jpg"
+        imageSrc="/media/pages/servicios/hero.jpg"
         speed={0.3}
         overlay
         overlayOpacity={40}

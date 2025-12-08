@@ -22,7 +22,7 @@ export default function HeroVariant1() {
         {/* Imagen de fondo */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero/01.jpg"
+            src="/media/shared/variantes/hero-01.jpg"
             alt="Inte Sistemas - Soluciones Eléctricas"
             fill
             className="object-cover scale-105"
@@ -165,10 +165,10 @@ export default function HeroVariant1() {
           {/* Logos de partners */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center max-w-4xl mx-auto">
             {[
-              { src: '/images/logos/logo-eaton.jpg', alt: 'Eaton' },
-              { src: '/images/logos/logo-cea.jpg', alt: 'CEA' },
-              { src: '/images/logos/logo-sael.png', alt: 'SAEL' },
-              { src: '/images/logos/logo-inte.png', alt: 'Inte Sistemas' },
+              { src: '/media/shared/logos/clientes/logo-eaton.webp', alt: 'Eaton' },
+              { src: '/media/shared/logos/clientes/logo-sael.webp', alt: 'SAEL' },
+              { src: '/media/shared/logos/clientes/logo-siemens.webp', alt: 'Siemens' },
+              { src: '/media/shared/logos/brand/logointe.webp', alt: 'Inte Sistemas' },
             ].map((logo, index) => (
               <motion.div
                 key={index}

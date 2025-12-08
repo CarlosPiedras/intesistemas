@@ -123,14 +123,14 @@ export default function HeroVariant3() {
                 </div>
                 <span className="text-secondary-300">|</span>
                 <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 relative">
-                    <Image
-                      src="/images/logos/logo-eaton.jpg"
-                      alt="Eaton"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+                <div className="w-6 h-6 relative">
+                  <Image
+                    src="/media/shared/logos/clientes/logo-eaton.webp"
+                    alt="Eaton"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
                   <span>Integrador Oficial</span>
                 </div>
                 <span className="text-secondary-300">|</span>
@@ -183,7 +183,7 @@ export default function HeroVariant3() {
       {/* SECCIÓN SIGUIENTE: IMAGEN GRANDE CON TEXTO SUPERPUESTO */}
       <section className="relative h-96 overflow-hidden">
         <Image
-          src="/images/hero/13.jpg"
+          src="/media/pages/servicios/distribucion/hero.jpg"
           alt="Instalaciones Inte Sistemas"
           fill
           className="object-cover"

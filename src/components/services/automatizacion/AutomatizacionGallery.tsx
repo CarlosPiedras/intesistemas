@@ -5,11 +5,11 @@ import Image from 'next/image';
 
 export default function AutomatizacionGallery() {
   const images = [
-    { id: 1, imagen: '/images/sectores/plc.bmp', alt: 'Programación de PLCs' },
-    { id: 2, imagen: '/images/sectores/procesos.png', alt: 'Automatización de procesos' },
-    { id: 3, imagen: '/images/sectores/procesos_2.jpg', alt: 'Control industrial' },
-    { id: 4, imagen: '/images/proceso/instalacion.jpg', alt: 'Instalación de sistemas' },
-    { id: 5, imagen: '/images/proceso/instalacion_1.jpg', alt: 'Configuración de equipos' },
+    { id: 1, imagen: '/media/shared/sectores/plc.bmp', alt: 'Programación de PLCs' },
+    { id: 2, imagen: '/media/shared/sectores/procesos.png', alt: 'Automatización de procesos' },
+    { id: 3, imagen: '/media/shared/sectores/procesos_2.jpg', alt: 'Control industrial' },
+    { id: 4, imagen: '/media/shared/proceso/instalacion.jpg', alt: 'Instalación de sistemas' },
+    { id: 5, imagen: '/media/shared/proceso/instalacion_1.jpg', alt: 'Configuración de equipos' },
   ];
 
   return (

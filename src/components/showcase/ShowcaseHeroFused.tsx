@@ -9,7 +9,7 @@ export default function ShowcaseHeroFused() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/12.jpg"
+          src="/media/pages/about/hero.jpg"
           alt="INTE SISTEMAS - Servicios profesionales"
           fill
           className="object-cover"
@@ -77,7 +77,7 @@ export default function ShowcaseHeroFused() {
             >
               <div className="relative w-full h-full overflow-hidden rounded-lg shadow-2xl">
                 <Image
-                  src="/images/hero/13.jpg"
+                  src="/media/pages/servicios/distribucion/hero.jpg"
                   alt="INTE SISTEMAS - Distribución de energía eléctrica"
                   fill
                   className="object-cover"

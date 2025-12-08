@@ -5,13 +5,13 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 const images = [
-  { id: 1, src: '/images/sectores/cortadora.jpg', alt: 'Maquinaria de Corte' },
-  { id: 2, src: '/images/sectores/cuadro_1.jpg', alt: 'Cuadros de Distribución' },
-  { id: 3, src: '/images/sectores/edificios.jpg', alt: 'Instalaciones Eléctricas' },
-  { id: 4, src: '/images/sectores/impresion_2.jpg', alt: 'Industria de Impresión' },
-  { id: 5, src: '/images/sectores/plc.bmp', alt: 'Programación PLCs' },
-  { id: 6, src: '/images/sectores/procesos.png', alt: 'Automatización de Procesos' },
-  { id: 7, src: '/images/sectores/proyecto.bmp', alt: 'Gestión de Proyectos' },
+  { id: 1, src: '/media/shared/sectores/cortadora.jpg', alt: 'Maquinaria de Corte' },
+  { id: 2, src: '/media/shared/sectores/cuadro_1.jpg', alt: 'Cuadros de Distribución' },
+  { id: 3, src: '/media/shared/sectores/edificios.jpg', alt: 'Instalaciones Eléctricas' },
+  { id: 4, src: '/media/shared/sectores/impresion_2.jpg', alt: 'Industria de Impresión' },
+  { id: 5, src: '/media/shared/sectores/plc.bmp', alt: 'Programación PLCs' },
+  { id: 6, src: '/media/shared/sectores/procesos.png', alt: 'Automatización de Procesos' },
+  { id: 7, src: '/media/shared/sectores/proyecto.bmp', alt: 'Gestión de Proyectos' },
 ];
 
 export default function OurSectorsVariant4() {

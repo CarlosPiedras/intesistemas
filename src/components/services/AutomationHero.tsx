@@ -9,7 +9,7 @@ export default function AutomationHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/heroautomati.jpg"
+          src="/media/pages/servicios/automatizacion/hero.jpg"
           alt="INTE SISTEMAS - Automatización Industrial"
           fill
           className="object-cover"

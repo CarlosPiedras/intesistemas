@@ -138,7 +138,7 @@ export default function HeroVariant2() {
                 {/* Imagen principal */}
                 <div className="relative h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-hard">
                   <Image
-                    src="/images/hero/12.jpg"
+                    src="/media/pages/about/hero.jpg"
                     alt="Instalaciones Inte Sistemas"
                     fill
                     className="object-cover"

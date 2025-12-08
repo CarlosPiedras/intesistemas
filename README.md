@@ -53,7 +53,9 @@ npm run lint         # Ejecutar ESLint
 ```
 intesistemas/
 ├── public/
-│   ├── images/          # Imágenes estáticas
+│   ├── media/           # Activos estáticos (organizados por página/uso)
+│   │   ├── pages/       # Imágenes y videos específicos por página
+│   │   └── shared/      # Recursos compartidos (logos, sectores, proceso, etc.)
 │   └── locales/         # Traducciones i18n
 │       ├── es/
 │       └── en/

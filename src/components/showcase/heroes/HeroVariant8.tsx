@@ -10,7 +10,7 @@ export default function HeroVariant8() {
       {/* Imagen de fondo con opacidad muy baja */}
       <div className="absolute inset-0 z-0 opacity-10">
         <Image
-          src="/images/hero/1.jpg"
+          src="/media/pages/servicios/soporte/hero.jpg"
           alt="Sistemas eléctricos profesionales"
           fill
           className="object-cover"

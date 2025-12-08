@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     description: 'Soluciones tecnológicas empresariales de vanguardia',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: '/media/shared/hero-extras/heroauto.jpg',
         width: 1200,
         height: 630,
         alt: 'Inte Sistemas',
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Inte Sistemas - Soluciones Tecnológicas',
     description: 'Soluciones tecnológicas empresariales de vanguardia',
-    images: ['/images/twitter-image.jpg'],
+    images: ['/media/pages/servicios/hero.jpg'],
     creator: '@intesistemas',
   },
   robots: {
@@ -125,7 +125,7 @@ export const metadata: Metadata = {
     url: 'https://intesistemas.com/services',
     images: [
       {
-        url: '/images/services-og.jpg',
+        url: '/media/pages/servicios/distribucion/hero.jpg',
         width: 1200,
         height: 630,
         alt: 'Servicios de Inte Sistemas',
@@ -303,7 +303,7 @@ export function OrganizationSchema() {
     '@type': 'Organization',
     name: 'Inte Sistemas',
     url: 'https://intesistemas.com',
-    logo: 'https://intesistemas.com/images/logo.png',
+    logo: 'https://intesistemas.com/media/shared/logos/brand/logointe.webp',
     description: 'Soluciones tecnológicas empresariales de vanguardia',
     address: {
       '@type': 'PostalAddress',
@@ -447,7 +447,7 @@ export function ArticleSchema({
       name: 'Inte Sistemas',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://intesistemas.com/images/logo.png',
+        url: 'https://intesistemas.com/media/shared/logos/brand/logointe.webp',
       },
     },
   }
@@ -507,7 +507,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 ```tsx
 // ✅ Alt text descriptivo y relevante
 <Image
-  src="/images/hero.jpg"
+  src="/media/pages/servicios/hero.jpg"
   alt="Equipo de desarrollo de software trabajando en oficina moderna con tecnología de vanguardia"
   width={1200}
   height={630}
@@ -516,7 +516,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 // ✅ Usar Next.js Image para optimización automática
 <Image
-  src="/images/service-consulting.jpg"
+  src="/media/pages/servicios/distribucion/gallery/cuadro1.webp"
   alt="Consultor IT presentando estrategia digital a equipo empresarial"
   width={800}
   height={600}
@@ -528,7 +528,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 // ✅ Dimensiones específicas (evita CLS)
 <Image
-  src="/images/team.jpg"
+  src="/media/shared/hero-extras/stand_barnigrado_2.jpg"
   alt="Equipo de Inte Sistemas"
   width={400}
   height={300}

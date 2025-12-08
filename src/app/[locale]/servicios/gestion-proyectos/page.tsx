@@ -47,7 +47,7 @@ export default function GestionProyectosPage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/hero/herogestion.jpg"
+            src="/media/pages/servicios/gestion/hero.jpg"
             alt="INTE SISTEMAS - Gestión de Proyectos"
             fill
             className="object-cover"

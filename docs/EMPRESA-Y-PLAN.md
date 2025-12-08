@@ -78,7 +78,7 @@ Empresa española especializada en **soluciones integrales de sistemas eléctric
 
 1. **Maquinaria de Corte**
    - Sistemas eléctricos para maquinaria de corte industrial
-   - Imagen: `/images/sectores/cortadora.jpg`
+   - Imagen: `/media/shared/sectores/cortadora.jpg`
 
 2. **Cuadros de Distribución Eléctrica**
    - Diseño y fabricación de paneles de control
@@ -122,17 +122,17 @@ Empresa española especializada en **soluciones integrales de sistemas eléctric
 ### EATON
 - **Tipo:** Integrador Oficial
 - **Descripción:** Integradores oficiales de Eaton en varios sectores industriales
-- **Logo:** `/images/logos/logo-eaton.jpg`
+- **Logo:** `/media/shared/logos/clientes/logo-eaton.webp`
 
 ### CEA
 - **Tipo:** Partner Comercial
 - **Descripción:** Controladores Eléctricos Asociados
-- **Logo:** `/images/logos/logo-cea.jpg`
+- **Logo:** `/media/shared/logos/clientes/logo-siemens.webp`
 
 ### SAEL
 - **Tipo:** Partner Comercial
 - **Descripción:** Socio comercial en sistemas eléctricos
-- **Logo:** `/images/logos/logo-sael.png`
+- **Logo:** `/media/shared/logos/clientes/logo-sael.webp`
 
 ---
 
@@ -219,7 +219,7 @@ secondary-950: #020617
    - Título: "Automatización Industrial Avanzada"
    - Subtítulo: "Más de 30 años diseñando e implementando sistemas de control industrial. Calidad, innovación y compromiso en cada proyecto."
    - CTA: "Conocer más"
-   - Imagen: `/images/hero/1.jpg`
+   - Imagen: `/media/pages/servicios/soporte/hero.jpg`
 
 2. ✅ **Client Logos Section** (Implementado)
    - **Componente:** `/src/components/home/ClientLogos.tsx`
@@ -416,7 +416,7 @@ Transmitir confianza, experiencia y profesionalidad. Mostrar la trayectoria de I
 - Breadcrumb superior: "Inicio > Quiénes Somos"
 
 **Contenido:**
-- **Imagen de fondo:** `/images/hero/1.1.jpg` o `/images/hero/13.jpg`
+- **Imagen de fondo:** `/media/pages/about/page-hero.jpg` o `/media/pages/servicios/distribucion/hero.jpg`
 - **Título principal:** "Quiénes Somos" (text-5xl font-bold text-white)
 - **Subtítulo:** "Más de 30 años innovando en sistemas eléctricos y automatización industrial" (text-xl text-white/90)
 
@@ -448,7 +448,7 @@ import { ChevronRight } from 'lucide-react';
 - **Columna Derecha (60%):** Contenido textual + stats
 
 **Contenido - Columna Izquierda:**
-- **Imagen:** `/images/proceso/instalacion.jpg` o `/images/hero/img_prin.jpg`
+- **Imagen:** `/media/shared/proceso/instalacion.jpg` o `/media/shared/hero-extras/img_prin.jpg`
 - **Tamaño:** Relación aspecto 4:5 aproximadamente
 - **Bordes:** rounded-2xl
 - **Efecto:** Sombra suave, opcional parallax sutil en scroll
@@ -530,17 +530,17 @@ import { Award, MapPin, Users } from 'lucide-react';
 1. **Análisis de necesidades**
    - **Icono:** Search o ClipboardCheck
    - **Descripción:** "Estudio detallado del proyecto y las necesidades del cliente"
-   - **Imagen:** `/images/proceso/analisis.jpg`
+   - **Imagen:** `/media/shared/proceso/analisis.jpg`
 
 2. **Planificación**
    - **Icono:** Layers o FileText
    - **Descripción:** "Diseño y estrategia del proyecto"
-   - **Imágenes:** `/images/proceso/disenos.jpg`
+   - **Imágenes:** `/media/shared/proceso/disenos.jpg`
 
 3. **Ejecución**
    - **Icono:** Hammer o Settings
    - **Descripción:** "Implementación del proyecto con estándares de calidad"
-   - **Imágenes:** `/images/proceso/instalacion.jpg`
+   - **Imágenes:** `/media/shared/proceso/instalacion.jpg`
 
 4. **Control de calidad**
    - **Icono:** CheckCircle o Shield
@@ -549,12 +549,12 @@ import { Award, MapPin, Users } from 'lucide-react';
 5. **Entrega**
    - **Icono:** Package o Truck
    - **Descripción:** "Finalización y puesta en marcha del proyecto"
-   - **Imágenes:** `/images/proceso/entrega.jpg`
+   - **Imágenes:** `/media/shared/proceso/entrega.jpg`
 
 6. **Soporte**
    - **Icono:** Headphones o LifeBuoy
    - **Descripción:** "Mantenimiento, asistencia técnica y formación"
-   - **Imágenes:** `/images/proceso/formacion.jpg`
+   - **Imágenes:** `/media/shared/proceso/formacion.jpg`
 
 **Elementos del Timeline:**
 
@@ -947,7 +947,7 @@ src/
 - [Lucide Icons](https://lucide.dev/)
 
 ### Referencias de Diseño
-- Imagen de referencia separador: `/public/images/gallery/Captura de pantalla 2025-11-29 193312.png`
+- Imagen de referencia separador: `/public/media/shared/gallery/Captura de pantalla 2025-11-29 193312.png`
 - Inspiración: Página original Laravel 8 (Mayo 2021)
 
 ---

@@ -10,7 +10,7 @@ const reasons = [
     title: '+30 años de experiencia',
     subtitle: 'Desde 1994',
     description: 'Más de tres décadas ofreciendo soluciones de calidad en sistemas eléctricos y automatización industrial.',
-    image: '/images/proceso/instalacion_1.jpg',
+    image: '/media/shared/proceso/instalacion_1.jpg',
     features: ['Proyectos completados', 'Clientes satisfechos', 'Certificaciones'],
   },
   {
@@ -18,7 +18,7 @@ const reasons = [
     title: 'Integrador oficial EATON',
     subtitle: '100% Certificado',
     description: 'Partners certificados de EATON en diversos sectores industriales con garantía de calidad.',
-    image: '/images/sectores/cuadro_3.jpg',
+    image: '/media/shared/sectores/cuadro_3.jpg',
     features: ['Certificación oficial', 'Componentes premium', 'Garantía extendida'],
   },
   {
@@ -26,7 +26,7 @@ const reasons = [
     title: '2 sedes en Barcelona',
     subtitle: 'Proximidad',
     description: 'Oficinas en Hospitalet de Llobregat y Terrassa para estar cerca de ti cuando nos necesites.',
-    image: '/images/sectores/edificios_1.jpg',
+    image: '/media/shared/sectores/edificios_1.jpg',
     features: ['Hospitalet de Llobregat', 'Terrassa', 'Cobertura regional'],
   },
   {
@@ -34,7 +34,7 @@ const reasons = [
     title: 'Soporte técnico continuo',
     subtitle: 'Disponibilidad 24/7',
     description: 'Asistencia técnica, mantenimiento preventivo y formación para garantizar el óptimo funcionamiento.',
-    image: '/images/proceso/formacion_1.jpg',
+    image: '/media/shared/proceso/formacion_1.jpg',
     features: ['Mantenimiento', 'Asistencia inmediata', 'Formación continua'],
   },
 ];

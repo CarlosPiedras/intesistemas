@@ -16,7 +16,7 @@ export default function Hero() {
           playsInline
           className="w-full h-full object-cover brightness-50"
         >
-          <source src="/videos/Videohero.mp4" type="video/mp4" />
+          <source src="/media/shared/videos/video-hero.mp4" type="video/mp4" />
         </video>
         {/* Overlay más opaco */}
         <div className="absolute inset-0 bg-gradient-to-br from-secondary-900/90 via-denim/80 to-primary-900/85" />

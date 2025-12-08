@@ -50,7 +50,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/es" className="flex items-center">
               <Image
-                src="/images/logos/logointe.webp"
+                src="/media/shared/logos/brand/logointe.webp"
                 alt="INTE SISTEMAS"
                 width={160}
                 height={50}

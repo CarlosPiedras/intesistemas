@@ -18,7 +18,7 @@ export default function ContactIntro() {
           >
             <div className="relative w-full h-full rounded-none overflow-hidden">
               <Image
-                src="/images/hero/bg-contacto.jpg"
+                src="/media/pages/contacto/hero.jpg"
                 alt="INTE SISTEMAS - Contacto"
                 fill
                 className="object-cover"

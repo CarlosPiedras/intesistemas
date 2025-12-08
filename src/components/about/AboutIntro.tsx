@@ -40,7 +40,7 @@ export default function AboutIntro() {
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/proceso/instalacion.jpg"
+                src="/media/shared/proceso/instalacion.jpg"
                 alt="INTE SISTEMAS - Trabajo profesional"
                 fill
                 className="object-cover"

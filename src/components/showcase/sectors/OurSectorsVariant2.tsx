@@ -4,18 +4,18 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const images = [
-  { id: 1, src: '/images/sectores/cortadora.jpg', alt: 'Maquinaria de Corte', size: 'large' },
-  { id: 2, src: '/images/sectores/cuadro_1.jpg', alt: 'Cuadros de Distribución', size: 'small' },
-  { id: 3, src: '/images/sectores/edificios.jpg', alt: 'Instalaciones Eléctricas', size: 'small' },
-  { id: 4, src: '/images/sectores/impresion_2.jpg', alt: 'Industria de Impresión', size: 'medium' },
-  { id: 5, src: '/images/sectores/plc.bmp', alt: 'Programación PLCs', size: 'medium' },
-  { id: 6, src: '/images/sectores/cuadro_3.jpg', alt: 'Panel de Control', size: 'small' },
-  { id: 7, src: '/images/sectores/procesos.png', alt: 'Automatización de Procesos', size: 'large' },
-  { id: 8, src: '/images/sectores/cuadro_4.jpg', alt: 'Sistemas Eléctricos', size: 'small' },
-  { id: 9, src: '/images/sectores/impresion_1.jpg', alt: 'Maquinaria de Impresión', size: 'small' },
-  { id: 10, src: '/images/sectores/edificios_1.jpg', alt: 'Edificios Comerciales', size: 'medium' },
-  { id: 11, src: '/images/sectores/procesos_2.jpg', alt: 'Procesos Industriales', size: 'small' },
-  { id: 12, src: '/images/sectores/proyecto.bmp', alt: 'Gestión de Proyectos', size: 'small' },
+  { id: 1, src: '/media/shared/sectores/cortadora.jpg', alt: 'Maquinaria de Corte', size: 'large' },
+  { id: 2, src: '/media/shared/sectores/cuadro_1.jpg', alt: 'Cuadros de Distribución', size: 'small' },
+  { id: 3, src: '/media/shared/sectores/edificios.jpg', alt: 'Instalaciones Eléctricas', size: 'small' },
+  { id: 4, src: '/media/shared/sectores/impresion_2.jpg', alt: 'Industria de Impresión', size: 'medium' },
+  { id: 5, src: '/media/shared/sectores/plc.bmp', alt: 'Programación PLCs', size: 'medium' },
+  { id: 6, src: '/media/shared/sectores/cuadro_3.jpg', alt: 'Panel de Control', size: 'small' },
+  { id: 7, src: '/media/shared/sectores/procesos.png', alt: 'Automatización de Procesos', size: 'large' },
+  { id: 8, src: '/media/shared/sectores/cuadro_4.jpg', alt: 'Sistemas Eléctricos', size: 'small' },
+  { id: 9, src: '/media/shared/sectores/impresion_1.jpg', alt: 'Maquinaria de Impresión', size: 'small' },
+  { id: 10, src: '/media/shared/sectores/edificios_1.jpg', alt: 'Edificios Comerciales', size: 'medium' },
+  { id: 11, src: '/media/shared/sectores/procesos_2.jpg', alt: 'Procesos Industriales', size: 'small' },
+  { id: 12, src: '/media/shared/sectores/proyecto.bmp', alt: 'Gestión de Proyectos', size: 'small' },
 ];
 
 export default function OurSectorsVariant2() {

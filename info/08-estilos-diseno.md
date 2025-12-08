@@ -817,7 +817,7 @@ import { ParallaxBackground } from '@/components/effects'
 // Hero con fondo parallax
 <section className="relative h-screen overflow-hidden">
   <ParallaxBackground
-    imageSrc="/images/hero-bg.jpg"
+    imageSrc="/media/pages/servicios/hero.jpg"
     speed={0.3}
     overlay
     overlayOpacity={40}
@@ -830,7 +830,7 @@ import { ParallaxBackground } from '@/components/effects'
 // Sin overlay
 <section className="relative h-[600px] overflow-hidden">
   <ParallaxBackground
-    imageSrc="/images/section-bg.jpg"
+    imageSrc="/media/pages/servicios/distribucion/hero.jpg"
     speed={0.5}
   />
   <div className="relative z-10 container-clean section-spacing">
@@ -950,7 +950,7 @@ export function HeroSection() {
     <section className="relative h-screen overflow-hidden">
       {/* Fondo parallax */}
       <ParallaxBackground
-        imageSrc="/images/hero-background.jpg"
+        imageSrc="/media/shared/hero-extras/heroauto.jpg"
         alt="Hero background"
         speed={0.3}
         overlay

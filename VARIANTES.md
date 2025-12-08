@@ -165,16 +165,16 @@ Breakpoints:
 ## 📸 Imágenes Utilizadas
 
 **Variante 1:**
-- Hero: `/images/hero/01.jpg`
-- Partners: logos de `/images/logos/`
+- Hero: `/media/shared/variantes/hero-01.jpg`
+- Partners: logos de `/media/shared/logos/clientes/`
 
 **Variante 2:**
-- Hero: `/images/hero/12.jpg`
+- Hero: `/media/pages/about/hero.jpg`
 - Card flotante con icono Award
 
 **Variante 3:**
-- Decorativa: `/images/hero/13.jpg`
-- Partners: `/images/logos/logo-eaton.jpg`
+- Decorativa: `/media/pages/servicios/distribucion/hero.jpg`
+- Partners: `/media/shared/logos/clientes/logo-eaton.webp`
 
 ---
 

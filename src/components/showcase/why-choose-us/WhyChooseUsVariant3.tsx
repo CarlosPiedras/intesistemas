@@ -11,7 +11,7 @@ const reasons = [
     label: 'años',
     title: 'Experiencia consolidada',
     description: 'Más de tres décadas diseñando e implementando sistemas de control industrial. Desde 1994, hemos completado cientos de proyectos exitosos en toda España.',
-    image: '/images/sectores/cuadro_1.jpg',
+    image: '/media/shared/sectores/cuadro_1.jpg',
     imageAlt: 'Cuadro eléctrico industrial',
   },
   {
@@ -20,7 +20,7 @@ const reasons = [
     label: 'oficial',
     title: 'Integrador EATON certificado',
     description: 'Como integradores oficiales de EATON, garantizamos la máxima calidad en componentes y soluciones técnicas para tu industria.',
-    image: '/images/proceso/instalacion.jpg',
+    image: '/media/shared/proceso/instalacion.jpg',
     imageAlt: 'Instalación de sistemas EATON',
   },
   {
@@ -29,7 +29,7 @@ const reasons = [
     label: 'sedes',
     title: 'Presencia en Barcelona',
     description: 'Con oficinas en Hospitalet de Llobregat y Terrassa, estamos cerca para ofrecerte el mejor servicio y respuesta inmediata.',
-    image: '/images/sectores/edificios.jpg',
+    image: '/media/shared/sectores/edificios.jpg',
     imageAlt: 'Edificios industriales',
   },
   {
@@ -38,7 +38,7 @@ const reasons = [
     label: 'soporte',
     title: 'Asistencia continua',
     description: 'Mantenimiento preventivo, asistencia técnica y formación continua para asegurar el óptimo funcionamiento de tus sistemas.',
-    image: '/images/proceso/formacion.jpg',
+    image: '/media/shared/proceso/formacion.jpg',
     imageAlt: 'Soporte técnico y formación',
   },
 ];
