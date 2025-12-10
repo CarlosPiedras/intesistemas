@@ -52,7 +52,7 @@ export default function ServicesIntro() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-widest mb-6"
             style={{ color: '#1175c7' }}

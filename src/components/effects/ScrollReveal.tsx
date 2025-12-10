@@ -38,6 +38,26 @@ export function ScrollReveal({
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
+    const element = elementRef.current;
+    if (!element) return;
+
+    // Verificar si el elemento ya está visible en el viewport inicial
+    const rect = element.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    const isInitiallyVisible =
+      rect.top >= 0 &&
+      rect.top < windowHeight * threshold &&
+      rect.bottom > 0;
+
+    if (isInitiallyVisible) {
+      // Si ya está visible, animar inmediatamente
+      setTimeout(() => {
+        setIsVisible(true);
+      }, delay);
+      return;
+    }
+
+    // Si no está visible, usar IntersectionObserver para detectar cuando entre en viewport
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -52,9 +72,7 @@ export function ScrollReveal({
       { threshold }
     )
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current)
-    }
+    observer.observe(element)
 
     return () => observer.disconnect()
   }, [delay, threshold])
