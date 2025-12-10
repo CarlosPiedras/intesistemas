@@ -9,7 +9,10 @@
     "lint": "eslint",
     "test": "playwright test",
     "test:ui": "playwright test --ui",
-    "test:debug": "playwright test --debug"
+    "test:debug": "playwright test --debug",
+    "test:visibility": "playwright test tests/navigation-visibility.spec.ts",
+    "test:heroes": "playwright test tests/hero-image-loading.spec.ts",
+    "test:heroes:ui": "playwright test tests/hero-image-loading.spec.ts --ui"
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
@@ -22,6 +25,7 @@
     "next-intl": "^4.5.5",
     "react": "19.2.0",
     "react-dom": "19.2.0",
+    "sharp": "^0.34.5",
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {

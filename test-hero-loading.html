@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test de Carga de Heroes - Intesistemas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f5f5;
+    }
+
+    .test-panel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(135deg, #1175c7 0%, #0d5a99 100%);
+      color: white;
+      padding: 1rem;
+      z-index: 9999;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .test-panel h1 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .test-buttons {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+
+    .test-buttons button {
+      padding: 0.6rem 1rem;
+      border: none;
+      background: white;
+      color: #1175c7;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .test-buttons button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      background: #e6f4ff;
+    }
+
+    .test-buttons button:active {
+      transform: translateY(0);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .stat-card {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      opacity: 0.9;
+      margin-bottom: 0.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .stat-value {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    .stat-value.good { color: #51cf66; }
+    .stat-value.warning { color: #ffd93d; }
+    .stat-value.bad { color: #ff6b6b; }
+
+    .performance-bars {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+
+    .perf-bar {
+      flex: 1;
+      min-width: 150px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 6px;
+      padding: 0.5rem;
+    }
+
+    .perf-label {
+      font-size: 0.75rem;
+      margin-bottom: 0.25rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .perf-progress {
+      height: 6px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .perf-fill {
+      height: 100%;
+      transition: width 0.3s;
+      border-radius: 3px;
+    }
+
+    .perf-fill.fast { background: #51cf66; }
+    .perf-fill.medium { background: #ffd93d; }
+    .perf-fill.slow { background: #ff6b6b; }
+
+    #log {
+      max-height: 120px;
+      overflow-y: auto;
+      background: rgba(0,0,0,0.3);
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-family: 'Courier New', monospace;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .log-entry {
+      margin: 3px 0;
+      padding: 2px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .log-error { color: #ff6b6b; }
+    .log-ok { color: #51cf66; }
+    .log-info { color: #74c0fc; }
+    .log-warning { color: #ffd93d; }
+
+    .test-iframe {
+      margin-top: 380px;
+      width: 100%;
+      height: calc(100vh - 380px);
+      border: none;
+      background: white;
+    }
+
+    .loading-indicator {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(17, 117, 199, 0.95);
+      color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      z-index: 10000;
+      display: none;
+      text-align: center;
+    }
+
+    .loading-indicator.active {
+      display: block;
+    }
+
+    .spinner {
+      border: 3px solid rgba(255,255,255,0.3);
+      border-top: 3px solid white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 1rem;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="test-panel">
+    <h1>🖼️ Test de Carga de Imágenes en Heroes</h1>
+
+    <div class="test-buttons">
+      <button onclick="navigate('/')">🏠 Home</button>
+      <button onclick="navigate('/about')">ℹ️ About</button>
+      <button onclick="navigate('/servicios')">🔧 Servicios</button>
+      <button onclick="navigate('/servicios/automatizacion-industrial')">🤖 Automatización</button>
+      <button onclick="navigate('/servicios/distribucion-energia')">⚡ Distribución</button>
+      <button onclick="navigate('/contacto')">📧 Contacto</button>
+      <button onclick="runLoadTest()" style="background: #ffd93d; color: #333;">🚀 Test Automático</button>
+      <button onclick="clearStats()" style="background: #ff6b6b;">🗑️ Limpiar</button>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Página Actual</div>
+        <div class="stat-value" id="currentPage">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Tiempo de Carga</div>
+        <div class="stat-value" id="loadTime">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Imágenes Hero</div>
+        <div class="stat-value" id="heroImages">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Estado</div>
+        <div class="stat-value" id="imageStatus">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">FetchPriority</div>
+        <div class="stat-value" id="fetchPriority">-</div>
+      </div>
+    </div>
+
+    <div class="performance-bars" id="perfBars"></div>
+
+    <div id="log"></div>
+  </div>
+
+  <div class="loading-indicator" id="loadingIndicator">
+    <div class="spinner"></div>
+    <div>Ejecutando test automático...</div>
+    <div id="loadingText" style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;"></div>
+  </div>
+
+  <iframe id="testFrame" class="test-iframe" src="http://localhost:3000"></iframe>
+
+  <script>
+    const frame = document.getElementById('testFrame');
+    const log = document.getElementById('log');
+    const loadHistory = [];
+    let navigationStartTime = 0;
+
+    function addLog(message, type = 'info') {
+      const entry = document.createElement('div');
+      entry.className = `log-entry log-${type}`;
+      const timestamp = new Date().toLocaleTimeString();
+      entry.textContent = `[${timestamp}] ${message}`;
+      log.insertBefore(entry, log.firstChild);
+
+      while (log.children.length > 50) {
+        log.removeChild(log.lastChild);
+      }
+    }
+
+    function navigate(path) {
+      navigationStartTime = performance.now();
+      document.getElementById('currentPage').textContent = path;
+      document.getElementById('loadTime').textContent = 'Cargando...';
+      document.getElementById('imageStatus').textContent = '⏳';
+
+      addLog(`Navegando a: ${path}`, 'info');
+      frame.src = `http://localhost:3000${path}`;
+
+      frame.onload = () => {
+        const loadTime = Math.round(performance.now() - navigationStartTime);
+        addLog(`Página cargada en ${loadTime}ms`, loadTime < 1000 ? 'ok' : 'warning');
+        setTimeout(() => checkHeroImages(path, loadTime), 200);
+      };
+    }
+
+    function checkHeroImages(path, navigationTime) {
+      try {
+        const doc = frame.contentDocument || frame.contentWindow.document;
+
+        // Buscar imágenes en el primer section (hero)
+        const heroSection = doc.querySelector('section');
+        if (!heroSection) {
+          addLog('⚠️ No se encontró section de hero', 'warning');
+          return;
+        }
+
+        const heroImages = heroSection.querySelectorAll('img');
+        const heroVideos = heroSection.querySelectorAll('video');
+
+        document.getElementById('heroImages').textContent =
+          heroImages.length > 0 ? `${heroImages.length} img` :
+          heroVideos.length > 0 ? `${heroVideos.length} video` : '0';
+
+        if (heroImages.length === 0 && heroVideos.length === 0) {
+          addLog('ℹ️ Hero sin imágenes/videos', 'info');
+          document.getElementById('imageStatus').textContent = 'N/A';
+          document.getElementById('fetchPriority').textContent = 'N/A';
+          return;
+        }
+
+        // Verificar imágenes
+        if (heroImages.length > 0) {
+          const firstImg = heroImages[0];
+          const complete = firstImg.complete;
+          const loaded = complete && firstImg.naturalWidth > 0;
+          const fetchPriority = firstImg.getAttribute('fetchpriority') || 'none';
+          const loading = firstImg.getAttribute('loading') || 'default';
+
+          document.getElementById('imageStatus').textContent = loaded ? '✅' : '❌';
+          document.getElementById('fetchPriority').textContent = fetchPriority;
+
+          const status = loaded ? 'ok' : 'error';
+          addLog(`Imagen: ${loaded ? 'Cargada' : 'NO cargada'} (${firstImg.naturalWidth}x${firstImg.naturalHeight})`, status);
+          addLog(`  fetchpriority="${fetchPriority}", loading="${loading}"`, 'info');
+
+          if (fetchPriority !== 'high') {
+            addLog(`  ⚠️ fetchpriority debería ser "high" para heroes`, 'warning');
+          }
+
+          // Guardar en historial
+          loadHistory.push({
+            path,
+            time: navigationTime,
+            loaded,
+            fetchPriority,
+            width: firstImg.naturalWidth,
+            height: firstImg.naturalHeight
+          });
+        }
+
+        // Verificar videos
+        if (heroVideos.length > 0) {
+          const firstVideo = heroVideos[0];
+          const readyState = firstVideo.readyState;
+          const loaded = readyState >= 2; // HAVE_CURRENT_DATA
+
+          document.getElementById('imageStatus').textContent = loaded ? '✅ 📹' : '❌ 📹';
+          document.getElementById('fetchPriority').textContent = 'Video';
+
+          addLog(`Video: readyState=${readyState} ${loaded ? '✅' : '⏳'}`, loaded ? 'ok' : 'warning');
+
+          loadHistory.push({
+            path,
+            time: navigationTime,
+            loaded,
+            type: 'video',
+            readyState
+          });
+        }
+
+        // Actualizar tiempo de carga con color
+        const timeEl = document.getElementById('loadTime');
+        timeEl.textContent = `${navigationTime}ms`;
+        timeEl.className = 'stat-value ' +
+          (navigationTime < 1000 ? 'good' : navigationTime < 2000 ? 'warning' : 'bad');
+
+        updatePerformanceBars();
+
+      } catch (e) {
+        addLog(`❌ Error: ${e.message}`, 'error');
+      }
+    }
+
+    function updatePerformanceBars() {
+      const perfBars = document.getElementById('perfBars');
+      perfBars.innerHTML = '';
+
+      loadHistory.slice(-5).forEach((item) => {
+        const bar = document.createElement('div');
+        bar.className = 'perf-bar';
+
+        const maxTime = 3000;
+        const percentage = Math.min((item.time / maxTime) * 100, 100);
+        const status = item.time < 1000 ? 'fast' : item.time < 2000 ? 'medium' : 'slow';
+
+        bar.innerHTML = `
+          <div class="perf-label">
+            <span>${item.path.substring(0, 20)}...</span>
+            <span>${item.time}ms</span>
+          </div>
+          <div class="perf-progress">
+            <div class="perf-fill ${status}" style="width: ${percentage}%"></div>
+          </div>
+        `;
+
+        perfBars.appendChild(bar);
+      });
+    }
+
+    async function runLoadTest() {
+      const routes = [
+        '/',
+        '/about',
+        '/servicios',
+        '/servicios/automatizacion-industrial',
+        '/servicios/distribucion-energia',
+        '/contacto'
+      ];
+
+      const indicator = document.getElementById('loadingIndicator');
+      const loadingText = document.getElementById('loadingText');
+      indicator.classList.add('active');
+
+      addLog('🚀 Iniciando test automático de carga...', 'info');
+
+      for (let i = 0; i < routes.length; i++) {
+        const route = routes[i];
+        loadingText.textContent = `${i + 1}/${routes.length}: ${route}`;
+
+        navigate(route);
+        await sleep(2500);
+      }
+
+      indicator.classList.remove('active');
+      addLog('✅ Test automático completado', 'ok');
+
+      // Resumen
+      const avgTime = loadHistory.reduce((sum, h) => sum + h.time, 0) / loadHistory.length;
+      const slowPages = loadHistory.filter(h => h.time > 2000).length;
+      const notLoaded = loadHistory.filter(h => !h.loaded).length;
+
+      addLog(`📊 Resumen: Promedio ${Math.round(avgTime)}ms`, 'info');
+      if (slowPages > 0) {
+        addLog(`⚠️ ${slowPages} páginas lentas (>2s)`, 'warning');
+      }
+      if (notLoaded > 0) {
+        addLog(`❌ ${notLoaded} imágenes no cargadas`, 'error');
+      }
+    }
+
+    function clearStats() {
+      loadHistory.length = 0;
+      document.getElementById('perfBars').innerHTML = '';
+      log.innerHTML = '';
+      addLog('🗑️ Estadísticas limpiadas', 'info');
+    }
+
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    // Auto-check inicial
+    frame.onload = () => {
+      if (!navigationStartTime) {
+        navigationStartTime = performance.now();
+      }
+      setTimeout(() => {
+        const path = new URL(frame.contentWindow.location.href).pathname;
+        checkHeroImages(path, Math.round(performance.now() - navigationStartTime));
+      }, 500);
+    };
+
+    addLog('🚀 Test de heroes iniciado', 'ok');
+    addLog('Asegúrate de que el servidor esté corriendo en http://localhost:3000', 'info');
+    addLog('Usa los botones para navegar o ejecuta el test automático', 'info');
+  </script>
+</body>
+</html>

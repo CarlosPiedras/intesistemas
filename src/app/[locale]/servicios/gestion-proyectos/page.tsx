@@ -1,8 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { HeroImageLoader } from '@/components/effects/HeroImageLoader';
 import { ClipboardCheck, Users, Shield, DollarSign } from 'lucide-react';
-import Image from 'next/image';
 
 const services = [
   {
@@ -43,15 +43,12 @@ export default function GestionProyectosPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[65vh] md:h-[45vh] xl:h-[calc(100vh-5rem)] 2xl:h-[70vh] overflow-hidden bg-secondary-900">
+      <section className="relative h-[65vh] md:h-[45vh] xl:h-[calc(100vh-5rem)] 2xl:h-[70vh] overflow-hidden bg-gradient-to-br from-secondary-800 via-secondary-700 to-primary-900">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <Image
-            src="/media/pages/servicios/gestion/hero.jpg"
+          <HeroImageLoader
+            src="/media/pages/servicios/gestion/hero.webp"
             alt="INTE SISTEMAS - Gestión de Proyectos"
-            fill
-            className="object-cover"
-            priority
           />
           {/* Overlay oscuro */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />

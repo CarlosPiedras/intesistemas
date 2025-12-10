@@ -1,19 +1,16 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+import { HeroImageLoader } from '@/components/effects/HeroImageLoader';
 
 export default function ShowcaseHeroContact() {
   return (
-    <section className="relative h-[65vh] md:h-[45vh] xl:h-[calc(100vh-5rem)] 2xl:h-[70vh] overflow-hidden bg-secondary-900">
+    <section className="relative h-[65vh] md:h-[45vh] xl:h-[calc(100vh-5rem)] 2xl:h-[70vh] overflow-hidden bg-gradient-to-br from-secondary-800 via-secondary-700 to-primary-900">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <Image
-          src="/media/pages/contacto/hero.jpg"
+        <HeroImageLoader
+          src="/media/pages/contacto/hero.webp"
           alt="INTE SISTEMAS - Contacto"
-          fill
-          className="object-cover"
-          priority
         />
         {/* Overlay oscuro */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
