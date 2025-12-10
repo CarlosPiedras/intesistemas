@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function AboutHero() {
   return (
-    <section className="relative h-[calc(100vh-5rem)] overflow-hidden bg-secondary-900">
+    <section className="relative h-[65vh] md:h-[45vh] xl:h-[calc(100vh-5rem)] 2xl:h-[70vh] overflow-hidden bg-secondary-900">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
