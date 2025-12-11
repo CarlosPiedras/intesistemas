@@ -31,7 +31,7 @@ export default function PageHero() {
           className="flex items-center gap-2 text-white/90 text-sm mb-6"
         >
           <Link
-            href="/es"
+            href="/"
             className="hover:text-white transition-colors duration-200"
           >
             Inicio

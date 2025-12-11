@@ -21,19 +21,19 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Inicio', href: '/es' },
-    { name: 'Quiénes somos', href: '/es/about' },
+    { name: 'Inicio', href: '/' },
+    { name: 'Quiénes somos', href: '/about' },
     {
       name: 'Servicios',
-      href: '/es/servicios',
+      href: '/servicios',
       dropdown: [
-        { name: 'Distribución de Energía', href: '/es/servicios/distribucion-energia' },
-        { name: 'Automatización Industrial', href: '/es/servicios/automatizacion-industrial' },
-        { name: 'Gestión de Proyectos', href: '/es/servicios/gestion-proyectos' },
-        { name: 'Soporte Técnico', href: '/es/servicios/soporte-tecnico' },
+        { name: 'Distribución de Energía', href: '/servicios/distribucion-energia' },
+        { name: 'Automatización Industrial', href: '/servicios/automatizacion-industrial' },
+        { name: 'Gestión de Proyectos', href: '/servicios/gestion-proyectos' },
+        { name: 'Soporte Técnico', href: '/servicios/soporte-tecnico' },
       ],
     },
-    { name: 'Contacto', href: '/es/contacto' },
+    { name: 'Contacto', href: '/contacto' },
   ];
 
   return (
@@ -48,7 +48,7 @@ export default function Navbar() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/es" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/media/shared/logos/brand/logointe.webp"
                 alt="INTE SISTEMAS"

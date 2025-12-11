@@ -68,7 +68,7 @@ export default function AutomatizacionCTA() {
           >
             {/* Primary Button */}
             <Link
-              href="/es/contacto"
+              href="/contacto"
               className="group inline-flex items-center gap-2 px-8 py-4 rounded-lg font-semibold text-lg text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl"
               style={{ backgroundColor: '#1175c7' }}
             >
@@ -78,7 +78,7 @@ export default function AutomatizacionCTA() {
 
             {/* Secondary Button */}
             <Link
-              href="/es/about"
+              href="/about"
               className="group inline-flex items-center gap-2 px-8 py-4 border-2 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-secondary-50"
               style={{ borderColor: '#1175c7', color: '#1175c7' }}
             >

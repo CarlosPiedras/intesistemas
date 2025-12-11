@@ -59,7 +59,7 @@ export default function ServicesCTA() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             {/* Primary Button */}
-            <Link href="/es/contacto">
+            <Link href="/contacto">
               <motion.button
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
