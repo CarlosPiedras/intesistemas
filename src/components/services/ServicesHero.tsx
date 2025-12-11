@@ -11,6 +11,7 @@ export default function ServicesHero() {
         <HeroImageLoader
           src="/media/pages/servicios/hero.webp"
           alt="INTE SISTEMAS - Servicios profesionales"
+          blurDataURL="data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoKAAcAAUAmJYwCdAEUVFiwpx6AAP70SIE2gbmPkQh6I8PqXokFcZD86rgXSz+erSJGgHattOyiVZyMuYYQAAAA"
         />
         {/* Overlay oscuro */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
