@@ -78,8 +78,7 @@ export default function ServicesSection() {
               <motion.div
                 key={service.id}
                 initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white rounded-lg p-8 hover:shadow-xl transition-all duration-300 group"
               >

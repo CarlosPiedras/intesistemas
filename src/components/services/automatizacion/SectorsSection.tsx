@@ -78,8 +78,7 @@ export default function SectorsSection() {
               <motion.div
                 key={sector.id}
                 initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-secondary-50 rounded-lg p-8 hover:shadow-lg transition-all duration-300 border border-secondary-200"
               >

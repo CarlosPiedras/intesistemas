@@ -140,8 +140,7 @@ export default function GestionProyectosPage() {
                 <motion.div
                   key={service.id}
                   initial={{ opacity: 0, x: -50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="group"
                 >

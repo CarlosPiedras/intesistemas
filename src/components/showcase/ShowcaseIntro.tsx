@@ -12,8 +12,7 @@ export default function ShowcaseIntro() {
           {/* Columna Izquierda - Imagen */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className="relative h-full min-h-[400px] lg:min-h-[500px]"
           >
@@ -30,8 +29,7 @@ export default function ShowcaseIntro() {
           {/* Columna Derecha - Contenido */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
             className="flex flex-col justify-center h-full"
           >
