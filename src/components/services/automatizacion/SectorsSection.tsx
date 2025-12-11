@@ -51,8 +51,7 @@ export default function SectorsSection() {
           {/* Main Title */}
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-widest mb-6"
             style={{ color: '#1175c7' }}
@@ -63,8 +62,7 @@ export default function SectorsSection() {
           {/* Description */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base md:text-lg text-secondary-600 max-w-2xl mx-auto leading-relaxed"
           >
