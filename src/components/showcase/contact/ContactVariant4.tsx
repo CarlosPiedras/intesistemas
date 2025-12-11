@@ -87,8 +87,8 @@ export default function ContactVariant4() {
                     <p className="text-xs text-secondary-600">Pasaje Milans 1</p>
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-secondary-900">Sevilla</p>
-                    <p className="text-xs text-secondary-600">Por definir</p>
+                    <p className="text-sm font-semibold text-secondary-900">Andalucía</p>
+                    <p className="text-xs text-secondary-600">Sevilla</p>
                   </div>
                 </div>
               </div>
