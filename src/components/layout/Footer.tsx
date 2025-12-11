@@ -58,7 +58,7 @@ export default function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="md:col-span-3 flex justify-center"
+            className="md:col-span-3 flex justify-start md:justify-center"
           >
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
@@ -68,7 +68,7 @@ export default function Footer() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: 0.1 + index * 0.05 }}
-                  className="text-center"
+                  className="text-left md:text-center"
                 >
                   <Link
                     href={link.href}
