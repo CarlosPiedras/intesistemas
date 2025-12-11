@@ -150,7 +150,7 @@ export default function FAQ() {
             ¿No encuentras la respuesta que buscas?
           </p>
           <a
-            href="/es/contacto"
+            href="/contacto"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-colors duration-200"
             style={{ backgroundColor: '#1175c7', color: '#ffffff' }}
           >

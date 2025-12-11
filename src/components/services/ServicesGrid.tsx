@@ -21,7 +21,7 @@ export default function ServicesGrid() {
       ],
       icon: Zap,
       image: '/media/shared/sectores/cuadro_1.jpg',
-      href: '/es/servicios/distribucion-energia',
+      href: '/servicios/distribucion-energia',
       color: '#1175c7',
     },
     {
@@ -38,7 +38,7 @@ export default function ServicesGrid() {
       ],
       icon: Cpu,
       image: '/media/shared/sectores/procesos.png',
-      href: '/es/servicios/automatizacion-industrial',
+      href: '/servicios/automatizacion-industrial',
       color: '#3a89c5',
     },
     {
@@ -55,7 +55,7 @@ export default function ServicesGrid() {
       ],
       icon: ClipboardList,
       image: '/media/pages/servicios/gestion/project-hero.png',
-      href: '/es/servicios/gestion-proyectos',
+      href: '/servicios/gestion-proyectos',
       color: '#65a6d8',
     },
     {
@@ -72,7 +72,7 @@ export default function ServicesGrid() {
       ],
       icon: Wrench,
       image: '/media/shared/proceso/formacion.jpg',
-      href: '/es/servicios/soporte-tecnico',
+      href: '/servicios/soporte-tecnico',
       color: '#a9d9ff',
     },
   ];

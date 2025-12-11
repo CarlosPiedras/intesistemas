@@ -12,7 +12,7 @@ export default function ServicesIntro() {
       description: 'Cuadros eléctricos y sistemas de distribución de baja y media tensión para instalaciones industriales.',
       keywords: ['BT/MT', 'Protección', 'Eficiencia'],
       icon: Zap,
-      href: '/es/servicios/distribucion-energia',
+      href: '/servicios/distribucion-energia',
       gradient: 'from-[#1175c7] to-[#3a89c5]',
     },
     {
@@ -21,7 +21,7 @@ export default function ServicesIntro() {
       description: 'PLCs, SCADA y sistemas de control automatizado para optimizar procesos productivos.',
       keywords: ['PLCs', 'SCADA', 'Control'],
       icon: Cpu,
-      href: '/es/servicios/automatizacion-industrial',
+      href: '/servicios/automatizacion-industrial',
       gradient: 'from-[#3a89c5] to-[#65a6d8]',
     },
     {
@@ -30,7 +30,7 @@ export default function ServicesIntro() {
       description: 'Planificación, dirección y control integral de proyectos eléctricos con metodologías ágiles.',
       keywords: ['Planificación', 'Ejecución', 'Control'],
       icon: ClipboardList,
-      href: '/es/servicios/gestion-proyectos',
+      href: '/servicios/gestion-proyectos',
       gradient: 'from-[#65a6d8] to-[#a9d9ff]',
     },
     {
@@ -39,7 +39,7 @@ export default function ServicesIntro() {
       description: 'Mantenimiento preventivo, correctivo y asistencia técnica especializada disponible 24/7.',
       keywords: ['Mantenimiento', 'Asistencia', 'Formación'],
       icon: Wrench,
-      href: '/es/servicios/soporte-tecnico',
+      href: '/servicios/soporte-tecnico',
       gradient: 'from-[#a9d9ff] to-[#1175c7]',
     },
   ];

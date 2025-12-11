@@ -67,13 +67,13 @@ export default function TestPage() {
           </h2>
           <div className="grid grid-cols-2 gap-4">
             <Link
-              href="/es"
+              href="/"
               className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg text-center transition-colors shadow-md"
             >
               🏠 Ir a Home
             </Link>
             <Link
-              href="/es/test"
+              href="/test"
               className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg text-center transition-colors shadow-md"
             >
               🔄 Recargar Test
