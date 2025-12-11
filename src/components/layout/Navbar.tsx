@@ -152,7 +152,7 @@ export default function Navbar() {
                   <div key={link.name}>
                     <Link
                       href={link.href}
-                      onClick={() => !link.dropdown && setIsMobileMenuOpen(false)}
+                      onClick={() => setIsMobileMenuOpen(false)}
                       className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-200 font-medium"
                     >
                       {link.name}
