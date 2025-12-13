@@ -30,13 +30,6 @@
   --font-heading: var(--font-poppins);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 /* Estilos base */
 body {
   background: var(--background);
