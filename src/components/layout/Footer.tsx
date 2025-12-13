@@ -169,13 +169,44 @@ export default function Footer() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-8 pt-6 border-t border-white/20"
         >
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
-            <p className="text-xs text-white/70">
-              © {currentYear} INTE SISTEMAS. Todos los derechos reservados.
-            </p>
-            <p className="text-xs text-white/70">
-              Integradores oficiales <span className="font-semibold text-white">EATON</span>
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center">
+            {/* Left: Copyright */}
+            <div className="text-center lg:text-left">
+              <p className="text-xs text-white/70">
+                © {currentYear} INTE SISTEMAS. Todos los derechos reservados.
+              </p>
+            </div>
+
+            {/* Center: Legal Links */}
+            <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
+              <Link
+                href="/politicas/aviso-legal"
+                className="text-xs text-white/70 hover:text-white transition-colors duration-200"
+              >
+                Aviso Legal
+              </Link>
+              <span className="text-white/30">•</span>
+              <Link
+                href="/politicas/privacidad"
+                className="text-xs text-white/70 hover:text-white transition-colors duration-200"
+              >
+                Política de Privacidad
+              </Link>
+              <span className="text-white/30">•</span>
+              <Link
+                href="/politicas/cookies"
+                className="text-xs text-white/70 hover:text-white transition-colors duration-200"
+              >
+                Política de Cookies
+              </Link>
+            </div>
+
+            {/* Right: EATON */}
+            <div className="text-center lg:text-right">
+              <p className="text-xs text-white/70">
+                Integradores oficiales <span className="font-semibold text-white">EATON</span>
+              </p>
+            </div>
           </div>
         </motion.div>
       </div>
