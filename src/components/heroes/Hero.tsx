@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="relative h-[65vh] md:h-[45vh] xl:h-[calc(100vh-5rem)] 2xl:h-[calc(100vh-5rem)] flex items-center overflow-hidden">
+    <section className="relative h-[65vh] md:h-[45vh] [@media(min-width:768px)_and_(max-width:1279px)_and_(orientation:landscape)]:h-[70vh] xl:h-[calc(100vh-5rem)] 2xl:h-[calc(100vh-5rem)] flex items-center overflow-hidden">
       {/* Video de fondo */}
       <div className="absolute inset-0 z-0">
         <video

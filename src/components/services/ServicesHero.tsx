@@ -5,7 +5,7 @@ import { HeroImageLoader } from '@/components/effects/HeroImageLoader';
 
 export default function ServicesHero() {
   return (
-    <section className="relative h-[65vh] md:h-[45vh] xl:h-[calc(100vh-5rem)] 2xl:h-[70vh] overflow-hidden bg-gradient-to-br from-secondary-800 via-secondary-700 to-primary-900">
+    <section className="relative h-[65vh] md:h-[45vh] [@media(min-width:768px)_and_(max-width:1279px)_and_(orientation:landscape)]:h-[70vh] xl:h-[calc(100vh-5rem)] 2xl:h-[70vh] overflow-hidden bg-gradient-to-br from-secondary-800 via-secondary-700 to-primary-900">
       {/* Background Image */}
       <div className="absolute inset-0">
         <HeroImageLoader
